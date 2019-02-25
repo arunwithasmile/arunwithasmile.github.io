@@ -1,0 +1,38 @@
+bnr, subhead {
+    font-size: 25px;
+    font-family: cursive;
+    color: #706b45;
+    padding: 10px;
+}
+
+bnr {
+	font-family: serif;
+	font-size: 30px;
+	display: block;
+	text-align: center;
+}
+
+subhead {
+	display: block;
+}
+
+clip {
+	display: inline-block;
+	min-width: 250px;
+    width: 24%;
+    margin: 5px;
+}
+
+foot {
+    display: block;
+    text-align: center;
+    font-family: sans-serif;
+    color: #706b45;
+    margin-top: 50px;
+    position: relative;
+    top: 75px;
+}
+
+iframe {
+	width: 100%;
+}
