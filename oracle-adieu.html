@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:o="urn:schemas-microsoft-com:office:office">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="x-apple-disable-message-reformatting">
+  <title>One Last Time</title>
+  <!--[if mso]>
+    <noscript>
+        <xml>
+            <o:OfficeDocumentSettings>
+                <o:PixelsPerInch>96</o:PixelsPerInch>
+            </o:OfficeDocumentSettings>
+        </xml>
+    </noscript>
+    <![endif]-->
+  <style type="text/css">
+
+  table[nowa] {
+    display: table !important;
+  }
+
+  div[nowa] {
+    display: block !important;
+  }
+
+  [owa] {
+    display: none;
+  }
+
+  table,
+  tr,
+  td,
+  span {
+    font-family: sans-serif;
+  }
+
+  a[x-apple-data-detectors] {
+    color: inherit !important;
+  }
+
+  a {
+    text-decoration: none;
+    color: unset;
+  }
+
+  * { 
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+  }
+
+  .phone {
+    position: relative;
+    width: 350px;
+    height: 700px;
+    border-radius: 50px;
+    border: 6px solid black;
+    margin: 25px auto;
+    /*background-image: linear-gradient(45deg, rgb(255 236 252), rgb(239 239 250));*/
+    background-image: linear-gradient(330deg, #ee5353, #e23e81, #3a9bcb, #a426c1, #9e9eff);
+    background-color: #c0b0de;
+  }
+
+  .bezel {
+    border: 12px solid #1f1f1e;
+    /* border-color: #a78c00; */
+    border-radius: 44px;
+    height: 100%;
+    box-shadow: -1px 0px 5px #888;
+  }
+
+  .notch {
+    background-color: #1f1f1e;
+    height: 28px;
+    width: 180px;
+    margin: auto;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
+
+  .sys-time {
+    color: #fff;
+    font-size: 13px;
+    font-weight: bold;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .wifi {
+    display: inline-block;
+    height: 22px;
+    width: 22px;
+  }
+
+  .wifi,
+  .wifi-inner {
+    border: 6px double transparent;
+    border-top-color: #fff;
+    border-radius: 50%;
+  }
+
+  .wifi-inner {
+    position: relative;
+    border-width: 3px;
+    border-style: solid;
+    height: 6px;
+    width: 6px;
+    display: block;
+    margin: 2px;
+  }
+
+  .battery {
+    width: 20px;
+    height: 11px;
+    border: 1px solid rgba(255,255,255,70%);
+    border-radius: 3px;
+    padding: 1px;
+  }
+
+  .battery .charge {
+    background: #fff;
+    height: 100%;
+    width: 84%;
+    border-radius: 1.3px 0.5px 0.5px 1.3px
+  }
+
+  .speaker {
+    width: 55px;
+    height: 7px;
+    background-color: #000;
+    border-radius: 5px;
+    box-shadow: 1px 1px #333;
+  }
+
+  .notch .camera {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: rgb(41, 41, 41);
+    padding: 6px;
+  }
+
+  .notch .camera .lens {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    background: #222;
+    box-shadow: -1px 1px 2px #124021 inset;
+    text-align: left;
+    padding: 3px 0 0 2px;
+  }
+
+  .notch .camera .lens .flare {
+    background: rgb(90 60 89);
+    height: 4px;
+    width: 2px;
+    border-radius: 50%;
+    transform: rotate(-20deg);
+    -webkit-transform: rotate(-20deg);
+  }
+
+  .cap {
+    background: #fff;
+    height: 3px;
+    width: 1px;
+    border-radius: 0 2px 2px 0;
+  }
+
+  .home-btn {
+    width: 123px;
+    height: 6px;
+    background: #00000095;
+    border-radius: 5px;
+    margin: auto;
+  }
+
+
+/* ##############################
+ *  NOTIFICATION
+ * ##############################*/
+
+  .notification {
+    background: rgba(255,255,255);
+    box-shadow: 0px 0px 2px rgba(0,0,0,20%);
+    margin: 10px 5px 3px;
+    border-radius: 15px;
+    font-size: 14px;
+    display: block;
+    height: 372px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: height 0.3s, margin-top 0.3s, background-color 0.3s;
+    letter-spacing: 0.5px;
+  }
+
+  /*
+  *  This part is only for clients that support :psuedo elements
+  *  This part is beautiful!
+  */
+
+  #toggle {
+    position: absolute;
+    opacity: 0;
+  }
+
+  #toggle:checked ~ .notification {
+    height: 115px;
+    background: rgba(255,255,255,55%);
+    line-height: 14px;
+  }
+
+  #toggle:checked ~ .notification:hover {
+    background: rgba(255,255,255,60%);
+  }
+
+  #toggle:not(:checked) ~ .notification {
+    margin-top: 69px;
+    background: rgba(255,255,255,80%);
+  }
+
+  .notification .info-header {
+    height: 40px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid rgb(0,0,0,15%);
+  }
+
+  #toggle:checked ~ .notification .info-header {
+    height: 35px;
+    margin-bottom: 0px;
+    border: none;
+  }
+
+  .notification .content {
+    margin: 0 11px 12px;
+    height: calc(100% - 63px);
+    overflow: hidden;
+  }
+
+  #toggle:checked ~ .notification .content {
+    height: calc(100% - 47px);
+  }
+
+  .notification .icon {
+    background: #c1c0d0;
+    padding: 4px 3px 2px 5px;
+    /* border: 1px solid #c0c0c0; */
+    border-radius: 5px;
+    font-size: 12px;
+  }
+
+  #toggle:checked ~ .notification .icon {
+    padding: 4px 1px 2px 5px;
+    background: #d2d7f2;
+  }
+
+  #toggle:not(:checked) ~ .notification .icon {
+    padding: 4px 1px 2px 5px;
+    background: #b1c0d0;
+  }
+
+  .notification .title {
+    font-weight: bold;
+    letter-spacing: 0;
+  }
+
+  .notification .app-name {
+    display: inline-block;
+    width: 226px;
+    padding: 0 8px;
+    font-size: 12px;
+    opacity: 0.5;
+  }
+
+  .notification .time {
+    opacity: 0.5;
+    font-size: 13px;
+  }
+
+  #toggle:not(:checked) ~ .notification .time {
+    display: none;
+  }
+
+  .notification .close {
+    position: absolute;
+    top: 69px;
+    right: 30px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    font-size: 24px;
+    opacity: 0;
+    background: rgb(255 255 255 / 93%);
+    border-radius: 50%;
+  }
+
+  #toggle:not(:checked) ~ .notification .close {
+    opacity: 0.4;
+    transition: opacity 1s ease 0.3s;
+  }
+
+  .notification .dots {
+    position: absolute;
+    top: 55px;
+    right: 35px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: auto;
+    opacity: 0;
+  }
+
+  #toggle:not(:checked) ~ .notification .dots {
+    opacity: 0.3;
+    top: 108px;
+    transition: top 0.3s;
+  }
+
+  .notification .text {
+    margin-top: 4px;
+    height: calc(100% - 10px);
+    line-height: 17px;
+  }
+
+  .button {
+    margin: auto;
+    width: 304px;
+    display: block;
+    border: none;
+    background-color: rgb(255,255,255);
+    line-height: 2.5em;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    margin-bottom: 1px;
+    transition: background-color 0.2s;
+  }
+
+  #toggle:checked ~ .notification ~ .button {
+    transition: height 0.6s;
+    height: 20px;
+    opacity: 0;
+  }
+
+  #toggle:not(:checked) ~ .notification ~ .button {
+    transition: height 0.6s;
+    background-color: rgb(255 255 255 / 40%);
+    height: 40px;
+    overflow: hidden;
+  }
+
+  #toggle:not(:checked) ~ .notification ~ .button:hover {
+    background-color: rgb(255 255 255 / 45%);
+  }
+
+  .heading-underline {
+    position: relative;
+  }
+
+  .heading-underline:before {
+    content: "";
+    background-color: orange;
+    display: block;
+    width: 30px;
+    height: 4px;
+    position: absolute;
+    top: 30px;
+  }
+
+  .with-tip {
+    position: relative;
+  }
+
+  .tip {
+    position: absolute;
+    background: #333;
+    color: #fff;
+    font-size: 13px;
+    text-align: center;
+    top: 35px;
+    padding: 4px 8px;
+    border-radius: 3px;
+    display: none;
+  }
+
+  .with-tip:hover>.tip {
+    display: block !important;
+  }
+  </style>
+</head>
+
+<body style="margin: 0; padding: 0; font-family: 'Calibri', sans-serif;color: #0f0e0d;-webkit-font-smoothing: antialiased;">
+  <table class="email-container" bgcolor="#F5F4F2" role="presentation" cellpadding="0" cellspacing="0" width="100%">
+    <tr>
+      <td bgcolor="white" style="padding: 10px 30px;letter-spacing: 0.01em;border-bottom: 1px solid #e7e7e7;font-size: 16px">
+        <![if !mso]>
+        <table nowa cellpadding="0" cellspacing="0" width="100%" style="display: none">
+          <tr>
+            <td width="60">
+              <img alt="&#8801;" src="https://arunwithasmile.github.io/images/ham.png" width="20" height="14" style="display: block;" />
+            </td>
+            <td width="40">
+              <img alt="O" src="https://arunwithasmile.github.io/images/logo.png" width="32" height="20" style="display: block;" />
+            </td>
+            <td>Responsys</td>
+            <td width="55">
+              <a href="https://goo.gl/maps/2NYVWNWqzCzVoBZH7" title="After Lockdown Of Course :)" class="with-tip">
+                <img alt="&#8962;" src="https://arunwithasmile.github.io/images/home.png" width="20" style="display: block;" />
+                <div class="tip" style="width:128px;left: -60px">You're Welcome for a Drink & Music</div>
+              </a>
+            </td>
+            <td width="55">
+              <a href="mailto:arunwithasmile@gmail.com" class="with-tip">
+                <img alt="&#9993;" src="https://arunwithasmile.github.io/images/mail.png" width="20" style="display: block;" />
+                <div class="tip" style="width:88px;left:-40px">My Email ID</div>
+              </a>
+            </td>
+            <td width="45">
+              <a href="https://wa.me/919742083691" class="with-tip">
+                <img alt="&#9990;" src="https://arunwithasmile.github.io/images/wa.png" width="21" style="display: block;" />
+                <div class="tip" style="width:60px;left:-25px">Say HI!</div>
+              </a>
+            </td>
+            <td style="color:#bdbdbd;font-size: 20px" width="30">|</td>
+            <td width="50">
+              <a href="https://www.google.com/search?q=arunwithasmile" class="with-tip">
+                <img alt="&#128269;" src="https://arunwithasmile.github.io/images/search.png" width="20" style="display: block;" />
+                <div class="tip" style="width:120px;left:-50px">Me Outside Work</div>
+              </a>
+            </td>
+            <td width="20">
+              <a href="https://www.instagram.com/p/BuGdgE0HjEw" class="with-tip">
+                <img alt="" src="https://arunwithasmile.github.io/images/user.png" width="20" style="display: block;" />
+                <div class="tip" style="width:85px;left:-60px">Me at Work</div>
+              </a>
+            </td>
+          </tr>
+        </table>
+        <![endif]>
+        <table owa cellpadding="0" cellspacing="0" width="100%">
+          <tr>
+            <td width="60">
+              <img alt="&#8801;" src="https://arunwithasmile.github.io/images/ham.png" width="20" height="14" style="display: block;" />
+            </td>
+            <td width="40">
+              <img alt="O" src="https://arunwithasmile.github.io/images/logo.png" width="32" height="20" style="display: block;" />
+            </td>
+            <td>Responsys</td>
+            <td width="55">
+              <a href="https://goo.gl/maps/2NYVWNWqzCzVoBZH7" title="You're Welcome for a Drink & Music" class="with-tip">
+                <img alt="&#8962;" src="https://arunwithasmile.github.io/images/home.png" width="20" style="display: block;" />
+              </a>
+            </td>
+            <td width="55">
+              <a href="mailto:arunwithasmile@gmail.com" title="My Email ID" class="with-tip">
+                <img alt="&#9993;" src="https://arunwithasmile.github.io/images/mail.png" width="20" style="display: block;" />
+              </a>
+            </td>
+            <td width="45">
+              <a href="https://wa.me/919742083691" title="Say HI!" class="with-tip">
+                <img alt="&#9990;" src="https://arunwithasmile.github.io/images/wa.png" width="21" style="display: block;" />
+              </a>
+            </td>
+            <td style="color:#bdbdbd;font-size: 20px" width="30">|</td>
+            <td width="50">
+              <a href="https://www.google.com/search?q=arunwithasmile" title="Me Outside Work" class="with-tip">
+                <img alt="&#128269;" src="https://arunwithasmile.github.io/images/search.png" width="20" style="display: block;" />
+              </a>
+            </td>
+            <td width="20">
+              <a href="https://www.instagram.com/p/BuGdgE0HjEw" title="Me at Work" class="with-tip">
+                <img alt="" src="https://arunwithasmile.github.io/images/user.png" width="20" style="display: block;" />
+              </a>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+    <tr>
+      <td style="background-color: #fff;padding: 30px 50px">
+        <table cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse;">
+          <tr>
+            <td width="204" style="font-family: Georgia;font-size: 28px;line-height: 36px;letter-spacing: 0px;text-align: left;">
+              Until Next Time&nbsp;<span style="font-family: Georgia;font-size: 13.75px;">/ Contacts / Arun</span>
+            </td>
+          </tr>
+        </table>
+        <table cellpadding="0" cellspacing="0" style="margin-top: 22px">
+          <tr>
+            <td width="72.5" style="background-color: #fff">
+              <!--[if mso]>
+              <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" style="height:24px;v-text-anchor:middle;width:57.77px;" arcsize="25%" stroke="f" fillcolor="#508223">
+                <w:anchorlock/>
+                <v:textbox inset="0,0,0,0">
+                <center>
+              <![endif]-->
+              <span style="background-color:#508223;border-radius:6px;color:#ffffff;display:inline-block;font-size:13px;font-weight:bold;line-height:24px;text-align:center;text-decoration:none;width:57.77px;-webkit-text-size-adjust:none;">Active</span>
+              <!--[if mso]>
+                </center>
+                </v:textbox>
+              </v:roundrect>
+            <![endif]-->
+            </td>
+            <td style="font-size: 13.75px;margin-left: 10px;letter-spacing: 0.5px;">
+              And will always be. So make sure you keep in touch &#x1F642;
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <table cellpadding="0" cellspacing="0" border="0" height="12" width="100%">
+          <tr>
+            <td background="https://stage.cdn.responsys.net/e1/21C000266/suite/suite/build/production/Suite/resources/uif/theme-redwood/images/Color_Strip.png" bgcolor="#c8b6d4" valign="top" style="font-size:0;line-height:0">
+              <!--[if gte mso]>
+              <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="mso-width-percent:1000;height:12px;">
+                <v:fill type="tile" aspect="atleast" src="https://stage.cdn.responsys.net/e1/21C000266/suite/suite/build/production/Suite/resources/uif/theme-redwood/images/Color_Strip.png" color="#c8b6d4"/>
+                <v:textbox inset="0,0,0,0"/>
+              </v:rect>
+              <![endif]-->
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+    <tr>
+      <td style="padding: 25px">
+        <!-- Wrapper for Min Width -->
+        <table align="center" cellpadding="0" cellspacing="0" width="600" style="border-collapse: collapse;">
+          <tr>
+            <td>
+              <table align="center" cellpadding="0" cellspacing="0" width="500" style="border-collapse: collapse;">
+                <!--[if mso]>
+                <tr>
+                  <td>
+                    <v:roundrect id="AutoShape_x0020_5"
+                     o:spid="_x0000_s1030" style='position:absolute;margin-left:57pt;
+                     margin-top:75pt;width:261pt;height:538.5pt;z-index:251655168;
+                     visibility:visible;mso-wrap-style:square;mso-width-percent:0;
+                     mso-height-percent:0;mso-wrap-distance-left:9pt;mso-wrap-distance-top:0;
+                     mso-wrap-distance-right:9pt;mso-wrap-distance-bottom:0;
+                     mso-position-horizontal:absolute;mso-position-horizontal-relative:text;
+                     mso-position-vertical:absolute;mso-position-vertical-relative:text;
+                     mso-width-percent:0;mso-height-percent:0;mso-width-relative:page;
+                     mso-height-relative:page;v-text-anchor:middle' arcsize="9000f"
+                      fillcolor="#c0b0de" strokeweight="4.5pt">
+                     <w:anchorlock/>
+                    </v:roundrect>
+
+                    <v:roundrect
+                     id="AutoShape_x0020_4" o:spid="_x0000_s1029" style='position:absolute;
+                     margin-left:125.25pt;margin-top:76.5pt;width:127.5pt;height:26pt;
+                     z-index:251656192;visibility:visible;mso-wrap-style:square;
+                     mso-width-percent:0;mso-height-percent:0;mso-wrap-distance-left:9pt;
+                     mso-wrap-distance-top:0;mso-wrap-distance-right:9pt;
+                     mso-wrap-distance-bottom:0;mso-position-horizontal:absolute;
+                     mso-position-horizontal-relative:text;mso-position-vertical:absolute;
+                     mso-position-vertical-relative:text;mso-width-percent:0;
+                     mso-height-percent:0;mso-width-relative:page;mso-height-relative:page;
+                     v-text-anchor:middle' arcsize="28000f"  fillcolor="#1f1f1e">
+                     <w:anchorlock/>
+                    </v:roundrect>
+
+                    <v:roundrect
+                     id="AutoShape_x0020_3" o:spid="_x0000_s1028" style='position:absolute;
+                     margin-left:63.975pt;margin-top:81.75pt;width:247.5pt;height:525pt;
+                     z-index:251657216;visibility:visible;mso-wrap-style:square;
+                     mso-width-percent:0;mso-height-percent:0;mso-wrap-distance-left:9pt;
+                     mso-wrap-distance-top:0;mso-wrap-distance-right:9pt;
+                     mso-wrap-distance-bottom:0;mso-position-horizontal:absolute;
+                     mso-position-horizontal-relative:text;mso-position-vertical:absolute;
+                     mso-position-vertical-relative:text;mso-width-percent:0;
+                     mso-height-percent:0;mso-width-relative:page;mso-height-relative:page;
+                     v-text-anchor:middle' arcsize="7700f"  filled="f" strokecolor="#1f1f1e" strokeweight="9pt">
+                     <w:anchorlock/>
+                    </v:roundrect>
+
+
+                          
+
+                    <v:roundrect id="Rounded_x0020_Rectangle_x0020_14"
+                     o:spid="_x0000_s1027" style='position:absolute;margin-left:72.75pt;
+                     margin-top:111pt;width:230.25pt;height:272pt;z-index:251659264;
+                     visibility:visible;mso-wrap-style:square;mso-width-percent:0;
+                     mso-wrap-distance-left:9pt;mso-wrap-distance-top:0;
+                     mso-wrap-distance-right:9pt;mso-wrap-distance-bottom:0;
+                     mso-position-horizontal:absolute;mso-position-horizontal-relative:text;
+                     mso-position-vertical:absolute;mso-position-vertical-relative:text;
+                     mso-width-percent:0;mso-width-relative:margin;v-text-anchor:middle'
+                     arcsize="5%" stroke="f" fillcolor="#ffffff">
+                      <v:fill opacity="55769f"/>
+                      <v:textbox>
+                        <p align=center style='text-align:center;font-size:10.875pt;
+                            font-family:"Arial",sans-serif;'>
+                          <table>
+                            <tr>
+                              <td style='font-size:10.8pt;font-family:"Arial",sans-serif;margin-top:5pt;margin-bottom:2pt;'>
+                                <b>Until Next Time</b>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td style='font-size:10.8pt;font-family:"Arial",sans-serif;color:#333333;'>
+                                Hi. I'm sending this <i>Notification</i> to let you know that I am bidding a heartfelt adieu Oracle today. While I'm sad I didn't get my send-off cake, I am immensely happy how amazing this ride was. I've enjoyed every <i>Event</i> of my life here. Most peaceful tenure of my entire career. I <i>Account</i> myself lucky&#128522; In the <i>SPAN</i> of 5 years, it gave me a great <i>Platform</i> to grow & made me confident to <i>Launch</i> myself out there. Special thanks to my leaders Sheetal & Sudhakar who taught me how to <i>Channel</i> my time between work and personal life perfectly. You are very approachable and easy to <i>Interact</i> with&#128522; Please stay connected! Let's hope to meet again. I wish you all the best &#128144;
+                              </td>
+                            </tr>
+                          </table>
+                        </p>
+                      </v:textbox>
+                    </v:roundrect>
+
+                    <v:roundrect id="AutoShape_x0020_2"
+                     o:spid="_x0000_s1026" style='width:375pt;height:626.25pt;visibility:visible;
+                     mso-wrap-style:square;mso-left-percent:-10001;mso-top-percent:-10001;
+                     mso-position-horizontal:absolute;mso-position-horizontal-relative:char;
+                     mso-position-vertical:absolute;mso-position-vertical-relative:line;
+                     mso-left-percent:-10001;mso-top-percent:-10001;v-text-anchor:top'
+                     arcsize="1311f"  stroked="f">
+                     <v:textbox inset="0,0,0,0">
+                      <![if !mso]>
+                      <table cellpadding=0 cellspacing=0 width="100%">
+                       <tr>
+                        <td><![endif]>
+                        <div>
+                        <div align=center>
+                        <table Table border=0 cellspacing=0 cellpadding=0
+                         width="100%" style='width:100.0%;border-collapse:collapse;
+                         mso-yfti-tbllook:1184;mso-padding-alt:0cm 0cm 0cm 0cm'>
+                         <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+                          <td style='padding:18.0pt 0cm 0cm 0cm'>
+                          <div align=center>
+                          <table Table border=0 cellspacing=0 cellpadding=0
+                           width=450 style='width:337.5pt;border-collapse:collapse;
+                           mso-yfti-tbllook:1184;mso-padding-alt:0cm 0cm 0cm 0cm'>
+                           <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:
+                            yes'>
+                            <td style='padding:0cm 0cm 0cm 0cm'>
+                            <p style='margin:0cm'><b><span style='font-size:15.0pt;
+                            font-family:"Arial",sans-serif;mso-bidi-font-family:"Times New Roman"'>Personal
+                            Message<o:p></o:p></span></b></p>
+                            </td>
+                            <td valign=bottom style='padding:0cm 0cm 0cm 0cm'>
+                            <p align=right style='margin:0cm;text-align:right'><span
+                            style='font-family:"Arial",sans-serif;mso-bidi-font-family:"Times New Roman";
+                            color:#00688C'>Data Sources<o:p></o:p></span></p>
+                            </td>
+                           </tr>
+                          </table>
+                          </div>
+                          </td>
+                         </tr>
+                         <tr style='mso-yfti-irow:1'>
+                          <td style='padding:0cm 0cm 0cm 0cm'></td>
+                         </tr>
+                         <tr style='mso-yfti-irow:2;mso-yfti-lastrow:yes'>
+                          <td style='padding:18.75pt 27.75pt 18.75pt 27.75pt'></td>
+                         </tr>
+                        </table>
+                        </div>
+                        <p  align=center style='text-align:center'><span
+                        style='mso-fareast-font-family:"Times New Roman"'><o:p>&nbsp;</o:p></span></p>
+                        </div>
+                        <![if !mso]></td>
+                       </tr>
+                      </table>
+                      <![endif]></v:textbox>
+                     <w:wrap type="none"/>
+                     <w:anchorlock/>
+                    </v:roundrect>
+                  </td>
+                </tr>
+                <![endif]-->
+                <![if !mso]>
+                <tr>
+                  <td>
+                    <div style="height: 835px;width: 600px;border-radius: 9px;background: #fff;box-shadow: 0 0 4px rgba(0, 0, 0, 0.15);">
+                      <table align="center" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse;">
+                        <tr>
+                          <td style="padding-top: 24px">
+                            <table align="center" cellpadding="0" cellspacing="0" width="450" style="border-collapse: collapse;">
+                              <tr>
+                                <td>
+                                  <p class="heading-underline" style="margin: 0;font-size: 20px;font-weight: bold;">Personal Message</p>
+                                </td>
+                                <td valign="bottom">
+                                  <div nowa class="with-tip" style="display: none;">
+                                    <p style="margin: 0;text-align: right;color: #00688C;">Data Sources</p>
+                                    <div class="tip" style="width:90px;left:70px;top: -50px;">My Heart ;)</div>
+                                  </div>
+                                  <div owa>
+                                    <p style="margin: 0;text-align: right;color: #00688C;" title="My Heart ;)">Data Sources</p>
+                                  </div>
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td style="padding:25px 37px">
+                            <div class="phone">
+                            <div class="bezel">
+                              <div style="width: 100%;height: 97%">
+                                <table align="center" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse;">
+                                  <tr>
+                                    <td align="center" width="67">
+                                      <div class="sys-time">16:43</div>
+                                    </td>
+                                    <td>
+                                      <div class="notch">
+                                        <table cellpadding="0" cellspacing="0" style="border-collapse: collapse;height: 15px;margin-top: -3px;">
+                                          <tr>
+                                            <td align="right" valign="middle" width="120">
+                                              <div class="speaker"></div>
+                                            </td>
+                                            <td align="center" style="width: 55px;">
+                                              <div class="camera">
+                                                <div class="lens">
+                                                  <div class="flare"></div>
+                                                </div>
+                                              </div>
+                                            </td>
+                                          </tr>
+                                        </table>
+                                      </div>
+                                    </td>
+                                    <td width="67">
+                                      <table id="wifi-battery" cellpadding="0" cellspacing="0" width="80%" style="border-collapse: collapse;text-align: center;">
+                                        <tr>
+                                          <td style="width: 30px;">
+                                            <div style="height:11px;">
+                                              <div class="wifi">
+                                                <div class="wifi-inner"></div>
+                                              </div>
+                                            </div>
+                                          </td>
+                                          <td style="width: 20px;">
+                                            <div style="height:11px;">
+                                              <div class="battery">
+                                                <div class="charge"></div>
+                                              </div>
+                                            </div>
+                                          </td>
+                                          <td>
+                                            <div style="height:11px;padding-top:4px;margin-left: 1px;">
+                                              <div class="cap"></div>
+                                            </div>
+                                          </td>
+                                        </tr>
+                                      </table>
+                                    </td>
+                                  </tr>
+                                </table>
+
+                                <!-- This is the Open/Close switch -->
+                                <input type="checkbox" checked id="toggle">
+
+                                <label class="notification" for="toggle">
+                                  <div class="info-header">
+                                    <span class="icon">&#x270D;&#127997;</span>
+                                    <span class="app-name">SIGNING OFF</span>
+                                    <span class="time">now</span>
+                                    <span class="dots" title="No, this is not a menu">&mldr;</span>
+                                    <span class="close">×</span>
+                                  </div>
+                                  <div class="content">
+                                    <div class="title">Until Next Time</div>
+                                    <div class="text">Hi. I'm sending this <i>Notification</i> to let you know that I am bidding a heartfelt adieu Oracle today. While I'm sad I didn't get my send-off cake, I am immensely happy how amazing this ride was. I've enjoyed every <i>Event</i> of my life here. Most peaceful tenure of my entire career. I <i>Account</i> myself lucky&#128522; In the <i>SPAN</i> of 5 years, it gave me a great <i>Platform</i> to grow & made me confident to <i>Launch</i> myself out there. Special thanks to my leaders Sheetal & Sudhakar who taught me how to <i>Channel</i> my time between work and personal life perfectly. You are very approachable and easy to <i>Interact</i> with&#128522; Please stay connected! Let's hope to meet again. I wish you all the best &#128144;</div>
+                                  </div>
+                                </label>
+                                <a class="button" style="border-radius: 13px 13px 0 0;" href="mailto:arunwithasmile@gmail.com?subject=RE: Fir Milenge. Until Next Time&body=%0D%0A%0D%0A%0D%0AHi. Sending this Notification to let you know that I am leaving Oracle today. While I'm sad I didn't get my send-off cake, I am immensely happy how amazing this ride was. I've enjoyed every Event of my life here. Most peaceful tenure of my entire career. I Account myself lucky&#128522; In the SPAN of 5 years, it gave me a great Platform to grow & made me confident to Launch myself out there. Special thanks to my leaders Sheetal & Sudhakar who taught me how to Channel my time between work and personal life perfectly. You are very approachable and easy to Interact with&#128522; Please stay connected! Let's hope to meet again. I wish you all the best&#128144;">Reply</a>
+                                <a class="button" style="border-radius: 0 0 13px 13px;" href="http://linkedin.com/in/arun-pujari">Connect</a>
+                              </div>
+                              <div class="home-btn"></div>
+                            </div>
+                          </div>
+                          </td>
+                        </tr>
+                      </table>
+                    </div>
+                  </td>
+                </tr>
+                <![endif]>
+                <tr>
+                  <td align="center">
+                    <p style="margin: 0;padding-top: 30px;font-size: 14px;opacity: 0.5;">My name is Arun S P. Good Bye and Thank you.</p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+
+</html>
