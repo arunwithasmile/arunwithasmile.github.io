@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Resume Arun S P</title>
+	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+	<style type="text/css">
+		body {
+			font-family: 'Roboto';
+			font-size: 11pt;
+			line-height: 17pt;
+			color: #333;
+			margin: 0;
+		}
+		table {
+			border-collapse: collapse;
+		}
+		.header {
+			text-transform: uppercase;
+			font-size: 9pt;
+			letter-spacing: 3px;
+			background-color: #eee;
+			color: #666;
+			width: 820px; /* A4 Sheet */
+			margin: auto;
+		}
+		.id {
+		    padding: 45px 50px 50px 50px;
+		}
+		.name {
+			font-family: sans-serif;
+			font-size: 16.5pt;
+			font-weight: bolder;
+			letter-spacing: 6px;
+			margin: 10px 0px 5px;
+			color: #000;
+		}
+		.contacts {
+			color: #666;
+			letter-spacing: 2px;
+			padding: 50px 50px 50px 0;
+		}
+		.contacts icon {
+			display: inline-block;
+			vertical-align: middle;
+			height: 22px;
+			width: 30px;
+			background-size: 20px;
+			background-repeat: no-repeat;
+			background-position: center;
+		}
+
+		.body {
+			width: 720px;
+			margin: 40px auto;
+		}
+
+		.section,
+		.sub-section {
+			text-transform: uppercase;
+		}
+
+		.section {
+			position: relative;
+			font-size: 12pt;
+			letter-spacing: 2px;
+			margin-bottom: 25px;
+			color: #666;
+		}
+
+		.section:before {
+			content: "";
+			display: block;
+			height: 3px;
+			width: 22px;
+			background: orange;
+			position: absolute;
+			bottom: -7px;
+		}
+
+		.sub-section {
+			font-size: 9pt;
+			color: #ccc;
+		}
+
+		.skills,
+		.timeline {
+			padding-top: 50px;
+		}
+
+		.skills {
+			width: 200px;
+		}
+
+		.skills .section,
+		.timeline .section {
+			margin-bottom: 30px;
+		}
+
+		.skills .group {
+			margin-bottom: 10px;
+		}
+
+		.skills .group span {
+			background-color: #f6f6f6;
+			padding: 5px 10px;
+			border-radius: 3px;
+			line-height: 33px;
+			margin-right: 5px;
+		}
+
+		.timeline {
+			position: relative;
+			padding-left: 30px;
+		}
+
+		.timeline .thread {
+			position: absolute;
+			height: 650px;
+			width: 2px;
+			background: #ccc;
+			left: 5px;
+		}
+
+		.stone {
+			position: relative;
+			margin-bottom: 50px;
+		}
+
+		.marker {
+			position: absolute;
+			height: 11px;
+			width: 11px;
+			border: 2px solid #ccc;
+			border-radius: 50%;
+			background: #fff;
+			transform: translate(-31.5px, 3px);
+		}
+
+		.marker:after {
+			content: "";
+			width: 5px;
+			height: 5px;
+			display: block;
+			background: orange;
+			position: absolute;
+			top: 3px;
+			left: 3px;
+			border-radius: 50%;
+		}
+
+		.stone .project,
+		.stone .company {
+			display: inline-block;
+			letter-spacing: 1px;
+			text-transform: uppercase;
+		}
+
+		.stone .project {
+			color: #000;
+			font-weight: bold;
+			margin-bottom: 10px;
+		}
+
+		.stone .company {
+			color: #888;
+			font-size: 9pt;
+			margin-left: 5px;
+		}
+
+		.stone .summary {
+			letter-spacing: 0.4px;
+			text-align: justify;
+			margin-bottom: 10px;
+		}
+		.role {
+			color: #666;
+			letter-spacing: 0.5px;
+			font-size: 10.5pt;
+		}
+		.edu {
+			font-size: 9.5pt;
+		}
+		.major {
+			text-transform: uppercase;
+			font-weight: bold;
+			letter-spacing: 0.6px;
+		}
+		.college,
+		.year {
+			color: #888;
+		}
+
+		.footer {
+			font-size: 10pt;
+			color: #666;
+		}
+	</style>
+</head>
+<body>
+<table class="header">
+	<tr>
+		<td class="id">
+			<div class="doc">Resume</div>
+			<div class="name">Arun Pujari</div>
+			<div class="title">Software Developer</div>
+		</td>
+		<td class="contacts" valign="middle">
+			<table valign="middle" align="right">
+				<tr>
+					<td><icon class="phone" style="background-image: url(img/phone.png)"/></td>
+					<td>+91 974 208 3691</td>
+				</tr>
+				<tr>
+					<td><icon class="mail" style="background-image: url(img/mail.png)"/></td>
+					<td>arunwithasmile@gmail.com</td>
+				</tr>
+				<tr>
+					<td><icon class="map" style="background-image: url(img/map.png)"/></td>
+					<td>Jayanagar, Bengaluru</td>
+				</tr>
+			</table>
+		</td>
+	</tr>	
+</table>
+<table class="body">
+	<tr>
+		<td colspan="2">
+			<div class="section">Summary</div>
+			<div>Full Stack Developer with 9+ years of experience in Java and UI technologies.</div>
+		</td>
+	</tr>
+	<tr>
+		<td class="skills" valign="top">
+			<div>
+				<div class="section">Skills</div>
+				<div class="sub-section">Back End</div>
+				<div class="group backend">
+					<span>Core Java</span>
+					<span>J2EE</span>
+					<span>REST</span>
+					<span>Spring</span>
+					<span>MVC</span>
+					<span>JDBC</span>
+					<span>Hibernate</span>
+				</div>
+				
+				<div class="sub-section">Front End</div>
+				<div class="group frontend">
+					<span>JavaScript</span>
+					<span>Angular</span>
+					<span>Extjs</span>
+					<span>JQuery</span>
+					<span>Ajax</span>
+					<span>Bootstrap</span>
+				</div>
+
+				<div class="sub-section">Database</div>
+				<div class="group db">
+					<span>Oracle</span>
+					<span>MySQL</span><br>
+					<span>SQL Server</span>
+				</div>
+			</div>
+			<div class="section" style="margin-top: 50px">Education</div>
+			<div class="edu">
+				<div class="major">B Tech in Comp. Science</div>
+				<div class="college">Basaveshwar Engg. College</div>
+				<div class="year">2007 - 2011</div>
+			</div>
+			<div class="edu" style="margin-top: 10px">
+				<div class="major">Sr Secondary School</div>
+				<div class="college">Sainik School, Bijapur</div>
+				<div class="year">2005 - 2007</div>
+			</div>
+		</td>
+		<td class="timeline" valign="top">
+			<div class="thread">
+			</div>
+			<div class="section">Career Stones</div>
+			<div class="stone">
+				<div class="marker"></div>
+				<div class="project">Responsys</div>
+				<div class="company">Oracle India | 2016 - Today</div>
+				<div class="summary">Responsys is a Targeted Marketing platform, where a marketer can create personalised campaigns and send Emails, SMSs, or Push Notifications to targeted audience. The platform connects to Google's & Apple's push services, and telecom companies to send Push & SMS.</div>
+				<div class="role">My Role:&nbsp; Designed REST APIs , Web Pages &nbsp;&bull;&nbsp; Enhanced Personalisation Engine &nbsp;&bull;&nbsp; Tracked user activity post delivery &nbsp;&bull;&nbsp; Mentored Juniors</div>
+			</div>
+			<div class="stone">
+				<div class="marker"></div>
+				<div class="project">DemandFarm</div>
+				<div class="company">DemandFarm Pvt Ltd. | 2014 - 2016</div>
+				<div class="summary">DemandFarm is a Key Account management toll that helps Account Managers to better manage their Key Accounts with Plans, Financials and Revenues etc. at a single place, which a standard CRM lacks.</div>
+				<div class="role">Designed a real-time synchroniser between DemandFarm & CRM &nbsp;&bull;&nbsp; Designed REST APIs, Web Pages &nbsp;&bull;&nbsp;Worked directly with clients</div>
+			</div>
+			<div class="stone">
+				<div class="marker"></div>
+				<div class="project">Global Document Delivery</div>
+				<div class="company">Mindtree Ltd. | 2011 - 2016</div>
+				<div class="summary">The project was about delivering travel records like E-Tickets and Invoices as PDFs to the travellers who use <i>American Express Global Business Travel</i>. We parse PNR data from a XML SOAP input, feed it to a Document Generator, get the documents & deliver via emails.</div>
+				<div class="role">Wrote a SOAP service &nbsp;&bull;&nbsp; Designed a PNR end-to-end Tracker &nbsp;&bull;&nbsp; Designed a Document Archive &nbsp;&bull;&nbsp; and you guessed it. REST APIs & Web Pages.</div>
+			</div>
+		</td>
+	</tr>
+	<tr>
+		<td colspan="2" align="center" class="footer">
+			I am fluent in English, Hindi, and Kannada. I like to play musical instruments and do sketches.
+		</td>
+	</tr>
+</table>
+</body>
+</html>
