@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:o="urn:schemas-microsoft-com:office:office">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="x-apple-disable-message-reformatting">
+    <link rel="shortcut icon" href="https://onsign.tv/media/apple-logo.png">
+    <title>CSS iPhone</title>
+    <style type="text/css">
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Calibri', sans-serif;
+            color: #0f0e0d;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        table,
+        tr,
+        td,
+        span {
+            font-family: sans-serif;
+        }
+
+        a[x-apple-data-detectors] {
+            color: inherit !important;
+        }
+
+        a {
+            text-decoration: none;
+            color: unset;
+        }
+
+        * {
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            -webkit-font-smoothing: antialiased;
+            -webkit-text-size-adjust: none;
+            text-size-adjust: none;
+        }
+
+        .phone {
+            position: relative;
+            width: 330px;
+            height: 700px;
+            border-radius: 50px;
+            border: 5px solid #222;
+            margin: 25px auto;
+            background-color: #c0b0de;
+        }
+
+        wallpaper {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to bottom, #bab6bf, #40466f);
+            overflow: hidden;
+            border-radius: 45px;
+            transition: filter 1s;
+        }
+
+        wallpaper .ball {
+            width: 172%;
+            height: 88%;
+            background: linear-gradient(to bottom, #6a6477, #182577);
+            border-radius: 50%;
+            position: absolute;
+            left: -35.5%;
+            top: 9%;
+            box-shadow: -60px 20px 100px 10px #ffffff inset, 0 40px 250px rgb(0 0 0 / 70%);
+        }
+
+        wallpaper>.ball>.ball {
+            height: 67%;
+            width: 74%;
+            left: 1%;
+            top: 14%;
+            box-shadow: -40px 0 100px rgb(233 239 255 / 75%) inset, 0 0 250px rgb(0 0 0 / 50%);
+        }
+
+        wallpaper>.ball>.ball>.ball {
+            height: 58.8%;
+            width: 58.8%;
+            left: 37%;
+            top: 20%;
+            box-shadow: -30px 0 70px rgb(233 239 255 / 75%) inset, 0 0 250px rgb(0 0 0 / 50%);
+        }
+
+        #toggle:not(:checked)~wallpaper {
+            filter: brightness(0.8);
+        }
+
+        .bezel {
+            position: absolute;
+            border: 10px solid #111;
+            /* border-color: #a78c00; */
+            border-radius: 44px;
+            height: 100%;
+            width: 100%;
+            box-shadow: -1px 0px 5px #888;
+        }
+
+        .notch {
+            background-color: #111;
+            height: 28px;
+            width: 180px;
+            margin: auto;
+            border-bottom-right-radius: 20px;
+            border-bottom-left-radius: 20px;
+        }
+
+        .sys-time {
+            color: #000;
+            margin-top: 8px;
+            margin-left: 5px;
+            font-size: 12px;
+            font-weight: bold;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        @keyframes blinker {
+            50% {
+                opacity: 0;
+            }
+        }
+
+        .blinker {
+            animation: blinker 2s step-start infinite;
+        }
+
+        .wifi-battery {
+            margin-top: 5px;
+        }
+
+        .wifi {
+            display: inline-block;
+            height: 22px;
+            width: 22px;
+        }
+
+        .wifi,
+        .wifi-inner {
+            border: 6px double transparent;
+            border-top-color: #000;
+            border-radius: 50%;
+        }
+
+        .wifi-inner {
+            position: relative;
+            border-width: 3px;
+            border-style: solid;
+            height: 6px;
+            width: 6px;
+            display: block;
+            margin: 2px;
+        }
+
+        .battery {
+            width: 20px;
+            height: 11px;
+            border: 1px solid rgba(0, 0, 0, 70%);
+            border-radius: 3px;
+            padding: 1px;
+        }
+
+        .battery .charge {
+            background: #000;
+            height: 100%;
+            width: 84%;
+            border-radius: 1.3px 0.5px 0.5px 1.3px
+        }
+
+        .cap {
+            background: #000;
+            height: 3px;
+            width: 1px;
+            border-radius: 0 2px 2px 0;
+        }
+
+        .speaker {
+            width: 55px;
+            height: 7px;
+            background-color: #222;
+            border-radius: 5px;
+            box-shadow: 1px 1px #333;
+        }
+
+        .notch .camera {
+            width: 17px;
+            height: 17px;
+            border-radius: 50%;
+            background-color: rgb(41, 41, 41);
+            padding: 6px;
+        }
+
+        .notch .camera .lens {
+            height: 100%;
+            width: 100%;
+            border-radius: 50%;
+            background: #222;
+            box-shadow: -1px 1px 2px #124021 inset;
+            text-align: left;
+            padding: 3px 0 0 2px;
+        }
+
+        .notch .camera .lens .flare {
+            background: rgb(90 60 89);
+            height: 4px;
+            width: 2px;
+            border-radius: 50%;
+            transform: rotate(-20deg);
+            -webkit-transform: rotate(-20deg);
+        }
+
+        .home-btn {
+            width: 123px;
+            height: 6px;
+            background: #fff9;
+            border-radius: 5px;
+            margin: auto;
+            backdrop-filter: blur(2px);
+        }
+
+
+        /* ##############################
+ *  NOTIFICATION
+ * ##############################*/
+
+        .notification {
+            background: rgba(255, 255, 255);
+            box-shadow: 0px 0px 2px rgba(0, 0, 0, 30%);
+            margin: 10px 5px 3px;
+            border-radius: 15px;
+            font-size: 14px;
+            display: block;
+            height: 220px;
+            /* overflow: hidden; */
+            cursor: pointer;
+            transition: height 0.3s, margin-top 0.3s, background-color 0.3s;
+            letter-spacing: 0.5px;
+            backdrop-filter: blur(5px);
+        }
+
+        /*
+  *  This part is only for clients that support :psuedo elements
+  *  This part is beautiful!
+  */
+
+        #toggle {
+            position: absolute;
+            opacity: 0;
+            top: 50%;
+        }
+
+        #toggle:checked~.bezel .notification {
+            height: 115px;
+            background: rgba(255, 255, 255, 70%);
+            line-height: 14px;
+        }
+
+        #toggle:checked~.bezel .notification:hover {
+            background: rgba(255, 255, 255, 75%);
+        }
+
+        #toggle:not(:checked)~.bezel .notification {
+            margin-top: 69px;
+            background: rgba(255, 255, 255, 80%);
+        }
+
+        .notification .info-header {
+            height: 40px;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-bottom: 1px solid rgb(0, 0, 0, 15%);
+        }
+
+        #toggle:checked~.bezel .notification .info-header {
+            height: 35px;
+            margin-bottom: 0px;
+            border: none;
+        }
+
+        .notification .content {
+            margin: 0 11px 12px;
+            height: calc(100% - 63px);
+            overflow: hidden;
+        }
+
+        #toggle:checked~.bezel .notification .content {
+            height: calc(100% - 47px);
+        }
+
+        .notification .icon {
+            background: #735e79;
+            padding: 4px 3px 2px 5px;
+            /* border: 1px solid #c0c0c0; */
+            border-radius: 5px;
+            font-size: 12px;
+            position: relative;
+            display: inline-block;
+            height: 20px;
+            width: 20px;
+            vertical-align: middle;
+        }
+
+        .notification .cloud {
+            background-color: #fff;
+            border-radius: 4px;
+            display: inline-block;
+            height: 8px;
+            left: 2px;
+            position: absolute;
+            top: 8px;
+            width: 16px;
+            transform: scale(0.85);
+        }
+
+        .cloud:after,
+        .cloud:before {
+            background-color: #fff;
+            content: '';
+            border-radius: 100%;
+            position: absolute;
+        }
+
+        .cloud:before {
+            height: 12px;
+            left: 1px;
+            top: -4px;
+            width: 12px;
+        }
+
+        .cloud:after {
+            height: 6px;
+            left: 9px;
+            top: -2px;
+            width: 6px;
+        }
+
+        .notification .title {
+            font-weight: bold;
+            letter-spacing: 0;
+        }
+
+        .notification .app-name {
+            display: inline-block;
+            width: 210px;
+            padding: 0 8px;
+            font-size: 12px;
+            opacity: 0.65;
+        }
+
+        .notification .time {
+            opacity: 0.65;
+            font-size: 13px;
+        }
+
+        #toggle:not(:checked)~.bezel .notification .time {
+            display: none;
+        }
+
+        .notification .close {
+            position: absolute;
+            top: -35px;
+            right: 15px;
+            width: 30px;
+            height: 30px;
+            text-align: center;
+            padding-left: 2px;
+            font-size: 26px;
+            opacity: 0;
+            border-radius: 50%;
+            background: rgb(255 255 255);
+            backdrop-filter: blur(5px);
+            box-shadow: 0px 0px 2px rgb(0 0 0 / 30%);
+            font-family: monospace;
+        }
+
+        #toggle:not(:checked)~.bezel .notification .close {
+            opacity: 0.6;
+            transition: opacity 1s ease 0.5s;
+        }
+
+        .notification .dots {
+            position: absolute;
+            top: 3px;
+            right: 15px;
+            font-size: 20px;
+            font-weight: bold;
+            font-family: auto;
+            opacity: 0;
+        }
+
+        #toggle:not(:checked)~.bezel .notification .dots {
+            opacity: 0.3;
+            transition: top 0.3s;
+        }
+
+        .notification .text {
+            margin-top: 4px;
+            height: calc(100% - 10px);
+            line-height: 17px;
+        }
+
+        .button {
+            margin: 0 5px;
+            display: block;
+            border: none;
+            background-color: rgb(255, 255, 255);
+            box-shadow: 0px 0px 2px rgb(0 0 0 / 30%);
+            backdrop-filter: blur(5px);
+            line-height: 2.5em;
+            font-size: 16px;
+            cursor: pointer;
+            text-align: center;
+            margin-bottom: 1px;
+            transition: background-color 0.2s;
+        }
+
+        buttons {
+            display: block;
+            overflow: hidden;
+        }
+
+        #toggle:checked~.bezel buttons {
+            height: 0;
+        }
+
+        #toggle:checked~.bezel .button {
+            transition: height 0.6s;
+            height: 20px;
+            opacity: 0;
+        }
+
+        #toggle:not(:checked)~.bezel .button {
+            transition: height 0.6s;
+            background-color: rgb(255 255 255 / 40%);
+            height: 40px;
+            overflow: hidden;
+        }
+
+        #toggle:not(:checked)~.bezel .notification~.button:hover {
+            background-color: rgb(255 255 255 / 45%);
+        }
+
+        .heading-underline {
+            position: relative;
+        }
+
+        .heading-underline:before {
+            content: "";
+            background-color: orange;
+            display: block;
+            width: 30px;
+            height: 4px;
+            position: absolute;
+            top: 30px;
+        }
+
+        .with-tip {
+            position: relative;
+        }
+
+        .tip {
+            position: absolute;
+            background: #333;
+            color: #fff;
+            font-size: 13px;
+            text-align: center;
+            top: 35px;
+            padding: 4px 8px;
+            border-radius: 3px;
+            display: none;
+        }
+
+        .with-tip:hover>.tip {
+            display: block !important;
+        }
+    </style>
+</head>
+
+<body style="">
+    <div class="phone">
+        <!-- This is the Open/Close switch -->
+        <input type="checkbox" checked id="toggle">
+        <wallpaper>
+            <div class="ball">
+                <div class="ball">
+                    <div class="ball"></div>
+                </div>
+            </div>
+        </wallpaper>
+        <div class="bezel">
+            <div style="width: 100%;height: 97%">
+                <table align="center" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse;">
+                    <tr>
+                        <td align="center" width="67">
+                            <div class="sys-time">16<span class="blinker">:</span>43</div>
+                        </td>
+                        <td>
+                            <div class="notch">
+                                <table cellpadding="0" cellspacing="0"
+                                    style="border-collapse: collapse;height: 15px;margin-top: -3px;">
+                                    <tr>
+                                        <td align="right" valign="middle" width="120">
+                                            <div class="speaker"></div>
+                                        </td>
+                                        <td align="center" style="width: 55px;">
+                                            <div class="camera">
+                                                <div class="lens">
+                                                    <div class="flare"></div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </td>
+                        <td width="67">
+                            <table class="wifi-battery" cellpadding="0" cellspacing="0" width="80%"
+                                style="border-collapse: collapse;text-align: center;">
+                                <tr>
+                                    <td style="width: 30px;">
+                                        <div style="height:11px;">
+                                            <div class="wifi">
+                                                <div class="wifi-inner"></div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td style="width: 20px;">
+                                        <div style="height:11px;">
+                                            <div class="battery">
+                                                <div class="charge"></div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div style="height:11px;padding-top:4px;margin-left: 1px;">
+                                            <div class="cap"></div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+
+                <label class="notification" for="toggle">
+                    <div class="info-header">
+                        <span class="icon">
+                            <span class="cloud"></span>
+                        </span>
+                        <span class="app-name">CSS PHONE</span>
+                        <span class="time">now</span>
+                        <span class="dots" title="No, this is not a menu">&mldr;</span>
+                        <span class="close">×</span>
+                    </div>
+                    <div class="content">
+                        <div class="title">Welcome to CSS Phone</div>
+                        <div class="text">&#128587;&#8205;&#9794;&#65039;Hey! I'm glad you took time to click that link and check this out. This phone
+                            layout
+                            is made purely with HTML and CSS elements. There's also little bit of animation used to make
+                            the
+                            transitions smooth. Expand and collapse of this notification is achieved using a simple
+                            checkbox. Pretty fun right?&#128526;
+                        </div>
+                    </div>
+                </label>
+                <buttons>
+                    <a class="button" style="border-radius: 13px 13px 0 0;"
+                        href="mailto:arunwithasmile@gmail.com?subject=Nice to Meet You&body=Hi Arun.">Reply</a>
+                    <a class="button" style="border-radius: 0 0 13px 13px;"
+                        href="http://linkedin.com/in/arun-pujari">Connect</a>
+                </buttons>
+            </div>
+            <div class="home-btn"></div>
+        </div>
+    </div>
+</body>
+
+</html>
