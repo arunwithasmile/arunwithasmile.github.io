@@ -91,7 +91,7 @@
         }
 
         #toggle:not(:checked)~wallpaper {
-            filter: brightness(0.8);
+            filter: brightness(0.6);
         }
 
         .bezel {
@@ -219,12 +219,16 @@
         .home-btn {
             width: 123px;
             height: 6px;
-            background: #fff9;
+            background: #fff4;
             border-radius: 5px;
             margin: auto;
             backdrop-filter: blur(2px);
+            transition: background 1s;
         }
 
+        #toggle:not(:checked)~.bezel .home-btn {
+            background: #fffa;
+        }
 
         /* ##############################
  *  NOTIFICATION
@@ -443,7 +447,7 @@
             overflow: hidden;
         }
 
-        #toggle:not(:checked)~.bezel .notification~.button:hover {
+        #toggle:not(:checked)~.bezel .button:hover {
             background-color: rgb(255 255 255 / 45%);
         }
 
