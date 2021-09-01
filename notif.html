@@ -160,25 +160,30 @@
         }
 
         .battery {
-            width: 20px;
-            height: 11px;
-            border: 1px solid rgba(0, 0, 0, 70%);
-            border-radius: 3px;
-            padding: 1px;
+            width: 40px;
+            height: 22px;
+            border: 2px solid rgba(0, 0, 0, 70%);
+            border-radius: 6px;
+            padding: 2px;
+            transform: scale(0.5);
+            transform-origin: 25%;
         }
 
         .battery .charge {
             background: #000;
             height: 100%;
             width: 84%;
-            border-radius: 1.3px 0.5px 0.5px 1.3px
+            border-radius: 3px 1.5px 1.5px 3px;
         }
 
         .cap {
             background: #000;
-            height: 3px;
-            width: 1px;
-            border-radius: 0 2px 2px 0;
+            height: 6px;
+            width: 2px;
+            border-radius: 0 4px 4px 0;
+            position: absolute;
+            top: calc(50% - 3px);
+            right: -14%;
         }
 
         .speaker {
@@ -539,12 +544,8 @@
                                         <div style="height:11px;">
                                             <div class="battery">
                                                 <div class="charge"></div>
+                                                <div class="cap"></div>
                                             </div>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div style="height:11px;padding-top:4px;margin-left: 1px;">
-                                            <div class="cap"></div>
                                         </div>
                                     </td>
                                 </tr>
