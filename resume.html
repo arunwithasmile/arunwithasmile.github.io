@@ -195,9 +195,27 @@
 			font-size: 10pt;
 			color: #666;
 		}
+
+		a {
+			text-decoration: none;
+			color: #282f63;
+			font-weight: bold;
+		}
+
+		a:hover {
+			text-decoration: underline;
+		}
+
+		[type="java"] .full-stack {
+			display: none;
+		}
+		
+		[type="full-stack"] .java {
+			display: none;
+		}
 	</style>
 </head>
-<body>
+<body type="java">
 <table class="header">
 	<tr>
 		<td class="id">
@@ -241,6 +259,7 @@
 					<span>REST</span>
 					<span>Spring</span>
 					<span>MVC</span>
+					<span>Spring-Boot</span>
 					<span>JDBC</span>
 					<span>Hibernate</span>
 				</div>
@@ -253,6 +272,7 @@
 					<span>JQuery</span>
 					<span>Ajax</span>
 					<span>Bootstrap</span>
+					<span>Ionic</span>
 				</div>
 
 				<div class="sub-section">Database</div>
@@ -301,9 +321,19 @@
 			</div>
 		</td>
 	</tr>
-	<tr>
+	<tr class="java">
 		<td colspan="2" align="center" class="footer">
 			I am fluent in English, Hindi, and Kannada. I like to play musical instruments and do sketches.
+		</td>
+	</tr>
+	<tr class="full-stack">
+		<td colspan="2" align="center" class="footer">
+			This resume was written using HTML and CSS. Find the <a href="https://arunwithasmile.github.io/resume.html">web version here</a>.
+		</td>
+	</tr>
+	<tr class="full-stack">
+		<td colspan="2" align="center" class="footer">
+			You may also like this <a href="https://arunwithasmile.github.io/notif.html">CSS-Only iPhone</a> that I made as a side project.
 		</td>
 	</tr>
 </table>
