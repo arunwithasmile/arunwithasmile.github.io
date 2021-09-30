@@ -16,19 +16,20 @@
 		}
 		.header {
 			text-transform: uppercase;
-			font-size: 9pt;
+			font-size: 8.5pt;
 			letter-spacing: 3px;
 			background-color: #eee;
 			color: #666;
 			width: 820px; /* A4 Sheet */
 			margin: auto;
 		}
-		.id {
-		    padding: 45px 50px 50px 50px;
+		.id,
+		.contacts {
+		    padding: 40px 60px;
 		}
 		.name {
 			font-family: sans-serif;
-			font-size: 16.5pt;
+			font-size: 15.5pt;
 			font-weight: bolder;
 			letter-spacing: 6px;
 			margin: 10px 0px 5px;
@@ -37,7 +38,6 @@
 		.contacts {
 			color: #666;
 			letter-spacing: 2px;
-			padding: 50px 50px 50px 0;
 		}
 		.contacts icon {
 			display: inline-block;
@@ -84,11 +84,11 @@
 
 		.skills,
 		.timeline {
-			padding-top: 40px;
+			padding-top: 35px;
 		}
 
 		.skills {
-			width: 200px;
+			width: 180px;
 		}
 
 		.skills .section,
@@ -115,25 +115,25 @@
 
 		.timeline .thread {
 			position: absolute;
-			height: 720px;
+			height: 730px;
 			width: 2px;
 			background: #ccc;
 			left: 5px;
 		}
 
-		.stone {
+		.stone:not(:last-of-type) {
 			position: relative;
-			margin-bottom: 40px;
+			margin-bottom: 30px;
 		}
 
 		.marker {
 			position: absolute;
-			height: 11px;
-			width: 11px;
+			height: 15px;
+			width: 15px;
 			border: 2px solid #ccc;
 			border-radius: 50%;
 			background: #fff;
-			transform: translate(-31.5px, 3px);
+			transform: translate(-33.5px, 1px);
 		}
 
 		.marker:after {
@@ -143,8 +143,8 @@
 			display: block;
 			background: orange;
 			position: absolute;
-			top: 3px;
-			left: 3px;
+			top: 5px;
+			left: 5px;
 			border-radius: 50%;
 		}
 
@@ -197,7 +197,7 @@
 
 		a {
 			text-decoration: none;
-			color: #282f63;
+			color: #393d5e;
 			font-weight: bold;
 		}
 
@@ -244,7 +244,9 @@
 	<tr>
 		<td colspan="2">
 			<div class="section">Summary</div>
-			<div>Full Stack Developer with 10+ years of experience in Java and UI technologies.</div>
+			<div>Full Stack Developer with 10+ years of experience in Java and UI technologies.
+				With right skills to design systems to scale and reliabilty, and a knack for maintainable codebase.
+			</div>
 		</td>
 	</tr>
 	<tr>
@@ -260,7 +262,8 @@
 					<span>MVC</span>
 					<span>Spring Boot</span>
 					<span>JDBC</span>
-					<span>Hibernate</span>
+					<span>JMS</span>
+					<span>NodeJS</span>
 				</div>
 				
 				<div class="sub-section">Front End</div>
@@ -270,7 +273,6 @@
 					<span>Angular</span>
 					<span>Extjs</span>
 					<span>JQuery</span>
-					<span>NodeJS</span>
 					<span>Bootstrap</span>
 					<span>Ionic</span>
 				</div>
@@ -290,15 +292,16 @@
 					<span>Postman</span>
 					<span>Docker</span>
 					<span>Agile</span>
+					<span>Jira</span>
 				</div>
 			</div>
 			<div class="section" style="margin-top: 50px">Education</div>
 			<div class="edu">
-				<div class="major">B Tech in Computer Science</div>
+				<div class="major">Bachelor's Degree in Computer Science</div>
 				<div class="college">Basaveshwar Engg. College</div>
 				<div class="year">2007 - 2011</div>
 			</div>
-			<div class="edu" style="margin-top: 10px">
+			<div class="edu" style="margin-top: 10px; display: none;">
 				<div class="major">Sr. Secondary School</div>
 				<div class="college">Sainik School, Bijapur</div>
 				<div class="year">2005 - 2007</div>
@@ -311,23 +314,44 @@
 			<div class="stone">
 				<div class="marker"></div>
 				<div class="project">Responsys</div>
-				<div class="company">Oracle India | 2016 - 2021</div>
-				<div class="summary">Responsys is a Targeted Marketing platform, where a marketer can create personalized campaigns and send Emails, SMSs, or Push Notifications to the targeted audience. It connects to Google's & Apple's push services, and telecom companies to send Push & SMS.</div>
-				<div class="role">My Role: Designed the Architectures of SMS Aggregator Mgmt Tool &amp; CSV Upload Tool&nbsp;&nbsp;•&nbsp;&nbsp;Optimised Personalisation Engine by about 10% faster&nbsp;&nbsp;•&nbsp;&nbsp;Designed REST APIs &amp; Web Pages&nbsp;&nbsp;•&nbsp;&nbsp;Tracked user activity post-delivery&nbsp;&nbsp;•&nbsp;&nbsp;Mentored junior team members</div>
+				<div class="company">Oracle India | Jun 2016 - Jun 2021</div>
+				<div class="summary">Oracle Marketing Cloud - Responsys is a Targeted Marketing platform, where a marketer can create personalized campaigns and send Emails, SMSs, or Push Notifications to the targeted audience. It connects to Google's & Apple's services, and telecom companies to send Push & SMS.</div>
+				<div class="role">
+					<ul>
+						<li>Designed architectures of SMS Providers Portal &amp; CSV Upload Tool</li>
+						<li>Optimised Personalisation Engine by about 10% faster</li>
+						<li>Tracked user activity post-delivery</li>
+						<li>Designed REST APIs &amp; Web Pages</li>
+						<li>Mentored budding team members</li>
+					</ul>
+				</div>
 			</div>
 			<div class="stone">
 				<div class="marker"></div>
 				<div class="project">DemandFarm</div>
-				<div class="company">DemandFarm Pvt Ltd. | 2014 - 2016</div>
-				<div class="summary">DemandFarm is a Key Account management tool that helps Account Managers to better manage their Key Accounts with Plans, Financials, and Revenues, etc. in a single place.</div>
-				<div class="role">Designed a real-time Integration System end-to-end to synch data between DemandFarm & CRM &nbsp;&bull;&nbsp; Designed REST APIs, Web Pages</div>
+				<div class="company">DemandFarm | Dec 2014 - Jun 2016 & Jun 2021 - Today</div>
+				<div class="summary">DemandFarm is a Key Account management tool that helps Account Managers to better manage their Key Accounts with Plans, Financials, and Revenues, etc. in a single place. I rejoined here from June this year.</div>
+				<div class="role">
+					<ul>
+						<li>Designed a real-time Integration System b/w DemandFarm & CRMs</li>
+						<li>Wrote a connector to Microsoft Dynamics CRM</li>
+						<li>Production Support with Deploymnets, Backups & Prod Issues</li>
+						<li>Designed REST APIs, Web Pages</li>
+					</ul>
+				</div>
 			</div>
 			<div class="stone">
 				<div class="marker"></div>
-				<div class="project">Global Document Delivery</div>
-				<div class="company">Mindtree Ltd. | 2011 - 2014</div>
-				<div class="summary">The project was about delivering travel records like E-Tickets and Invoices as PDFs to the travelers who use American Express Global Business Travel. We parse PNR data from an XML SOAP input, feed it to a Document Generator, get the documents & deliver via emails.</div>
-				<div class="role">Wrote a SOAP service &nbsp;&bull;&nbsp; Designed a PNR end-to-end Tracker &nbsp;&bull;&nbsp; Designed a Documents Archive system that can keep documents for up to 10 years &nbsp;&bull;&nbsp; and you guessed it. REST APIs & Web Pages.</div>
+				<div class="project">Global Business Travel</div>
+				<div class="company">Mindtree Ltd. | Apr 2011 - Dec 2014</div>
+				<div class="summary">The project delivered travel records like E-Tickets, Invoices as PDFs to the travelers who use American Express GBT. We parse PNR data from an XML SOAP input, process it, generate the documents & deliver via emails.</div>
+				<div class="role">
+					<ul>
+						<li>Designed a PNR end-to-end Tracker using polling system</li>
+						<li>Designed a Doc Archive System to store documents for up to 10 yrs</li>
+						<li>And of course, Designed REST APIs & Web Pages :)</li>
+					</ul>
+				</div>
 			</div>
 		</td>
 	</tr>
