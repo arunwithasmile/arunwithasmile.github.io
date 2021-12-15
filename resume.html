@@ -9,7 +9,17 @@
 			font-size: 11pt;
 			line-height: 17pt;
 			color: #333;
+			background: #f8f9fa;
 			margin: 0;
+		}
+		page {
+			width: 820px; /* A4 Sheet */
+			display: block;
+			margin: auto;
+			padding-bottom: 1px;
+			margin-bottom: 50px;
+			background: #fff;
+			box-shadow: 0 1px 5px rgb(0 0 0 / 30%);
 		}
 		table {
 			border-collapse: collapse;
@@ -20,7 +30,7 @@
 			letter-spacing: 3px;
 			background-color: #eee;
 			color: #666;
-			width: 820px; /* A4 Sheet */
+			width: 100%;
 			margin: auto;
 		}
 		.id,
@@ -215,161 +225,163 @@
 	</style>
 </head>
 <body type="java">
-<table class="header">
-	<tr>
-		<td class="id">
-			<div class="doc">Resume</div>
-			<div class="name">Arun Pujari</div>
-			<div class="title">Software Developer</div>
-		</td>
-		<td class="contacts" valign="middle">
-			<table valign="middle" align="right">
-				<tr>
-					<td><icon class="phone" style="background-image: url(images/resume/phone.png)"/></td>
-					<td>+91 974 208 3691</td>
-				</tr>
-				<tr>
-					<td><icon class="mail" style="background-image: url(images/resume/mail.png)"/></td>
-					<td>arunwithasmile@gmail.com</td>
-				</tr>
-				<tr>
-					<td><icon class="map" style="background-image: url(images/resume/map.png)"/></td>
-					<td>Jayanagar, Bengaluru</td>
-				</tr>
-			</table>
-		</td>
-	</tr>	
-</table>
-<table class="body">
-	<tr>
-		<td colspan="2">
-			<div class="section">Summary</div>
-			<div>Full Stack Developer with 10+ years of experience in Java and UI technologies.
-				With right skills to design systems to scale and reliabilty, and a knack for maintainable codebase.
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td class="skills" valign="top">
-			<div>
-				<div class="section">Skills</div>
-				<div class="sub-section">Back End</div>
-				<div class="group backend">
-					<span>Core Java</span>
-					<span>J2EE</span>
-					<span>REST</span>
-					<span>Spring</span>
-					<span>MVC</span>
-					<span>Spring Boot</span>
-					<span>JDBC</span>
-					<span>JMS</span>
-					<span>NodeJS</span>
+<page>
+	<table class="header">
+		<tr>
+			<td class="id">
+				<div class="doc">Resume</div>
+				<div class="name">Arun Pujari</div>
+				<div class="title">Software Developer</div>
+			</td>
+			<td class="contacts" valign="middle">
+				<table valign="middle" align="right">
+					<tr>
+						<td><icon class="phone" style="background-image: url(images/resume/phone.png)"/></td>
+						<td>+91 974 208 3691</td>
+					</tr>
+					<tr>
+						<td><icon class="mail" style="background-image: url(images/resume/mail.png)"/></td>
+						<td>arunwithasmile@gmail.com</td>
+					</tr>
+					<tr>
+						<td><icon class="map" style="background-image: url(images/resume/map.png)"/></td>
+						<td>Jayanagar, Bengaluru</td>
+					</tr>
+				</table>
+			</td>
+		</tr>	
+	</table>
+	<table class="body">
+		<tr>
+			<td colspan="2">
+				<div class="section">Summary</div>
+				<div>Full Stack Developer with 10+ years of experience in Java and UI technologies.
+					With right skills to design systems to scale and reliabilty, and a knack for maintainable codebase.
 				</div>
-				
-				<div class="sub-section">Front End</div>
-				<div class="group frontend">
-					<span>HTML</span>
-					<span>CSS</span>
-					<span>Angular</span>
-					<span>Extjs</span>
-					<span>JQuery</span>
-					<span>Bootstrap</span>
-					<span>Ionic</span>
-				</div>
+			</td>
+		</tr>
+		<tr>
+			<td class="skills" valign="top">
+				<div>
+					<div class="section">Skills</div>
+					<div class="sub-section">Back End</div>
+					<div class="group backend">
+						<span>Core Java</span>
+						<span>J2EE</span>
+						<span>REST</span>
+						<span>Spring</span>
+						<span>MVC</span>
+						<span>Spring Boot</span>
+						<span>JDBC</span>
+						<span>JMS</span>
+						<span>NodeJS</span>
+					</div>
 
-				<div class="sub-section">Database</div>
-				<div class="group db">
-					<span>Oracle</span>
-					<span>MySQL</span><br>
-					<span>SQL Server</span>
-				</div>
+					<div class="sub-section">Front End</div>
+					<div class="group frontend">
+						<span>HTML</span>
+						<span>CSS</span>
+						<span>Angular</span>
+						<span>Extjs</span>
+						<span>JQuery</span>
+						<span>Bootstrap</span>
+						<span>Ionic</span>
+					</div>
 
-				<div class="sub-section">Others</div>
-				<div class="group tools">
-					<span>Linux/Unix</span>
-					<span>AWS</span>
-					<span>Git</span><br>
-					<span>Postman</span>
-					<span>Docker</span>
-					<span>Agile</span>
-					<span>Jira</span>
+					<div class="sub-section">Database</div>
+					<div class="group db">
+						<span>Oracle</span>
+						<span>MySQL</span><br>
+						<span>SQL Server</span>
+					</div>
+
+					<div class="sub-section">Others</div>
+					<div class="group tools">
+						<span>Linux/Unix</span>
+						<span>AWS</span>
+						<span>Git</span><br>
+						<span>Postman</span>
+						<span>Docker</span>
+						<span>Agile</span>
+						<span>Jira</span>
+					</div>
 				</div>
-			</div>
-			<div class="section" style="margin-top: 50px">Education</div>
-			<div class="edu">
-				<div class="major">Bachelor's Degree in Computer Science</div>
-				<div class="college">Basaveshwar Engg. College</div>
-				<div class="year">2007 - 2011</div>
-			</div>
-			<div class="edu" style="margin-top: 10px; display: none;">
-				<div class="major">Sr. Secondary School</div>
-				<div class="college">Sainik School, Bijapur</div>
-				<div class="year">2005 - 2007</div>
-			</div>
-		</td>
-		<td class="timeline" valign="top">
-			<div class="thread">
-			</div>
-			<div class="section">Career Path</div>
-			<div class="stone">
-				<div class="marker"></div>
-				<div class="project">Responsys</div>
-				<div class="company">Oracle India | Jun 2016 - Jun 2021</div>
-				<div class="summary">Oracle Marketing Cloud - Responsys is a Targeted Marketing platform, where a marketer can create personalized campaigns and send Emails, SMSs, or Push Notifications to the targeted audience. It connects to Google's & Apple's services, and telecom companies to send Push & SMS.</div>
-				<div class="role">
-					<ul>
-						<li>Designed architectures of SMS Providers Portal &amp; CSV Upload Tool</li>
-						<li>Optimised Personalisation Engine by about 10% faster</li>
-						<li>Tracked user activity post-delivery</li>
-						<li>Designed REST APIs &amp; Web Pages</li>
-						<li>Mentored budding team members</li>
-					</ul>
+				<div class="section" style="margin-top: 50px">Education</div>
+				<div class="edu">
+					<div class="major">Bachelor's Degree in Computer Science</div>
+					<div class="college">Basaveshwar Engg. College</div>
+					<div class="year">2007 - 2011</div>
 				</div>
-			</div>
-			<div class="stone">
-				<div class="marker"></div>
-				<div class="project">DemandFarm</div>
-				<div class="company">DemandFarm | Dec 2014 - Jun 2016 & Jun 2021 - Today</div>
-				<div class="summary">DemandFarm is a Key Account management tool that helps Account Managers to better manage their Key Accounts with Plans, Financials, and Revenues, etc. in a single place. I rejoined here from June this year.</div>
-				<div class="role">
-					<ul>
-						<li>Designed a real-time Integration System b/w DemandFarm & CRMs</li>
-						<li>Wrote a connector to Microsoft Dynamics CRM</li>
-						<li>Production Support with Deploymnets, Backups & Prod Issues</li>
-						<li>Designed REST APIs, Web Pages</li>
-					</ul>
+				<div class="edu" style="margin-top: 10px; display: none;">
+					<div class="major">Sr. Secondary School</div>
+					<div class="college">Sainik School, Bijapur</div>
+					<div class="year">2005 - 2007</div>
 				</div>
-			</div>
-			<div class="stone">
-				<div class="marker"></div>
-				<div class="project">Global Business Travel</div>
-				<div class="company">Mindtree Ltd. | Apr 2011 - Dec 2014</div>
-				<div class="summary">The project delivered travel records like E-Tickets, Invoices as PDFs to the travelers who use American Express GBT. We parse PNR data from an XML SOAP input, process it, generate the documents & deliver via emails.</div>
-				<div class="role">
-					<ul>
-						<li>Designed a PNR end-to-end Tracker using polling system</li>
-						<li>Designed a Doc Archive System to store documents for up to 10 yrs</li>
-						<li>And of course, Designed REST APIs & Web Pages :)</li>
-					</ul>
+			</td>
+			<td class="timeline" valign="top">
+				<div class="thread">
 				</div>
-			</div>
-		</td>
-	</tr>
-	<tr class="java">
-		<td colspan="2" align="center" class="footer">
-			I am fluent in English, Hindi, and Kannada. I like to play musical instruments and make sketches.
-		</td>
-	</tr>
-	<tr class="full-stack">
-		<td colspan="2" align="center" class="footer">
-			This resume was written purly using HTML and CSS. Find the <a href="https://arunwithasmile.github.io/resume.html">web version here</a>.
-		</td>
-	</tr>
-	<tr>
-		<td colspan="2" align="center" class="footer">
-			You may also like this <a href="https://arunwithasmile.github.io/notif.html">CSS-Only iPhone</a> that I made as a side project.
-		</td>
-	</tr>
-</table>
+				<div class="section">Career Path</div>
+				<div class="stone">
+					<div class="marker"></div>
+					<div class="project">Responsys</div>
+					<div class="company">Oracle India | Jun 2016 - Jun 2021</div>
+					<div class="summary">Oracle Marketing Cloud - Responsys is a Targeted Marketing platform, where a marketer can create personalized campaigns and send Emails, SMSs, or Push Notifications to the targeted audience. It connects to Google's & Apple's services, and telecom companies to send Push & SMS.</div>
+					<div class="role">
+						<ul>
+							<li>Designed architectures of SMS Providers Portal &amp; CSV Upload Tool</li>
+							<li>Optimised Personalisation Engine by about 10% faster</li>
+							<li>Tracked user activity post-delivery</li>
+							<li>Designed REST APIs &amp; Web Pages</li>
+							<li>Mentored budding team members</li>
+						</ul>
+					</div>
+				</div>
+				<div class="stone">
+					<div class="marker"></div>
+					<div class="project">DemandFarm</div>
+					<div class="company">DemandFarm | Dec 2014 - Jun 2016 & Jun 2021 - Today</div>
+					<div class="summary">DemandFarm is a Key Account management tool that helps Account Managers to better manage their Key Accounts with Plans, Financials, and Revenues, etc. in a single place. I rejoined here from June this year.</div>
+					<div class="role">
+						<ul>
+							<li>Designed a real-time Integration System b/w DemandFarm & CRMs</li>
+							<li>Wrote a connector to Microsoft Dynamics CRM</li>
+							<li>Production Support with Deploymnets, Backups & Prod Issues</li>
+							<li>Designed REST APIs, Web Pages</li>
+						</ul>
+					</div>
+				</div>
+				<div class="stone">
+					<div class="marker"></div>
+					<div class="project">Global Business Travel</div>
+					<div class="company">Mindtree Ltd. | Apr 2011 - Dec 2014</div>
+					<div class="summary">The project delivered travel records like E-Tickets, Invoices as PDFs to the travelers who use American Express GBT. We parse PNR data from an XML SOAP input, process it, generate the documents & deliver via emails.</div>
+					<div class="role">
+						<ul>
+							<li>Designed a PNR end-to-end Tracker using polling system</li>
+							<li>Designed a Doc Archive System to store documents for up to 10 yrs</li>
+							<li>And of course, Designed REST APIs & Web Pages :)</li>
+						</ul>
+					</div>
+				</div>
+			</td>
+		</tr>
+		<tr class="java">
+			<td colspan="2" align="center" class="footer">
+				I am fluent in English, Hindi, and Kannada. I like to play musical instruments and make sketches.
+			</td>
+		</tr>
+		<tr class="full-stack">
+			<td colspan="2" align="center" class="footer">
+				This resume was written purly using HTML and CSS. Find the <a href="https://arunwithasmile.github.io/resume.html">web version here</a>.
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2" align="center" class="footer">
+				You may also like this <a href="https://arunwithasmile.github.io/notif.html">CSS-Only iPhone</a> that I made as a side project.
+			</td>
+		</tr>
+	</table>
+</page>
 </body>
 </html>
