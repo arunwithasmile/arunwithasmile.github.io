@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Resume Arun S P</title>
+	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+	<style type="text/css">
+		body {
+			font-family: 'Roboto';
+			font-size: 11pt;
+			line-height: 17pt;
+			color: #333;
+			margin: 0;
+		}
+		table {
+			border-collapse: collapse;
+		}
+		.header {
+			text-transform: uppercase;
+			font-size: 9pt;
+			letter-spacing: 3px;
+			background-color: #eee;
+			color: #666;
+			width: 820px; /* A4 Sheet */
+			margin: auto;
+		}
+		.id {
+		    padding: 45px 50px 50px 50px;
+		}
+		.name {
+			font-family: sans-serif;
+			font-size: 16.5pt;
+			font-weight: bolder;
+			letter-spacing: 6px;
+			margin: 10px 0px 5px;
+			color: #000;
+		}
+		.contacts {
+			color: #666;
+			letter-spacing: 2px;
+			padding: 50px 50px 50px 0;
+		}
+		.contacts icon {
+			display: inline-block;
+			vertical-align: middle;
+			height: 22px;
+			width: 30px;
+			background-size: 20px;
+			background-repeat: no-repeat;
+			background-position: center;
+		}
+
+		.body {
+			width: 720px;
+			margin: 40px auto;
+		}
+
+		.section,
+		.sub-section {
+			text-transform: uppercase;
+		}
+
+		.section {
+			position: relative;
+			font-size: 12pt;
+			letter-spacing: 2px;
+			margin-bottom: 25px;
+			color: #666;
+		}
+
+		.section:before {
+			content: "";
+			display: block;
+			height: 3px;
+			width: 22px;
+			background: orange;
+			position: absolute;
+			bottom: -7px;
+		}
+
+		.sub-section {
+			font-size: 9pt;
+			color: #888;
+			display: inline-block;
+    		width: 80px;
+		}
+
+		.skills,
+		.timeline {
+			padding-top: 40px;
+		}
+
+		.skills {
+			width: 200px;
+		}
+
+		.skills .section,
+		.timeline .section {
+			margin-bottom: 30px;
+		}
+
+		.skills .group span {
+			padding: 4px 7px;
+			line-height: 30px;
+		}
+
+		.timeline {
+			position: relative;
+		}
+
+		.stone {
+			position: relative;
+			margin-bottom: 40px;
+		}
+
+		.marker {
+			position: absolute;
+			height: 11px;
+			width: 11px;
+			border: 2px solid #ccc;
+			border-radius: 50%;
+			background: #fff;
+			transform: translate(-31.5px, 3px);
+		}
+
+		.marker:after {
+			content: "";
+			width: 5px;
+			height: 5px;
+			display: block;
+			background: orange;
+			position: absolute;
+			top: 3px;
+			left: 3px;
+			border-radius: 50%;
+		}
+
+		.stone .project,
+		.stone .company {
+			display: inline-block;
+			letter-spacing: 1px;
+			text-transform: uppercase;
+		}
+
+		.stone .project {
+			color: #000;
+			font-weight: bold;
+			margin-bottom: 10px;
+		}
+
+		.stone .company {
+			color: #888;
+			font-size: 9pt;
+			margin-left: 5px;
+		}
+
+		.stone .summary {
+			letter-spacing: 0.4px;
+			text-align: justify;
+			margin-bottom: 10px;
+		}
+		.role {
+			color: #666;
+			letter-spacing: 0.5px;
+			font-size: 10.5pt;
+		}
+		.designation {
+			font-size: 15px;
+			font-weight: bold;
+			margin-bottom: 5px;
+		}
+		.edu {
+			font-size: 10.5pt;
+		}
+		.major {
+			text-transform: uppercase;
+			font-weight: bold;
+			letter-spacing: 0.6px;
+		}
+		
+		.college {
+			color: #666;
+		}
+
+		.year {
+			color: #888;
+		}
+
+		.major,
+		.year {
+			display: inline;
+		}
+
+		.footer {
+			font-size: 10pt;
+			color: #666;
+		}
+
+		a {
+			text-decoration: none;
+			color: #282f63;
+			font-weight: bold;
+		}
+
+		a:hover {
+			text-decoration: underline;
+		}
+
+		[type="java"] .full-stack {
+			display: none;
+		}
+		
+		[type="full-stack"] .java {
+			display: none;
+		}
+		pbr {
+			display: block;
+			width: 100%;
+			height: 110px;
+		}
+	</style>
+</head>
+<body type="java">
+<table class="header">
+	<tr>
+		<td class="id">
+			<div class="doc">Resume</div>
+			<div class="name">Arun Pujari</div>
+			<div class="title">Software Developer</div>
+		</td>
+		<td class="contacts" valign="middle">
+			<table valign="middle" align="right">
+				<tr>
+					<td><icon class="phone" style="background-image: url(images/resume/phone.png)"/></td>
+					<td>+91 974 208 3691</td>
+				</tr>
+				<tr>
+					<td><icon class="mail" style="background-image: url(images/resume/mail.png)"/></td>
+					<td>arunwithasmile@gmail.com</td>
+				</tr>
+				<tr>
+					<td><icon class="map" style="background-image: url(images/resume/map.png)"/></td>
+					<td>Jayanagar, Bengaluru</td>
+				</tr>
+			</table>
+		</td>
+	</tr>	
+</table>
+<table class="body">
+	<tr>
+		<td colspan="2">
+			<div class="section">Summary</div>
+			<div>Full Stack Developer with 10+ years of experience in Java and UI technologies. With an ablity to design systems to scale and reliabilty, and a knack for organised codebase for long term maintainability.</div>
+		</td>
+	</tr>
+	<tr>
+		<td class="skills" valign="top">
+			<div>
+				<div class="section">Skills</div>
+				
+				<div class="group backend">
+					<div class="sub-section">Back End</div>
+					<span>Core Java</span>
+					<span>J2EE</span>
+					<span>REST</span>
+					<span>Spring</span>
+					<span>MVC</span>
+					<span>Spring Boot</span>
+					<span>JDBC</span>
+					<span>Hibernate</span>
+				</div>
+				
+				<div class="group frontend">
+					<div class="sub-section">Front End</div>
+					<span>HTML</span>
+					<span>CSS</span>
+					<span>Angular</span>
+					<span>Extjs</span>
+					<span>JQuery</span>
+					<span>NodeJS</span>
+					<span>Bootstrap</span>
+					<span>Ionic</span>
+				</div>
+
+				<div class="group db">
+					<div class="sub-section">Database</div>
+					<span>Oracle</span>
+					<span>MySQL</span>
+					<span>SQL Server</span>
+				</div>
+
+				<div class="group tools">
+					<div class="sub-section">Others</div>
+					<span>Linux/Unix</span>
+					<span>AWS</span>
+					<span>Git</span>
+					<span>Postman</span>
+					<span>Docker</span>
+					<span>Agile</span>
+				</div>
+			</div>
+		</td>
+	</tr>
+	<tr>
+		<td class="timeline" valign="top">
+			</div>
+			<div class="section">Career Path</div>
+			<div class="stone">
+				<div class="marker"></div>
+				<div class="project">DemandFarm</div>
+				<div class="company">DemandFarm Pvt Ltd. | June 2011 - Today</div>
+				<div class="designation">Lead Product Engineer - Full Stack</div>
+				<div class="summary">DemandFarm is a Key Account management tool that helps Account Managers to better manage their Key Accounts with Plans, Financials, and Revenues, etc. in a single place. Built on Java Stack and Web based user interface.</div>
+				<div class="role">Responsibilities:</div>
+				<ul>
+					<li>Handling a team of 4 developers, to drive the deliverables from requirement to release</li>
+					<li>Handling Infrastructure responsiblities like Production Deploymnets, Databse Backups etc.</li>
+					<li>Providing Prodction Support</li>
+					<li>Designing REST APIs, Web Pages</li>
+				</ul>
+			</div>
+			<div class="stone">
+				<div class="marker"></div>
+				<div class="project">Responsys</div>
+				<div class="company">Oracle India | Jun 2016 - Jun 2021</div>
+				<div class="designation">Senior Application Engineer - Full Stack</div>
+				<div class="summary">Responsys is a global Targeted Marketing platform for marketers, where a marketer can create a
+					personalised campaign and upon launching, all the targeted audiences will receive emails, SMSs, or Push
+					Notifications on their mobile devices. This platform contacts Google Cloud Messaging service (GCM), Apple
+					Push Notification Service (APNS) etc. to send Push Notifications to devices, or telecom companies for SMS.
+					This serves customers all over the world.</div>
+					
+				<pbr></pbr>
+
+				<div class="role">Responsibilities:</div>
+				<ul>
+					<li>Designed the Architectures of SMS Aggregator Mgmt Tool &amp; CSV Upload Tool</li>
+					<li>Optimised Personalisation Engine by about 10% faster</li>
+					<li>Tracked user activity post-delivery</li>
+					<li>Designed REST APIs &amp; Web Pages</li>
+					<li>Mentored junior team members</li>
+				</ul>
+			</div>
+			<div class="stone">
+				<div class="marker"></div>
+				<div class="project">DemandFarm</div>
+				<div class="company">DemandFarm Pvt Ltd. | Dec 2014 - Jun 2016</div>
+				<div class="designation">Product Engineer</div>
+				<div class="summary">DemandFarm is a Key Account management tool that helps Account Managers to better manage their Key Accounts with Plans, Financials, and Revenues, etc. in a single place. Built on Java Stack and Web based user interface.</div>
+				<div class="role">Responsibilities:</div>
+				<ul>
+					<li>Designed a real-time Integration System end-to-end to synch data between DemandFarm & CRM</li>
+					<li>Wrote a connector to Microsoft Dynamics CRM</li>
+					<li>Designed REST APIs, Web Pages</li>
+				</ul>
+			</div>
+			<div class="stone">
+				<div class="marker"></div>
+				<div class="project">Global Document Delivery</div>
+				<div class="company">Mindtree Ltd. | Apr 2011 - Dec 2014</div>
+				<div class="designation">Senior Software Engineer</div>
+				<div class="summary">The project was about delivering travel records like Itineraries, E-Tickets and Invoices, in PDF or Word
+					form to the employees who make business travels with American Express Travel. Main modules of the
+					application are Middleware, the core business module, DocEngine, that Generates PDF/Word documents, and
+					Traveler UI, a Web application that makes documents accessible to Travellers & Counsellors, for upto 8 yrs.</div>
+				<div class="role"></div>
+				<ul>
+					<li>Wrote a SOAP service</li>
+					<li>Designed a PNR end-to-end Tracker</li>
+					<li>Designed the Documents Archive system that can keep documents for up to 8 years</li>
+					<li>Designed REST APIs & Web Pages.</li>
+				</ul>
+			</div>
+			<div class="section">Education Summary</div>
+			<div class="edu">
+				<div class="major">Bachelors of Engineering in Computer Science</div>
+				<div class="year">2007 - 2011</div>
+				<div class="college">Basaveshwar Engg. College, Bagalkot. <span class="result">CGPA 8.09</span></div>
+			</div>
+			<div class="edu" style="margin-top: 10px">
+				<div class="major">Sr. Secondary School</div>
+				<div class="year">2005 - 2007</div>
+				<div class="college">Sainik School, Bijapur. <span class="result">Result: 72.25%</span></div>
+			</div>
+		</td>
+	</tr>
+	<tr class="java">
+		<td colspan="2">
+			<div class="section" style="margin-top: 30px">Personal Information</div>
+			I was born in 1989. I am fluent in English and Hindi. Unmarried, and I like to play musical instruments and make sketches.
+		</td>
+	</tr>
+</table>
+</body>
+</html>
