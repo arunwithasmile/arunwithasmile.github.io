@@ -1,5 +1,10 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
-	font-family: "Roboto", Helvetica, sans-serif;
+	font-family: "Google Sans","Roboto","Arial",sans-serif;
+    color: #3c4043;
     margin: 0;
 }
 
@@ -46,19 +51,47 @@ banner {
     background-attachment: fixed;
     background-repeat: no-repeat;
     font-size: 2em;
-    padding-top: 140px;
-
 }
 
-banner > h6 {
-    margin: 0;
+banner.top {
+    padding-top: 160px;
+}
+
+banner.with-animation {
+    transition: padding-top 1s, opacity 1s;
+}
+
+banner.init {
+    padding-top: 200px;
+    opacity: 0;
+}
+
+banner > h6,
+banner > h4 {
     color: #555;
 }
 
+banner.top > h6 {
+    margin: 0;
+}
+
+banner.greeting {
+    top: 260px;
+    position: fixed;
+    z-index: 500;
+}
+
+banner.greeting h4,
+banner.greeting h6 {
+    opacity: 0;
+    transition: opacity 1s;
+}
+
 lroom {
+    margin-top: 1150px;
     display: block;
     width: 100%;
-    border: 1px solid red;
+    position: relative;
 }
 
 lroom .room-bg {
@@ -69,50 +102,69 @@ lroom .room-bg {
     height: 100vh;
     position: sticky;
     bottom: 0;
-    z-index: -1;
+}
+
+.reveal-overlay {
+    width: 100%;
+    height: 100vh;
+    background: white;
+    position: absolute;
+    z-index: 1;
 }
 
 .lroom-area-before {
     width: 100%;
-    height: 750px;
+    height: 6500px;
     background: white;
-}
-
-.lroom-area-after {
-    width: 100%;
-    height: 2500px;
 }
 
 pframe {
     display: block;
-    width: 100vw;
-    height: 56vw; 
-    position: fixed;
-    top: calc((100vh - 56vw) / 2);
+    border: 2vw solid #333;
     background-color: #000;
     box-shadow: 5px 7px 10px #0008;
     overflow: hidden;
-    left: 0;
-    z-index: 10;
-}
-
-@media screen and (min-width: 1154px) {
-    pframe {
-        width: 180vh;
-        height: 100vh;
-        top: 0;
-        left: calc((100vw - 180vh)/2);
-    }
 }
 
 pframe > img {
-    border: 2vw solid #333;
-    width: calc(100% - 4vw);
-    height: calc(100% - 4vw);
+    width: 100%;
+    height: 100%;
+}
+
+pframe.splash,
+lroom pframe {
+    position: fixed;
+    width: 100vw;
+    height: 56vw;
+    top: calc((100vh - 56vw) / 2);
+    background: url("../img/sailing-boat.jpeg");
+    bottom: 0;
+    z-index: 10;
+    background-size: cover;
+    background-position: center;
 }
 
 pframe.splash {
     transform: scale(0.6) rotate(16deg) translate(-65vw, 100vh);
+}
+
+lroom pframe {
+    display: none;
+    position: sticky;
+}
+
+@media screen and (min-width: 1154px) {
+    pframe.splash,
+    lroom pframe {
+        width: 140vh;
+        height: 100vh;
+        top: 0;
+        left: calc((100vw - 140vh)/2);
+    }
+}
+
+object {
+    z-index: 1;
 }
 
 object.paint {
@@ -172,5 +224,63 @@ object.brush.blue {
 
 .ribben {
     width: 100%;
-    height: 600px;
+    height: 300px;
+    margin: 30px 0;
+    padding: 0 15px;
+    margin-bottom: 1000px;
+    white-space: nowrap;
+    overflow: auto hidden;
+}
+
+.ribben .tb-frame {
+    background: white;
+    height: 100%;
+    display: inline-block;
+    margin-right: 40px;
+    border: 15px solid #333;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    vertical-align: middle;
+}
+
+.ribben .tb-frame img {
+    height: 100%;
+    box-shadow: 1px 1px 1px #000;
+}
+
+.tb-frame.padded {
+    padding: 30px;
+}
+
+.tb-frame .name {
+    position: absolute;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    background: rgb(0 0 0 / 45%);
+    padding: 5px;
+    font-weight: 600;
+    transition: bottom 0.3s;
+    bottom: -45px;
+    left: 0;
+}
+
+section {
+    margin-top: 50px;
+}
+
+section label {
+    margin: 10px 50px;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.ribben .tb-frame:hover .name {
+    bottom: 0;
+}
+
+[hidden] {
+    display: none !important;
 }
