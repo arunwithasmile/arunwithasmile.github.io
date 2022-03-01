@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Resume Arun S P - Music Producer</title>
+	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+	<link rel="icon" type="image/x-icon" href="images/resume/favicon.ico">
+	<style type="text/css">
+		body {
+			font-family: 'Roboto';
+			font-size: 11pt;
+			line-height: 17pt;
+			color: #333;
+			background: #f8f9fa;
+			margin: 0;
+		}
+
+		page {
+			width: 820px;
+			/* A4 Sheet */
+			display: block;
+			margin: auto;
+			padding-bottom: 1px;
+			margin-bottom: 50px;
+			background: #fff;
+			box-shadow: 0 1px 5px rgb(0 0 0 / 30%);
+		}
+
+		table {
+			border-collapse: collapse;
+		}
+
+		.header {
+			text-transform: uppercase;
+			font-size: 8.5pt;
+			letter-spacing: 3px;
+			background-color: #eee;
+			color: #666;
+			width: 100%;
+			margin: auto;
+			position: relative;
+		}
+
+		.header::before {
+			content: "";
+			position: absolute;
+			height: 100%;
+			width: 100%;
+			top: 0;
+			left: 0;
+			background-image: url(images/resume/musical-symbols.jpg);
+			background-size: cover;
+			background-position: center;
+			opacity: 0.02;
+		}
+
+		.id,
+		.contacts {
+			padding: 40px 60px;
+		}
+
+		.name {
+			font-family: sans-serif;
+			font-size: 15.5pt;
+			font-weight: bolder;
+			letter-spacing: 6px;
+			margin: 10px 0px 5px;
+			color: #000;
+		}
+
+		.contacts {
+			color: #666;
+			letter-spacing: 2px;
+		}
+
+		.contacts icon {
+			display: inline-block;
+			vertical-align: middle;
+			height: 22px;
+			width: 30px;
+			background-size: 20px;
+			background-repeat: no-repeat;
+			background-position: center;
+		}
+
+		.body {
+			width: 720px;
+			margin: 40px auto;
+		}
+
+		.section,
+		.sub-section {
+			text-transform: uppercase;
+		}
+
+		.section {
+			position: relative;
+			font-size: 12pt;
+			letter-spacing: 2px;
+			margin-bottom: 25px;
+			color: #666;
+		}
+
+		.section:before {
+			content: "";
+			display: block;
+			height: 3px;
+			width: 22px;
+			background: orange;
+			position: absolute;
+			bottom: -7px;
+		}
+
+		.sub-section {
+			font-size: 9pt;
+			color: #ccc;
+		}
+
+		.skills,
+		.timeline {
+			padding-top: 35px;
+		}
+
+		.skills {
+			width: 200px;
+		}
+
+		.skills .section,
+		.timeline .section {
+			margin-bottom: 30px;
+		}
+
+		.skills .group {
+			margin-bottom: 10px;
+		}
+
+		.skills .group span {
+			padding: 4px 7px;
+			line-height: 30px;
+			background: #f7f7f7;
+			border-radius: 5px;
+			box-shadow: 0 1px rgb(0 0 0 / 15%);
+		}
+
+		.timeline {
+			position: relative;
+			padding-left: 30px;
+		}
+
+		.timeline .thread {
+			position: absolute;
+			height: 710px;
+			width: 2px;
+			background: #ccc;
+			left: 5px;
+		}
+
+		.stone:not(:last-of-type) {
+			position: relative;
+			margin-bottom: 30px;
+		}
+
+		.marker {
+			position: absolute;
+			height: 15px;
+			width: 15px;
+			border: 2px solid #ccc;
+			border-radius: 50%;
+			background: #fff;
+			transform: translate(-33.5px, 1px);
+		}
+
+		.marker:after {
+			content: "";
+			width: 5px;
+			height: 5px;
+			display: block;
+			background: orange;
+			position: absolute;
+			top: 5px;
+			left: 5px;
+			border-radius: 50%;
+		}
+
+		.stone .project,
+		.stone .company {
+			display: inline-block;
+			letter-spacing: 1px;
+			text-transform: uppercase;
+		}
+
+		.stone .project {
+			color: #000;
+			font-weight: bold;
+			margin-bottom: 10px;
+		}
+
+		.stone .company {
+			color: #888;
+			font-size: 9pt;
+			margin-left: 5px;
+		}
+
+		.stone .summary {
+			letter-spacing: 0.4px;
+			text-align: justify;
+			margin-bottom: 10px;
+		}
+
+		.role {
+			color: #666;
+			letter-spacing: 0.5px;
+			font-size: 10.5pt;
+		}
+
+		.edu {
+			font-size: 9.5pt;
+		}
+
+		.major {
+			text-transform: uppercase;
+			font-weight: bold;
+			letter-spacing: 0.6px;
+		}
+
+		.college,
+		.year {
+			color: #888;
+		}
+
+		.year {
+			text-transform: uppercase;
+		}
+
+		.footer {
+			font-size: 10pt;
+			color: #666;
+		}
+
+		a {
+			text-decoration: none;
+			color: #393d5e;
+			font-weight: bold;
+		}
+
+		a:hover {
+			text-decoration: underline;
+		}
+	</style>
+</head>
+
+<body type="java">
+	<page>
+		<table class="header">
+			<tr>
+				<td class="id">
+					<div class="doc">Resume</div>
+					<div class="name">Arun Pujari</div>
+					<div class="title">Music Producer</div>
+				</td>
+				<td class="contacts" valign="middle">
+					<table valign="middle" align="right">
+						<tr>
+							<td>
+								<icon class="phone" style="background-image: url(images/resume/phone.png)" />
+							</td>
+							<td>+91 974 208 3691</td>
+						</tr>
+						<tr>
+							<td>
+								<icon class="mail" style="background-image: url(images/resume/mail.png)" />
+							</td>
+							<td>arunwithasmile@gmail.com</td>
+						</tr>
+						<tr>
+							<td>
+								<icon class="map" style="background-image: url(images/resume/map.png)" />
+							</td>
+							<td>Jayanagar, Bengaluru</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+		<table class="body">
+			<tr>
+				<td colspan="2">
+					<div class="section">Summary</div>
+					<div>Music Composer and Producer with about 6 years of ongoing classical training,
+						4 years of music production experience and 10+ years of intermittent live performances.
+						Part of about 50 songs and 20 films/short films.
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td class="skills" valign="top">
+					<div>
+						<div class="section">Skills</div>
+						<div class="sub-section">Composing & Production</div>
+						<div class="group">
+							<span>Background Scoring</span>
+							<span>Composing</span>
+							<span>Programming</span>
+							<span>Mixing</span>
+							<span>Mastering</span>
+							<span>Foley</span>
+							<span>Dubbing</span>
+						</div>
+
+						<div class="sub-section">Live Performances</div>
+						<div class="group">
+							<span>Keyboard</span>
+							<span>Bass</span><br>
+							<span>Rhythm Guitar</span>
+						</div>
+
+						<div class="sub-section">Audio Workstations</div>
+						<div class="group tools">
+							<span>Logic Pro X</span>
+							<span>Garageband</span><br>
+							<span>Mainstage</span>
+						</div>
+					</div>
+					<div class="section" style="margin-top: 50px">Education</div>
+					<div class="edu">
+						<div class="major">Learning Hindustani Classical Music</div>
+						<div class="college">Pt. M V Hegde. Goonjan Kala Kendra</div>
+						<div class="year">2015 - today</div>
+					</div>
+					<div class="edu" style="margin-top: 10px">
+						<div class="major">Bachelor's Degree in Computer Science</div>
+						<div class="college">Basaveshwar Engg. College</div>
+						<div class="year">2007 - 2011</div>
+					</div>
+				</td>
+				<td class="timeline" valign="top">
+					<div class="thread">
+					</div>
+					<div class="section">Major Stones</div>
+					<div class="stone">
+						<div class="marker"></div>
+						<div class="project">Gejje Recording Studio</div>
+						<div class="company">Music Producer | Jan 2020</div>
+						<div class="summary">Built a Recording Studio that is fully equiped for recording
+							albums, scores and any kind of sound design for multimedia.</div>
+						<div class="role">
+							<ul>
+								<li>Fully soundproofed and treated for controlled hearing</li>
+								<li>Multiple in-house instruments including Keyboard, 2 Guitar, Bass</li>
+								<li>Large Screen with 2K projector</li>
+							</ul>
+						</div>
+					</div>
+					<div class="stone">
+						<div class="marker"></div>
+						<div class="project">Ravi Basrur Music</div>
+						<div class="company">Trainee | Aug 2019</div>
+						<div class="summary">Ravi Basrur Music Production Course was a programme designed by
+							KGF fame Ravi Basrur, of which I was part of the first batch.</div>
+						<div class="role">
+							<ul>
+								<li>Fully Formal Training with a signed Certificate</li>
+								<li>Covered Music Design, Programming, Mixing, and Mastering</li>
+								<li>Still keeps in touch with us, our progress, and gives assignments.</li>
+							</ul>
+						</div>
+					</div>
+					<div class="stone">
+						<div class="marker"></div>
+						<div class="project">Random Black Geometry</div>
+						<div class="company">Keyboard Player & Album Producer | Oct 2016</div>
+						<div class="summary">Random Black Geometry is an art pop band that creates Dream Pop / Psychedelia type of music.
+							We have about 15 original compositions and have played
+							live in private events, pubs, and social events.
+						</div>
+					</div>
+					<div class="stone">
+						<div class="marker"></div>
+						<div class="project">Spashta Theatre</div>
+						<div class="company">Music Performer and Composer | Apl 2018</div>
+						<div class="summary">Spashta Theatre is an amazing team of Theatre production that has produced and performed
+							3 plays all over Bengaluru, including in Ranga Shankara. I play instruments for the play and help them record their songs.
+						</div>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2" align="center" class="footer" style="padding-top: 20px">
+					I run this channel called <a href="https://www.youtube.com/chikkistudios">Chikki Studios</a>. You are welcome to check it.
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2" align="center" class="footer">
+					I keep interest in photography/videography and editing.
+				</td>
+			</tr>
+		</table>
+	</page>
+</body>
+
+</html>

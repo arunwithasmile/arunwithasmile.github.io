@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Quotation Arun S P - Music Dept Charges</title>
+	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+	<link rel="icon" type="image/x-icon" href="images/resume/favicon.ico">
+	<style type="text/css">
+		body {
+			font-family: 'Roboto';
+			font-size: 11pt;
+			line-height: 17pt;
+			color: #333;
+			background: #f8f9fa;
+			margin: 0;
+		}
+
+		page {
+			width: 820px;
+			/* A4 Sheet */
+			display: block;
+			margin: auto;
+			padding-bottom: 1px;
+			margin-bottom: 50px;
+			background: #fff;
+			/* box-shadow: 0 1px 5px rgb(0 0 0 / 30%); */
+		}
+
+		table {
+			border-collapse: collapse;
+		}
+
+		.header {
+			text-transform: uppercase;
+			font-size: 8.5pt;
+			letter-spacing: 3px;
+			background-color: #eee;
+			color: #666;
+			width: 100%;
+			margin: auto;
+			position: relative;
+		}
+
+		.header::before {
+			content: "";
+			position: absolute;
+			height: 100%;
+			width: 100%;
+			top: 0;
+			left: 0;
+			background-image: url(images/resume/musical-symbols.jpg);
+			background-size: cover;
+			background-position: center;
+			opacity: 0.02;
+		}
+
+		.id,
+		.contacts {
+			padding: 40px 60px;
+		}
+
+		.name {
+			font-family: sans-serif;
+			font-size: 15.5pt;
+			font-weight: bolder;
+			letter-spacing: 6px;
+			margin: 10px 0px 5px;
+			color: #000;
+		}
+
+		.contacts {
+			color: #666;
+			letter-spacing: 2px;
+		}
+
+		.contacts icon {
+			display: inline-block;
+			vertical-align: middle;
+			height: 22px;
+			width: 30px;
+			background-size: 20px;
+			background-repeat: no-repeat;
+			background-position: center;
+		}
+
+		.body {
+			width: 720px;
+			margin: 40px auto;
+		}
+
+		.section,
+		.sub-section {
+			text-transform: uppercase;
+		}
+
+		.section {
+			position: relative;
+			font-size: 12pt;
+			letter-spacing: 2px;
+			margin-bottom: 25px;
+			color: #666;
+		}
+
+		.section:before {
+			content: "";
+			display: block;
+			height: 3px;
+			width: 22px;
+			background: orange;
+			position: absolute;
+			bottom: -7px;
+		}
+
+		.sub-section {
+			font-size: 9pt;
+			color: #ccc;
+		}
+
+		.skills,
+		.timeline {
+			padding-top: 35px;
+		}
+
+		.skills {
+			width: 170px;
+		}
+
+		.skills .section,
+		.timeline .section {
+			margin-bottom: 30px;
+		}
+
+		.skills .group {
+			margin-bottom: 10px;
+		}
+
+		.skills .group span {
+			padding: 4px 7px;
+			line-height: 30px;
+			background: #f7f7f7;
+			border-radius: 5px;
+			box-shadow: 0 1px rgb(0 0 0 / 15%);
+		}
+
+		.timeline {
+			position: relative;
+			padding-left: 30px;
+		}
+
+		.timeline .thread {
+			position: absolute;
+			height: 602px;
+			width: 2px;
+			background: #ccc;
+			left: 5px;
+			top: 20px;
+		}
+
+		.stone:not(:last-of-type) {
+			position: relative;
+			margin-bottom: 30px;
+		}
+
+		.marker {
+			position: absolute;
+			height: 15px;
+			width: 15px;
+			border: 2px solid #ccc;
+			border-radius: 50%;
+			background: #fff;
+			transform: translate(-33.5px, 1px);
+		}
+
+		.marker:after {
+			content: "";
+			width: 5px;
+			height: 5px;
+			display: block;
+			background: orange;
+			position: absolute;
+			top: 5px;
+			left: 5px;
+			border-radius: 50%;
+		}
+
+		.stone .project,
+		.stone .company {
+			display: inline-block;
+			letter-spacing: 1px;
+			text-transform: uppercase;
+		}
+
+		.stone .project {
+			color: #000;
+			font-weight: bold;
+			margin-bottom: 10px;
+		}
+
+		.stone .company {
+			color: #888;
+			font-size: 9pt;
+			margin-left: 5px;
+		}
+
+		.stone .summary {
+			letter-spacing: 0.4px;
+			text-align: justify;
+			margin-bottom: 10px;
+		}
+
+		.role {
+			color: #666;
+			letter-spacing: 0.5px;
+			font-size: 10.5pt;
+		}
+
+		.edu {
+			font-size: 9.5pt;
+		}
+
+		.major {
+			text-transform: uppercase;
+			font-weight: bold;
+			letter-spacing: 0.6px;
+		}
+
+		.college,
+		.year {
+			color: #888;
+		}
+
+		.year {
+			text-transform: uppercase;
+		}
+
+		.footer {
+			font-size: 10pt;
+			color: #666;
+		}
+
+		a {
+			text-decoration: none;
+			color: #393d5e;
+			font-weight: bold;
+		}
+
+		a:hover {
+			text-decoration: underline;
+		}
+
+		table.charges td {
+			padding: 0 10px;
+			color: #444;
+		}
+
+		table.charges .total td {
+			font-weight: bold;
+			color: #000;
+		}
+
+		.role ul {
+			margin-top: 0;
+		}
+
+		.section.charges {
+			margin-top: 30px;
+			margin-bottom: 0;
+		}
+	</style>
+</head>
+
+<body type="java">
+	<page>
+		<table class="header">
+			<tr>
+				<td class="id">
+					<div class="doc">Quotation</div>
+					<div class="name">Arun Pujari</div>
+					<div class="title">Music Producer</div>
+				</td>
+				<td class="contacts" valign="middle">
+					<table valign="middle" align="right">
+						<tr>
+							<td>
+								<icon class="phone" style="background-image: url(images/resume/phone.png)" />
+							</td>
+							<td>+91 974 208 3691</td>
+						</tr>
+						<tr>
+							<td>
+								<icon class="mail" style="background-image: url(images/resume/mail.png)" />
+							</td>
+							<td>arunwithasmile@gmail.com</td>
+						</tr>
+						<tr>
+							<td>
+								<icon class="map" style="background-image: url(images/resume/map.png)" />
+							</td>
+							<td>Jayanagar, Bengaluru</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+		<table class="body">
+			<tr>
+				<td colspan="2">
+					<div class="section">Summary</div>
+					<div>Music Composer and Producer with about 6 years of ongoing classical training,
+						4 years of music production experience and 10+ years of intermittent live performances.
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<div class="section charges">Music Dept Charges</div>
+				</td>
+			</tr>
+			<tr>
+				<td class="timeline" valign="top">
+					<div class="thread">
+					</div>
+					<div class="stone">
+						<div class="marker"></div>
+						<div class="project">Background Scoring</div>
+						<div class="company">Original Sound Tracks</div>
+						<div class="role">
+							<ul>
+								<li>Composing and Programming</li>
+								<li>Mix and Export for DTS</li>
+								<li>Trailer Cut</li>
+							</ul>
+						</div>
+						<table class="charges">
+							<tr>
+								<td>Charge Per Reel (18 - 20 mins)</td>
+								<td>₹ 10000</td>
+							</tr>
+							<tr>
+								<td>No of reels</td>
+								<td>5.5 (110 mins)</td>
+							</tr>
+							<tr class="total">
+								<td>Total</td>
+								<td>₹ 55000</td>
+							</tr>
+						</table>
+					</div>
+					<div class="stone">
+						<div class="marker"></div>
+						<div class="project">Live Artists</div>
+						<div class="company">Musicians and Chorus Singers</div>
+						<div class="summary">Based on the scene, we may need musicians or singers
+							to record pieces. We have to pay
+							them separately as per their individual charges.</div>
+					</div>
+					<div class="stone">
+						<div class="marker"></div>
+						<div class="project">Dubbing</div>
+						<div class="company">Voice Over Recording</div>
+						<div class="summary">Voice Recording of all the dialogues. This work is done
+							per-day basis.</div>
+						<table class="charges">
+							<tr>
+								<td>Charge Per Day</td>
+								<td>₹ 4000</td>
+							</tr>
+							<tr>
+								<td>No of days</td>
+								<td>4 (Roughly)</td>
+							</tr>
+							<tr class="total">
+								<td>Total</td>
+								<td>₹ 16000</td>
+							</tr>
+						</table>
+					</div>
+					<div class="stone">
+						<div class="marker"></div>
+						<div class="project">Total</div>
+						<div class="company">Rough Estimate</div>
+						<table class="charges">
+							<tr>
+								<td>Background Score</td>
+								<td>₹ 55000</td>
+							</tr>
+							<tr>
+								<td>Dubbing</td>
+								<td>₹ 16000</td>
+							</tr>
+							<tr class="total">
+								<td>Total</td>
+								<td>₹ 71000</td>
+							</tr>
+						</table>
+					</div>
+				</td>
+			</tr>
+			<!-- <tr>
+				<td colspan="2" style="padding-top: 30px;">
+					<span>OTHER SERVICES</span>
+					<span style="color: #888">Optional</span>
+					<table class="charges" style="margin-top: 10px;">
+						<tr>
+							<td>Foley</td>
+							<td>₹ 3500 Per Reel</td>
+						</tr>
+						<tr>
+							<td>Stereo Mixing (OTT Release)</td>
+							<td>₹ 3000 Per Reel</td>
+						</tr>
+					</table>
+				</td>
+			</tr> -->
+			<tr>
+				<td colspan="2" align="center" class="footer" style="padding-top: 50px">
+					My other services include Foley, Stereo Mixing for OTT Release, & DTS Mixing.
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2" align="center" class="footer">
+					Feel free to call me to discuss any points in this document.
+				</td>
+			</tr>
+		</table>
+	</page>
+</body>
+
+</html>
