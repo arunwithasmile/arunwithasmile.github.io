@@ -1,3 +1,163 @@
+:root {
+    --text-dark: #333;
+    --text: #666;
+    --text--light: #888;
+    --bg-dark: #eee;
+    --web-wash: #F0F2F5;
+    --card-wash: #2F3A3F;
+    --card-wash-transparent: #2F3A3Fcc;
+}
+
+* {
+    box-sizing: border-box;
+    transition: all 400ms;
+}
+
+body {
+    font-family: 'Roboto';
+    font-size: 11pt;
+    line-height: 17pt;
+    color: var(--text);
+    background: var(--web-wash);
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-dark);
+}
+
+.ellipsis {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+header {
+    height: 60px;
+    background-color: var(--bg-dark);
+    box-shadow: 0 1px 10px rgb(0 0 0 / 15%), 0 1px 5px rgb(0 0 0 / 15%);
+    position: relative;
+    display: flex;
+}
+
+header::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-image: url(images/resume/musical-symbols.jpg);
+    background-size: cover;
+    background-position: center;
+    opacity: 0.02;
+}
+
+logo,
+nav {
+    z-index: 1;
+}
+
+logo {
+    cursor: default;
+}
+
+nav {
+    margin: auto 50px auto auto;
+    font-size: 16px;
+}
+
+nav a {
+    color: var(--text);
+    padding: 5px;
+    margin: 5px;
+    border-bottom: 3px solid transparent;
+}
+
+nav a:hover {
+    color: var(--text-dark);
+    border-color: #ffa50077;
+}
+
+nav a.active {
+    color: var(--text-dark);
+    background-color: #eee;
+    border-color: orange;
+}
+
+.brand-name {
+    margin: auto auto auto 50px;
+    font-family: sans-serif;
+    font-size: 15.5pt;
+    font-weight: bolder;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    color: var(--text-dark);
+}
+
+section > .title {
+    position: relative;
+    font-size: 12pt;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 25px 0;
+}
+
+section > .title:before {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 22px;
+    background: orange;
+    position: absolute;
+    bottom: -7px;
+}
+
+main {
+    margin: 15px;
+}
+
+asp-card {
+    display: inline-block;
+    width: 241px;
+    height: 135px;
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    margin: 5px;
+    box-shadow: 0 1px 2px rgb(0 0 0 / 40%), 0 1px 5px rgb(0 0 0 / 30%);
+    position: relative;
+}
+
+asp-card:hover {
+    transform: scale(1.025);
+    box-shadow: 0 1px 2px rgb(0 0 0 / 40%), 0 1px 8px rgb(0 0 0 / 35%);
+}
+
+asp-card .title {
+    padding: 20px 15px 30px;
+    position: absolute;
+    bottom: 0;
+    background: linear-gradient(0, var(--card-wash), var(--card-wash-transparent), transparent);
+    color: #fff;
+    width: 100%;
+    opacity: 0;
+}
+
+asp-card:hover .title {
+    opacity: 1;
+}
+
+asp-card thumbnail {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
 bnr, subhead {
     font-size: 25px;
     font-family: cursive;
@@ -33,6 +193,22 @@ foot {
     top: 75px;
 }
 
-iframe {
-	width: 100%;
+.toast-container {
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    top: 50px;
+    left: 0;
+}
+.toast {
+    display: inline-block;
+    background-color: #fff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 0 1px 15px rgb(0 0 0 / 15%);
+    transition: opacity 300ms;
+}
+
+.toast.ok {
+    opacity: 0;
 }

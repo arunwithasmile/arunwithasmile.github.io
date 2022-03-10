@@ -1,0 +1,119 @@
+[
+    {
+        "sectionName": "Melody",
+        "media": [
+            {
+                "title": "Mareyade Kshamisu Mareyadare",
+                "key": "tjNKxAdht04",
+                "zoom": "124%"
+            },
+            {
+                "title": "I Love You Maa",
+                "key": "t-R7Yo9Ge10"
+            },
+            {
+                "title": "He Sharade | Instrumental Cover",
+                "key": "chlnGdBWioY",
+                "zoom": "117%"
+            },
+            {
+                "title":"Character theme 1",
+                "key": "f93DAd3on2U"
+            }
+        ]
+    },
+    {
+        "sectionName": "Mass",
+        "media": [
+            {
+                "title": "Fluke 2.0 Cricket Entry Theme",
+                "key": "pEOFNSM9ajE"
+            },
+            {
+                "title": "Salaam Rocky Bhai | Instrumental Cover",
+                "key": "8lHAjS8Jrw4"
+            },
+            {
+                "title":"Nodi Swami | Rock Version",
+                "key": "_KLGjVLd5x8"
+            }
+        ]
+    },
+    {
+        "sectionName": "Life",
+        "media": [
+            {
+                "title": "Mahatma | Musical Video",
+                "key": "423ctzalM40",
+                "startAt": "&t=34s"
+            },
+            {
+                "title": "Kartavya - A musical Journey",
+                "key": "xtLUI-cbnYg"
+            }
+        ]
+    },
+    {
+        "sectionName": "Party/DJ",
+        "media": [
+            {
+                "title": "Shankar Nag House Trap Mix",
+                "key": "eSlmdIWztv4"
+            },
+            {
+                "title": "Happy New Year 2019",
+                "key": "g20LooUvGVo",
+                "startAt": "&t=19s"
+            },
+            {
+                "title": "Hangover Kannada Song",
+                "key": "tHV9x43a1K4"
+            }
+        ]
+    },
+    {
+        "sectionName": "Cheerful",
+        "media": [
+            {
+                "title": "In search",
+                "key": "CZk5QY2BN0o"
+            },
+            {
+                "title": "Triller",
+                "key": "BO3hPtOkL7Q"
+            }
+        ]
+    },
+    {
+        "sectionName": "Emotional",
+        "media": [
+            {
+                "title": "Defeated",
+                "key": "Io91QKq3xzY"
+            },
+            {
+                "title": "Nostalgia",
+                "key": "K_aClf0IcKg"
+            }
+        ]
+    },
+    {
+        "sectionName": "Western Classical",
+        "media": [
+            {
+                "title": "Game of Thrones | Instrumental Cover",
+                "key": "3_58N-3MQ3A"
+            }
+        ]
+    },
+    {
+        "sectionName": "Horror",
+        "media": [
+            {
+                "title": "Chaara",
+                "key": "sDH27koNc_c",
+                "startAt":"&t=202s"
+            }
+        ]
+    }
+]

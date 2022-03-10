@@ -1,68 +1,52 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Arun S P - Music Samples</title>
+		<title>Arun S P - Music Portfolio</title>
 		<link rel="stylesheet" type="text/css" href="style.css">
+		<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+		<link rel="icon" type="image/x-icon" href="images/resume/favicon.ico">
 	</head>
-	<body style="background-image: url(SlideBg.png);opacity: 1;background-size: 100%;padding: 90px">
-	
+	<body>
+		<header>
+			<logo class="brand-name">Arun S P</logo>
+			<nav>
+				<a href="#songs" class="active">Songs</a>
+				<a href="#scores">Movies</a>
+				<a href="#covers">Covers</a>
+				<a href="#contact">Contact Me</a>
+			</nav>
+		</header>
+		<main>
+			
+		</main>
+		<template id="section">
+			<section>
+				<div class="title">
+					{{name}}
+				</div>
+				<div class="container">
+
+				</div>
+			</section>
+		</template>
+		<template id="card">
+			<asp-card>
+				<a href="{{url}}" target="blank">
+					<thumbnail style="background-image: url({{thumb}}); background-size: {{zoom}}">
+					</thumbnail>
+					<div class="title ellipsis">{{title}}</div>
+				</a>
+			</asp-card>
+		</template>
+		<template id="toast">
+			<div class="toast-container">
+				<div class="toast">
+					{{msg}}
+				</div>
+			</div>
+		</template>
 	</body>
-<script type="text/javascript">
-	var links = [];
-	
-	links.push({
-		name: "Melody",
-		urls: ["tjNKxAdht04","t-R7Yo9Ge10","chlnGdBWioY","f93DAd3on2U"]
-	});
 
-	links.push({
-		name: "Mass",
-		urls: ["pEOFNSM9ajE","8lHAjS8Jrw4","_KLGjVLd5x8"]
-	});
-
-	links.push({
-		name: "Life",
-		urls: ["rOrUY38Wdsg","xtLUI-cbnYg"]
-	});
-
-	links.push({
-		name: "Party/DJ",
-		urls: ["eSlmdIWztv4","g20LooUvGVo?start=19"]
-	});
-
-	links.push({
-		name: "Cheerful",
-		urls: ["NSO5gc4fsos","CZk5QY2BN0o","BO3hPtOkL7Q"]
-	});
-
-
-	links.push({
-		name: "Emotional",
-		urls: ["Io91QKq3xzY","K_aClf0IcKg"]
-	});
-
-
-	links.push({
-		name: "Western Classical",
-		urls: ["3_58N-3MQ3A"]
-	});
-
-
-	links.push({
-		name: "Horror",
-		urls: ["TZwDSYBRPIo"]
-	});
-
-
-
-	var html = "<bnr>MUSIC SAMPLES</bnr>";
-	for (var i = 0;i < links.length; i++) {
-		html += "<subhead>"+links[i].name+"</subhead>";
-		for (var j = 0; j < links[i].urls.length; j++) {
-			html+= '<clip><iframe src="https://www.youtube.com/embed/'+links[i].urls[j]+'" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></clip>';
-		}
-	}
-	html+="<foot>There are some unreleased compositions. Feel free to come over and listen to them.</foot>"
-	document.body.innerHTML = html;
-</script>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<script src="main.js"></script>
 </html>
