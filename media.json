@@ -8,6 +8,10 @@
                 "zoom": "124%"
             },
             {
+                "title": "Kannada Nadu",
+                "key": "oGbP7-v46Ws"
+            },
+            {
                 "title": "I Love You Maa",
                 "key": "t-R7Yo9Ge10"
             },
@@ -36,6 +40,10 @@
             {
                 "title":"Nodi Swami | Rock Version",
                 "key": "_KLGjVLd5x8"
+            },
+            {
+                "title": "Trailer Cut: Terminator",
+                "key": "iOUiwDwK4Dw"
             }
         ]
     },
@@ -50,6 +58,10 @@
             {
                 "title": "Kartavya - A musical Journey",
                 "key": "xtLUI-cbnYg"
+            },
+            {
+                "title": "Koonur Times",
+                "key": "KPMDuNCBdyU"
             }
         ]
     },
@@ -57,8 +69,8 @@
         "sectionName": "Party/DJ",
         "media": [
             {
-                "title": "Shankar Nag House Trap Mix",
-                "key": "eSlmdIWztv4"
+                "title": "Hangover Kannada Song",
+                "key": "tHV9x43a1K4"
             },
             {
                 "title": "Happy New Year 2019",
@@ -66,8 +78,8 @@
                 "startAt": "&t=19s"
             },
             {
-                "title": "Hangover Kannada Song",
-                "key": "tHV9x43a1K4"
+                "title": "Shankar Nag House Trap Mix",
+                "key": "eSlmdIWztv4"
             }
         ]
     },
@@ -85,7 +97,7 @@
         ]
     },
     {
-        "sectionName": "Emotional",
+        "sectionName": "Drama",
         "media": [
             {
                 "title": "Defeated",
@@ -94,6 +106,14 @@
             {
                 "title": "Nostalgia",
                 "key": "K_aClf0IcKg"
+            },
+            {
+                "title": "Raja Rani",
+                "key": "5w4rWyzBJFU"
+            },
+            {
+                "title": "The Search",
+                "key": "mO-95wGMsKY"
             }
         ]
     },
@@ -113,6 +133,10 @@
                 "title": "Chaara",
                 "key": "sDH27koNc_c",
                 "startAt":"&t=202s"
+            },
+            {
+                "title": "The Room",
+                "key": "_LUP7q5fgZg"
             }
         ]
     }
