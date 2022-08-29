@@ -52,7 +52,7 @@
 		
 		.id,
 		.contacts {
-		    padding: 40px 60px;
+		    padding: 35px 60px;
 			display: inline-block;
 			vertical-align: middle;
 		}
@@ -84,8 +84,8 @@
 		}
 
 		main {
-			width: 720px;
-			margin: 40px auto;
+			width: 740px;
+			margin: 30px auto;
 		}
 
 		.section,
@@ -97,7 +97,7 @@
 			position: relative;
 			font-size: 12pt;
 			letter-spacing: 2px;
-			margin-bottom: 30px;
+			margin-bottom: 25px;
 			color: #666;
 		}
 
@@ -127,6 +127,11 @@
 			width: var(--aside-width);
 		}
 
+		.skills .section,
+		timeline .section {
+			margin-bottom: 25px;
+		}
+
 		.skills .group {
 			margin-bottom: 10px;
 		}
@@ -147,7 +152,7 @@
 
 		timeline .thread {
 			position: absolute;
-			height: 740px;
+			height: 755px;
 			width: 2px;
 			background: #ccc;
 			left: 5px;
@@ -155,7 +160,7 @@
 
 		.stone:not(:last-of-type) {
 			position: relative;
-			margin-bottom: 30px;
+			margin-bottom: 25px;
 		}
 
 		.marker {
@@ -209,6 +214,9 @@
 			letter-spacing: 0.5px;
 			font-size: 10.5pt;
 		}
+		.role ul {
+			padding-left: 14px;
+		}
 		.edu {
 			font-size: 9.5pt;
 		}
@@ -238,7 +246,11 @@
 			text-decoration: underline;
 		}
 
-		[type="java"] .full-stack {
+		[type="java"] footer.full-stack {
+			display: none;
+		}
+
+		[type="full-stack"] footer.java {
 			display: none;
 		}
 	</style>
@@ -290,7 +302,7 @@
 		<row>
 			<div class="section">Summary</div>
 			<div>Full Stack Developer with 10+ years of experience in Java and UI technologies.
-				With right skills to design systems to scale and reliabilty, and a zeal for neat & maintainable codebase.
+				With right skills to design systems to scale and reliabilty, and a strong affection for maintainable codebase.
 			</div>
 		</row>
 		<aside>
@@ -301,9 +313,10 @@
 					<span>Core Java</span>
 					<span>Spring MVC</span>
 					<span>Spring Boot</span>
-					<span>JDBC</span>
+					<span>REST</span>
+					<span>JOOQ</span>
 					<span>JMS</span>
-					<span>NodeJS</span>
+					<span>Node JS</span>
 				</div>
 
 				<div class="sub-section">Front End</div>
@@ -313,8 +326,11 @@
 					<span>Angular</span>
 					<span>React</span>
 					<span>Extjs</span>
+					<span>OJET</span>
 					<span>JQuery</span>
 					<span>Bootstrap</span>
+					<span>Chakra UI</span>
+					<span>Material UI</span>
 					<span>Ionic</span>
 				</div>
 
@@ -354,13 +370,13 @@
 				<div class="marker"></div>
 				<div class="project">DemandFarm</div>
 				<div class="company">DemandFarm | Dec 2014 - Jun 2016 & Jun 2021 - Today</div>
-				<div class="summary">DemandFarm is a Key Account management tool that helps Account Managers to better manage their Key Accounts with Plans, Financials, and Revenues, etc. in a single place. I rejoined here from June 2021.</div>
+				<div class="summary">DemandFarm is a Key Account management tool that helps Account Managers better manage their Key Accounts with Plans, Financials, and Revenues, etc. in a single place. I rejoined here from June 2021.</div>
 				<div class="role">
 					<ul>
-						<li>Designed a real-time Integration Systems b/w DemandFarm & CRMs</li>
-						<li>Redesigned Card View &amp; List View using advanced Angular tools</li>
-						<li>In the process of rewriting current system into Microservices + React</li>
-						<li>Production Support with Deploymnets, Backups & Prod Issues</li>
+						<li>Designed real-time Integration Systems for MS Dynamics, Oracle Fusion, Pipedrive, &amp; custom-made helping 40% customer onboarding / retention.</li>
+						<li>Introduced Feature Separator allowing customers to subscribe to only certain features, resulting in about 10% enquiry surge.</li>
+						<li>Designed a highly advanced search system.</li>
+						<li>Designed Card, List View &amp; Interactive Analytic tools with search &amp; filters.</li>
 						<li>Mentored budding team members</li>
 					</ul>
 				</div>
@@ -369,7 +385,7 @@
 				<div class="marker"></div>
 				<div class="project">Responsys</div>
 				<div class="company">Oracle India | Jun 2016 - Jun 2021</div>
-				<div class="summary">Oracle Marketing Cloud - Responsys is a Targeted Marketing platform, where a marketer can create personalized campaigns and send Emails, SMSs, or Push Notifications to the targeted audience. Connects to Google's & Apple's services, and telecom companies to send Push & SMS.</div>
+				<div class="summary">Oracle Marketing Cloud - Responsys is a Targeted Marketing platform, where a marketer can create personalized campaigns and send Emails, SMSs, or Push Notifications to the audience. It connects to Google's & Apple's services, and telecom companies to send Push & SMS.</div>
 				<div class="role">
 					<ul>
 						<li>Designed architectures of SMS Providers Portal &amp; CSV Upload Tool</li>
@@ -383,20 +399,23 @@
 				<div class="marker"></div>
 				<div class="project">Global Business Travel</div>
 				<div class="company">Mindtree Ltd. | Apr 2011 - Dec 2014</div>
-				<div class="summary">The project delivered travel records like E-Tickets, Invoices as PDFs to the travelers who use American Express GBT. We parse PNR data from an XML SOAP input, process it, generate the documents & deliver via emails.</div>
+				<div class="summary">The project delivered travel records like E-Tickets, Invoices as PDFs to the travelers of American Express GBT. It parses a PNR data, process it, generate the documents & deliver via emails.</div>
 				<div class="role">
 					<ul>
-						<li>Designed a PNR end-to-end Tracker using polling system</li>
+						<li>Designed a PNR end-to-end Tracker system</li>
 						<li>Designed a Doc Archive System that stored docs for up to 10 yrs</li>
-						<li>And of course, Designed REST APIs & Web Pages :)</li>
 					</ul>
 				</div>
 			</div>
 		</timeline>
 		<footer class="full-stack">
-			I enjoy creating things with CSS. Like this very resume (<a href="https://arunwithasmile.github.io/resume.html">web version here</a>), and <a href="notif.html">this iPhone</a>.
+			I enjoy creating everyday objects with CSS. Like this very resume (<a href="https://arunwithasmile.github.io/resume.html">web version here</a>),
+			 and <a href="https://arunwithasmile.github.io/notif.html">this iPhone</a>.
 		</footer>
 		<footer class="java">
+			I enjoy creating everyday objects with CSS. Checkout <a href="https://arunwithasmile.github.io/notif.html">this iPhone</a>.
+		</footer>
+		<footer>
 			I am fluent in English, Hindi, and Kannada. I like to play musical instruments and make sketches.
 		</footer>
 	</main>
