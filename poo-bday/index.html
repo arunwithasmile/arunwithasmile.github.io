@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>B'day</title>
     <style type="text/css">
+        :root {
+            --solo-pos: 0;
+            --swe-pos: 0;
+            --both-pos: 0;
+            --aaru-pos: 0;
+            --samb-pos: 0;
+        }
         body {
             font-family: Arial, Helvetica, sans-serif;
         }
@@ -40,28 +47,28 @@
         .solo {
             z-index: 500;
             transform: rotate(-11deg);
-            translate: 6rem -17rem;
+            translate: var(--solo-pos);
         }
         .swe {
             z-index: 10;
             transform: rotate(5deg);
-            translate: -2rem;
+            translate: var(--swe-pos);
         }
         .both {
             transform: rotate(-22deg);
-            translate: 4rem 19rem;
+            translate: var(--both-pos);
         }
         .aaru {
             transform: rotate(-4deg);
-            translate: -5rem -14rem;
+            translate: var(--aaru-pos);
         }
         .sambh {
             transform: rotate(2deg);
-            translate: -5rem 20rem;
+            translate: var(--samb-pos);
         }
         .minion {
-            translate: -8.5rem 0rem;
             z-index: 10;
+            translate: -8.5rem 0rem;
         }
         .popper {
             translate: 12rem 8rem;
@@ -83,17 +90,11 @@
             }
         }
         @media only screen and (min-width: 600px) {
-            .solo {
-                translate: 8rem -22rem;
-            }
-            .both {
-                translate: 7rem 24rem;
-            }
-            .aaru {
-                translate: -7rem -19rem;
-            }
-            .sambh {
-                translate: -7rem 27rem;
+            .loaded {
+                --solo-pos: 8rem -22rem;
+                --both-pos: 7rem 24rem;
+                --aaru-pos: -7rem -19rem;
+                --samb-pos: -7rem 27rem;
             }
             .minion {
                 translate: -11rem 0rem;
@@ -106,10 +107,72 @@
                 font-size: 1.1rem;
             }
         }
+        @keyframes move-solo {
+            from {
+                translate: 0 0;
+            }
+            to {
+                translate: var(--solo-pos);
+            }
+        }
+        @keyframes move-swe {
+            from {
+                translate: 0 0;
+            }
+            to {
+                translate: var(--swe-pos);
+            }
+        }
+        @keyframes move-both {
+            from {
+                translate: 0 0;
+            }
+            to {
+                translate: var(--both-pos);
+            }
+        }
+        @keyframes move-aaru {
+            from {
+                translate: 0 0;
+            }
+            to {
+                translate: var(--aaru-pos);
+            }
+        }
+        @keyframes move-samb {
+            from {
+                translate: 0 0;
+            }
+            to {
+                translate: var(--samb-pos);
+            }
+        }
+        .loaded {
+            --solo-pos: 6rem -17rem;
+            --swe-pos: -2rem;
+            --both-pos: 4rem 19rem;
+            --aaru-pos: -5rem -14rem;
+            --samb-pos: -5rem 20rem;
+            .solo {
+                animation: move-solo 500ms forwards;
+            }
+            .swe {
+                animation: move-swe 500ms forwards;
+            }
+            .both {
+                animation: move-both 500ms forwards;
+            }
+            .aaru {
+                animation: move-aaru 500ms forwards;
+            }
+            .sambh {
+                animation: move-sambh 500ms forwards;
+            }
+        }
     </style>
 </head>
-<body>
-    <collage>
+<body onload="addLoadedClass()"">
+    <collage id="collage">
         <center>
             <img src="graffiti.jpeg" width="60%" class="solo">
             <img src="sweden.jpeg" width="60%" class="swe">
@@ -128,4 +191,9 @@
         </div>
     </collage>
 </body>
+<script>
+    function addLoadedClass() {
+        document.getElementById("collage").classList.add('loaded');
+    }
+</script>
 </html>
