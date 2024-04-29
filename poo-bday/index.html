@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>B'day</title>
     <style type="text/css">
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
         collage {
             display: grid;
             place-items: center;
@@ -26,39 +29,82 @@
             box-shadow: 0 0 2px 1px rgb(0 0 0 / 20%);
             transition: transform 300ms;
         }
-        img:hover {
+        img:not(.gif):hover {
             z-index: 1000;
             transform: rotate(0deg) scale(1.1);
+        }
+        img.gif {
+            border: none;
+            box-shadow: none;
         }
         .solo {
             z-index: 500;
             transform: rotate(-11deg);
-            /* right: -51px;
-            top: -100px; */
             translate: 6rem -17rem;
         }
         .swe {
             z-index: 10;
             transform: rotate(5deg);
-            /* top: 20%; */
             translate: -2rem;
         }
         .both {
             transform: rotate(-22deg);
-            /* bottom: -35px;
-            right: 0; */
             translate: 4rem 19rem;
         }
         .aaru {
             transform: rotate(-4deg);
-            /* left: 1rem;
-            top: -5rem; */
             translate: -5rem -14rem;
         }
         .sambh {
             transform: rotate(2deg);
-            /* bottom: -6rem; */
             translate: -5rem 20rem;
+        }
+        .minion {
+            translate: -8.5rem 0rem;
+            z-index: 10;
+        }
+        .popper {
+            translate: 12rem 8rem;
+            z-index: 50;
+        }
+        .msg {
+            position: absolute;
+            z-index: 500;
+            color: white;
+            text-transform: uppercase;
+            text-align: center;
+
+            span {
+                background-color: rgb(0 0 0 / 70%);
+                padding: 2px 5px;
+                display: inline-block;
+                margin: 1px 0;
+                border-radius: 3px;
+            }
+        }
+        @media only screen and (min-width: 600px) {
+            .solo {
+                translate: 8rem -22rem;
+            }
+            .both {
+                translate: 7rem 24rem;
+            }
+            .aaru {
+                translate: -7rem -19rem;
+            }
+            .sambh {
+                translate: -7rem 27rem;
+            }
+            .minion {
+                translate: -11rem 0rem;
+            }
+            .popper {
+                z-index: 550;
+                translate: 18rem 8rem;
+            }
+            .msg {
+                font-size: 1.1rem;
+            }
         }
     </style>
 </head>
@@ -70,7 +116,16 @@
             <img src="IMG_1394.jpg" width="60%" class="both">
             <img src="aaru.jpeg" width="35%" class="aaru">
             <img src="sambh.jpeg" width="35%" class="sambh">
+            <img src="minion.gif" width="35%" class="gif minion">
+            <img src="popper.gif" width="35%" class="gif popper">
         </center>
+        <div class="msg">
+            <span>never stop dreaming</span>
+            <br>
+            <span>never stop growing</span>
+            <br>
+            <span>Happy Birthday Besteset dost 🥳</span>
+        </div>
     </collage>
 </body>
 </html>
