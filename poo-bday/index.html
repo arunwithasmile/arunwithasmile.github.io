@@ -6,13 +6,18 @@
     <title>B'day</title>
     <style type="text/css">
         collage {
-            display: block;
+            display: grid;
+            place-items: center;
             background-image: url(bg.webp);
             max-width: 580px;
             height: calc(100vh - 1rem);
             margin: auto;
             position: relative;
             overflow: hidden;
+        }
+        center {
+            width: 60%;
+            height: 40%;
         }
         img {
             position: absolute;
@@ -27,38 +32,45 @@
         }
         .solo {
             z-index: 500;
-            right: -51px;
             transform: rotate(-11deg);
-            top: -100px;
+            /* right: -51px;
+            top: -100px; */
+            translate: 6rem -17rem;
         }
         .swe {
-            top: 20%;
             z-index: 10;
             transform: rotate(5deg);
+            /* top: 20%; */
+            translate: -2rem;
         }
         .both {
-            bottom: -35px;
             transform: rotate(-22deg);
-            right: 0;
+            /* bottom: -35px;
+            right: 0; */
+            translate: 4rem 19rem;
         }
         .aaru {
-            left: 1rem;
-            top: -5rem;
             transform: rotate(-4deg);
+            /* left: 1rem;
+            top: -5rem; */
+            translate: -5rem -14rem;
         }
         .sambh {
-            bottom: -6rem;
             transform: rotate(2deg);
+            /* bottom: -6rem; */
+            translate: -5rem 20rem;
         }
     </style>
 </head>
 <body>
     <collage>
-        <img src="graffiti.jpeg" width="60%" class="solo">
-        <img src="sweden.jpeg" width="60%" class="swe">
-        <img src="IMG_1394.jpg" width="60%" class="both">
-        <img src="aaru.jpeg" width="35%" class="aaru">
-        <img src="sambh.jpeg" width="35%" class="sambh">
+        <center>
+            <img src="graffiti.jpeg" width="60%" class="solo">
+            <img src="sweden.jpeg" width="60%" class="swe">
+            <img src="IMG_1394.jpg" width="60%" class="both">
+            <img src="aaru.jpeg" width="35%" class="aaru">
+            <img src="sambh.jpeg" width="35%" class="sambh">
+        </center>
     </collage>
 </body>
 </html>
