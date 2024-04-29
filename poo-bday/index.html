@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B'day</title>
+    <style type="text/css">
+        collage {
+            display: block;
+            background-image: url(bg.webp);
+            max-width: 580px;
+            height: calc(100vh - 1rem);
+            margin: auto;
+            position: relative;
+            overflow: hidden;
+        }
+        img {
+            position: absolute;
+            display: block;
+            border: 10px solid white;
+            box-shadow: 0 0 2px 1px rgb(0 0 0 / 20%);
+            transition: transform 300ms;
+        }
+        img:hover {
+            z-index: 1000;
+            transform: rotate(0deg) scale(1.1);
+        }
+        .solo {
+            z-index: 500;
+            right: -51px;
+            transform: rotate(-11deg);
+            top: -100px;
+        }
+        .swe {
+            top: 20%;
+            z-index: 10;
+            transform: rotate(5deg);
+        }
+        .both {
+            bottom: -35px;
+            transform: rotate(-22deg);
+            right: 0;
+        }
+        .aaru {
+            left: 1rem;
+            top: -5rem;
+            transform: rotate(-4deg);
+        }
+        .sambh {
+            bottom: -6rem;
+            transform: rotate(2deg);
+        }
+    </style>
+</head>
+<body>
+    <collage>
+        <img src="graffiti.jpeg" width="60%" class="solo">
+        <img src="sweden.jpeg" width="60%" class="swe">
+        <img src="IMG_1394.jpg" width="60%" class="both">
+        <img src="aaru.jpeg" width="35%" class="aaru">
+        <img src="sambh.jpeg" width="35%" class="sambh">
+    </collage>
+</body>
+</html>
