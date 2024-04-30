@@ -10,7 +10,7 @@
             --swe-pos: 0;
             --both-pos: 0;
             --aaru-pos: 0;
-            --samb-pos: 0;
+            --sambh-pos: 0;
         }
         body {
             font-family: Arial, Helvetica, sans-serif;
@@ -64,7 +64,7 @@
         }
         .sambh {
             transform: rotate(2deg);
-            translate: var(--samb-pos);
+            translate: var(--sambh-pos);
         }
         .minion {
             z-index: 10;
@@ -96,7 +96,7 @@
                 --swe-pos: -2rem -2rem;
                 --both-pos: 7rem 20rem;
                 --aaru-pos: -7rem -19rem;
-                --samb-pos: -7rem 23rem;
+                --sambh-pos: -7rem 23rem;
             }
             .minion {
                 translate: -11rem 0rem;
@@ -141,12 +141,12 @@
                 translate: var(--aaru-pos);
             }
         }
-        @keyframes move-samb {
+        @keyframes move-sambh {
             from {
                 translate: 0 0;
             }
             to {
-                translate: var(--samb-pos);
+                translate: var(--sambh-pos);
             }
         }
         .loaded {
@@ -154,7 +154,7 @@
             --swe-pos: -2rem;
             --both-pos: 4rem 19rem;
             --aaru-pos: -5rem -14rem;
-            --samb-pos: -5rem 20rem;
+            --sambh-pos: -5rem 20rem;
             .solo {
                 animation: move-solo 500ms forwards;
             }
