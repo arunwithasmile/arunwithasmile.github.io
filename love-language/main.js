@@ -43,7 +43,7 @@ let data = {
             "question": "The expression of love that resonates with me more",
             "options": [
                 {
-                    "choice": "My partner holding the umbrela for me",
+                    "choice": "My partner holding the umbrella for me",
                     "love_language": "service"
                 },
                 {
@@ -60,13 +60,13 @@ let data = {
                     "love_language": "gifts"
                 },
                 {
-                    "choice": "Them cooking my favorite meal",
+                    "choice": "Them cooking my favourite meal",
                     "love_language": "service"
                 }
             ]
         },
         {
-            "question": "My prefered way to spend quality time with my partner",
+            "question": "My preferred way to spend quality time with my partner",
             "options": [
                 {
                     "choice": "Engaging in meaningful conversations and sharing thoughts and feelings",
@@ -82,7 +82,7 @@ let data = {
             "question": "This makes me connected to my partner the most",
             "options": [
                 {
-                    "choice": "Cooking a new recepe together",
+                    "choice": "Cooking a new recipe together",
                     "love_language": "time"
                 },
                 {
@@ -147,11 +147,11 @@ let data = {
             "question": "When I'm sick, this would make me feel better",
             "options": [
                 {
-                    "choice": "My partner staying by my side and cudling me",
+                    "choice": "My partner staying by my side and cuddling me",
                     "love_language": "touch"
                 },
                 {
-                    "choice": "My partner bringing me my favorite comfort food",
+                    "choice": "My partner bringing me my favourite comfort food",
                     "love_language": "service"
                 }
             ]
@@ -164,7 +164,7 @@ let data = {
                     "love_language": "touch"
                 },
                 {
-                    "choice": "My partner making me a cup of my favorite drink",
+                    "choice": "My partner making me a cup of my favourite drink",
                     "love_language": "service"
                 }
             ]
@@ -173,7 +173,7 @@ let data = {
             "question": "I feel most valued when",
             "options": [
                 {
-                    "choice": "My partner surprise me with a bouquet of my favorite flowers",
+                    "choice": "My partner surprise me with a bouquet of my favourite flowers",
                     "love_language": "gifts"
                 },
                 {
@@ -281,7 +281,7 @@ let data = {
                     "love_language": "touch"
                 },
                 {
-                    "choice": "Them preparing my favorite meal just to see me smile",
+                    "choice": "Them preparing my favourite meal just to see me smile",
                     "love_language": "service"
                 }
             ]
@@ -290,17 +290,17 @@ let data = {
             "question": "The actions from my partner that would make me feel most loved",
             "options": [
                 {
-                    "choice": "Your partner spending time discussing your dreams and goals",
+                    "choice": "My partner spending time discussing my dreams and goals",
                     "love_language": "time"
                 },
                 {
-                    "choice": "Surprising me with tickets to a concert of my favorite band",
+                    "choice": "Surprising me with tickets to a concert of my favourite band",
                     "love_language": "gifts"
                 }
             ]
         },
         {
-            "question": "I feel most loved by your partner when",
+            "question": "I feel most loved by my partner when",
             "options": [
                 {
                     "choice": "They give me their full attention when I'm talking",
