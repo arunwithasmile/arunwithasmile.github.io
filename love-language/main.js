@@ -184,11 +184,11 @@ function drawChart() {
     // A column for custom tooltip content
     dataTable.addColumn({ type: 'string', role: 'tooltip' });
     dataTable.addRows([
-        ['Words', percent(resMap.words), `Words of Affirmation (${percent(resMap.words)}%)`],
-        ['Time', percent(resMap.time), `Quality Time (${percent(resMap.time)}%)`],
-        ['Services', percent(resMap.service), `Acts of Services (${percent(resMap.time)}%)`],
-        ['Gifts', percent(resMap.gifts), `Gifts (${percent(resMap.time)}%)`],
-        ['Touch', percent(resMap.touch), `Physical Touch (${percent(resMap.time)}%)`]
+        [`Words (${percent(resMap.words)}%)`, percent(resMap.words), `Words of Affirmation (${percent(resMap.words)}%)`],
+        [`Time (${percent(resMap.time)}%)`, percent(resMap.time), `Quality Time (${percent(resMap.time)}%)`],
+        [`Services (${percent(resMap.time)}%)`, percent(resMap.service), `Acts of Services (${percent(resMap.time)}%)`],
+        [`Gifts (${percent(resMap.time)}%)`, percent(resMap.gifts), `Gifts (${percent(resMap.time)}%)`],
+        [`Touch (${percent(resMap.time)}%)`, percent(resMap.touch), `Physical Touch (${percent(resMap.time)}%)`]
     ]);
 
     console.log({ dataTable, result })
