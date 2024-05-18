@@ -514,9 +514,9 @@ function drawChart() {
     dataTable.addRows([
         [`Words (${percent(resMap.words)}%)`, percent(resMap.words), `Words of Affirmation (${percent(resMap.words)}%)`],
         [`Time (${percent(resMap.time)}%)`, percent(resMap.time), `Quality Time (${percent(resMap.time)}%)`],
-        [`Services (${percent(resMap.time)}%)`, percent(resMap.service), `Acts of Services (${percent(resMap.time)}%)`],
-        [`Gifts (${percent(resMap.time)}%)`, percent(resMap.gifts), `Gifts (${percent(resMap.time)}%)`],
-        [`Touch (${percent(resMap.time)}%)`, percent(resMap.touch), `Physical Touch (${percent(resMap.time)}%)`]
+        [`Services (${percent(resMap.service)}%)`, percent(resMap.service), `Acts of Services (${percent(resMap.service)}%)`],
+        [`Gifts (${percent(resMap.gifts)}%)`, percent(resMap.gifts), `Gifts (${percent(resMap.gifts)}%)`],
+        [`Touch (${percent(resMap.touch)}%)`, percent(resMap.touch), `Physical Touch (${percent(resMap.touch)}%)`]
     ]);
 
     console.log({ dataTable, result })
