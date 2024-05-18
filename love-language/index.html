@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vision 2024 - Love Language Test</title>
+    <link rel="icon" type="image/x-icon" href="heart.svg">
+    <link rel="stylesheet" href="main.css">
+    <script type="module" src="main.js"></script>
+</head>
+<body>
+    <main>
+        <header>
+            <h1 class="title">Vision 2024</h1>
+            <h3 class="test-name">Love Language Test</h3>
+        </header>
+        <body>
+            <test>
+                <div class="carosal-nav">
+                    <div class="arrow left" aria-disabled="true"></div>
+                    <carosal>
+                        <cards>
+                            <!-- Fill with template -->
+                        </cards>
+                    </carosal>
+                    <div class="arrow right" aria-disabled="true"></div>
+                </div>
+                <button class="submit" aria-hidden="true">View Result</button>
+                <template>
+                    <card>
+                        <qtn>
+                        </qtn>
+                        <label class="ans">
+                            <input type="radio">
+                            <span></span>
+                        </label>
+                        <label class="ans">
+                            <input type="radio">
+                            <span></span>
+                        </label>
+                    </card>
+                </template>
+                <progress-bar>
+                    <progress value="0" />
+                </progress-bar>
+            </test>
+            <result aria-hidden="true">
+                <h4>Your Love Language Is</h4>
+                <h2 class="result"></h2>
+                <img src="" class="love-language">
+                <div class="chart-sub-title">See where other Love Languages stand</div>
+                <div id="piechart"></div>
+                <div class="detailed"></div>
+                <button class="text">Retake the Test</button>
+            </result>
+        </body>
+    </main>
+    <img src="heart.svg" class="heart top">
+    <img src="heart.svg" class="heart bottom">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+</body>
+</html>
