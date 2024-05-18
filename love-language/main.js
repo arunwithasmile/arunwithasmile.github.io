@@ -435,17 +435,7 @@ let setUpArrows = () => {
 
 let restart = () => {
     localStorage.removeItem('answers');
-    answers = [];
-    currentQtn = 0;
-    document.querySelector('test').ariaHidden = false;
-    document.querySelector('result').ariaHidden = true;
-    document.querySelector('.test-name').style.visibility = 'visible';
-    setUpQuestions();
-    setUpProgressBar();
-    setUpSwipeStepSize();
-    setUpArrows();
-    adjustArrowPos();
-    document.querySelector('.submit').ariaHidden = true;
+    location.reload();
 }
 
 function updateScore(input) {
