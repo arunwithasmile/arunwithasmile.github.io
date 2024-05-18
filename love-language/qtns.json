@@ -281,7 +281,7 @@
                     "love_language": "touch"
                 },
                 {
-                    "choice": "Them preparing my favorite meal just to see me smile",
+                    "choice": "Them preparing my favourite meal just to see me smile",
                     "love_language": "service"
                 }
             ]
@@ -290,17 +290,17 @@
             "question": "The actions from my partner that would make me feel most loved",
             "options": [
                 {
-                    "choice": "Your partner spending time discussing your dreams and goals",
+                    "choice": "My partner spending time discussing my dreams and goals",
                     "love_language": "time"
                 },
                 {
-                    "choice": "Surprising me with tickets to a concert of my favorite band",
+                    "choice": "Surprising me with tickets to a concert of my favourite band",
                     "love_language": "gifts"
                 }
             ]
         },
         {
-            "question": "I feel most loved by your partner when",
+            "question": "I feel most loved by my partner when",
             "options": [
                 {
                     "choice": "They give me their full attention when I'm talking",
