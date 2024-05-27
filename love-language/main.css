@@ -1,0 +1,242 @@
+:root {
+    --primary-50: #ebe4e6;
+    --primary-100: #f5c5d3;
+    --primary-200: #e891a9;
+    --primary-300: #da5d7f;
+    --primary-400: #cc325a;
+    --primary-500: #9e1149;
+    --primary-600: #8e0f41;
+    --primary-700: #7d0d39;
+    --primary-800: #6d0b31;
+    --primary-900: #5c0928;
+
+    --color-bg: #edeaeb;
+
+    --arrow-correction: 75px;
+}
+
+* {
+    accent-color: var(--primary-500)
+}
+
+body {
+    font-family: 'Google Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-color: var(--color-bg);
+    font-size: 18px;
+    color: #444;
+
+}
+
+main {
+    text-align: center;
+    max-width: 500px;
+    margin: 1rem auto;
+    padding: 1rem;
+}
+
+header {
+    color: var(--primary-500);
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.carosal-nav {
+    display: flex;
+    align-items: center;
+}
+
+carosal {
+    width: 100%;
+    display: block;
+    overflow: hidden;
+    scroll-snap-type: inline mandatory;
+}
+
+.arrow {
+    content: '';
+    display: block;
+    height: 40px;
+    width: 40px;
+    background-image: url(angle.svg);
+    background-size: cover;
+    opacity: 0.3;
+    translate: 0 calc(var(--arrow-correction) - 26px);
+    cursor: pointer;
+    transition: scale 300ms, opacity 300ms;
+
+    &[aria-disabled="true"] {
+        opacity: 0.05;
+        scale: 0.8;
+        cursor: default;
+    }
+
+    &.left {
+        rotate: 180deg;
+    }
+}
+
+
+cards {
+    display: flex;
+    transition: translate 300ms;
+}
+
+card {
+    display: block;
+    width: 100%;
+    flex-shrink: 0;
+    margin-top: 2rem;
+    scroll-snap-align: center;
+
+    qtn {
+        display: flex;
+        place-items: center;
+        justify-content: center;
+        min-height: 80px;
+        font-weight: bold;
+        padding: 1rem;
+        margin-block: 1rem;
+    }
+
+    .ans {
+        display: grid;
+        place-items: center;
+        margin-block: 0.75rem;
+        padding: 1rem;
+        border: 1px solid #aaa;
+        min-height: 50px;
+        width: 80%;
+        margin-inline: auto;
+        border-radius: 0.75rem;
+        cursor: pointer;
+        background-color: var(--color-bg);
+
+        input {
+            display: none;
+        }
+
+        &:has(input:checked) {
+            border-color: var(--primary-500);
+            background-color: var(--primary-50);
+        }
+
+        &:hover {
+            background-color: var(--primary-50);
+        }
+    }
+}
+
+.submit {
+    margin-top: 2.5rem;
+}
+
+.result {
+    color: var(--primary-500);
+}
+
+img.love-language {
+    width: 60%;
+}
+
+.detailed {
+    margin-bottom: 3rem;
+    font-size: 1rem;
+}
+
+.chart-sub-title {
+    margin-top: 1rem;
+    translate: 0 1rem;
+}
+
+.heart {
+    position: fixed;
+    z-index: -1;
+    scale: 0.4;
+
+    &.top {
+        top: 50px;
+        rotate: -30deg;
+        translate: calc(-50% - 176px);
+        left: 50%;
+    }
+
+    &.bottom {
+        top: 65%;
+        scale: 0.3;
+        left: 55%;
+        rotate: 37deg;
+    }
+}
+
+main:has(result[aria-hidden="false"])~img.heart {
+    opacity: 0.2;
+}
+
+progress-bar {
+    position: absolute;
+    left: 0;
+    bottom: 2rem;
+    width: 100%;
+}
+
+progress {
+    width: 80%;
+    max-width: calc(500px* 0.8);
+}
+
+button {
+    font-size: 1.1rem;
+    border: none;
+    background-color: var(--primary-500);
+    color: white;
+    padding: 0.5rem 5rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+
+    &:hover {
+        background-color: var(--primary-600);
+    }
+
+    &:active {
+        background-color: var(--primary-500);
+    }
+
+    &.text {
+        background: transparent;
+        color: var(--primary-500);
+
+        &:hover {
+            background-color: var(--primary-50);
+        }
+
+        &:active {
+            background-color: var(--primary-100);
+        }
+    }
+}
+
+[aria-hidden="true"] {
+    display: none;
+}
+
+@media screen and (min-width: 780px) {
+    .heart.bottom {
+        bottom: 0;
+    }
+
+    progress-bar {
+        bottom: 1rem;
+    }
+
+    .heart {
+
+        &.top {
+            top: 50px;
+            left: 35%;
+        }
+
+        &.bottom {
+            left: 70%;
+        }
+    }
+}

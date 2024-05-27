@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B'day</title>
+    <style type="text/css">
+        :root {
+            --solo-pos: 0;
+            --swe-pos: 0;
+            --both-pos: 0;
+            --aaru-pos: 0;
+            --sambh-pos: 0;
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        collage {
+            display: grid;
+            place-items: center;
+            background-image: url(bg.webp);
+            max-width: 580px;
+            height: calc(100vh - 1rem);
+            margin: auto;
+            position: relative;
+            overflow: hidden;
+        }
+        center {
+            width: 60%;
+            height: 40%;
+        }
+        img {
+            position: absolute;
+            display: block;
+            border: 10px solid white;
+            box-shadow: 0 0 2px 1px rgb(0 0 0 / 20%);
+            transition: transform 300ms;
+        }
+        img:not(.gif):hover {
+            z-index: 1000;
+            transform: rotate(0deg) scale(1.1);
+        }
+        img.gif {
+            border: none;
+            box-shadow: none;
+        }
+        .solo {
+            z-index: 500;
+            transform: rotate(-11deg);
+            translate: var(--solo-pos);
+        }
+        .swe {
+            z-index: 10;
+            transform: rotate(5deg);
+            translate: var(--swe-pos);
+        }
+        .both {
+            transform: rotate(-22deg);
+            translate: var(--both-pos);
+        }
+        .aaru {
+            transform: rotate(-4deg);
+            translate: var(--aaru-pos);
+        }
+        .sambh {
+            transform: rotate(2deg);
+            translate: var(--sambh-pos);
+        }
+        .minion {
+            z-index: 10;
+            translate: -8.5rem 0rem;
+        }
+        .popper {
+            translate: 12rem 8rem;
+            z-index: 50;
+        }
+        .msg {
+            position: absolute;
+            z-index: 500;
+            color: white;
+            translate: 0 -3rem;
+            text-transform: uppercase;
+            text-align: center;
+
+            span {
+                background-color: rgb(0 0 0 / 70%);
+                padding: 2px 5px;
+                display: inline-block;
+                font-weight: bold;
+                border-radius: 3px;
+            }
+        }
+        @media only screen and (min-width: 600px) {
+            collage.loaded {
+                --solo-pos: 8rem -22rem;
+                --swe-pos: -2rem -2rem;
+                --both-pos: 7rem 20rem;
+                --aaru-pos: -7rem -19rem;
+                --sambh-pos: -7rem 23rem;
+            }
+            .minion {
+                translate: -11rem 0rem;
+            }
+            .popper {
+                z-index: 550;
+                translate: 18rem 8rem;
+            }
+            .msg {
+                font-size: 1.1rem;
+            }
+        }
+        @keyframes move-solo {
+            from {
+                translate: 0 0;
+            }
+            to {
+                translate: var(--solo-pos);
+            }
+        }
+        @keyframes move-swe {
+            from {
+                translate: 0 0;
+            }
+            to {
+                translate: var(--swe-pos);
+            }
+        }
+        @keyframes move-both {
+            from {
+                translate: 0 0;
+            }
+            to {
+                translate: var(--both-pos);
+            }
+        }
+        @keyframes move-aaru {
+            from {
+                translate: 0 0;
+            }
+            to {
+                translate: var(--aaru-pos);
+            }
+        }
+        @keyframes move-sambh {
+            from {
+                translate: 0 0;
+            }
+            to {
+                translate: var(--sambh-pos);
+            }
+        }
+        .loaded {
+            --solo-pos: 6rem -17rem;
+            --swe-pos: -2rem;
+            --both-pos: 4rem 19rem;
+            --aaru-pos: -5rem -14rem;
+            --sambh-pos: -5rem 20rem;
+            .solo {
+                animation: move-solo 500ms forwards;
+            }
+            .swe {
+                animation: move-swe 500ms forwards;
+            }
+            .both {
+                animation: move-both 500ms forwards;
+            }
+            .aaru {
+                animation: move-aaru 500ms forwards;
+            }
+            .sambh {
+                animation: move-sambh 500ms forwards;
+            }
+        }
+    </style>
+</head>
+<body onload="addLoadedClass()"">
+    <collage id="collage">
+        <center>
+            <img src="graffiti.jpeg" width="60%" class="solo">
+            <img src="sweden.jpeg" width="60%" class="swe">
+            <img src="IMG_1394.jpg" width="60%" class="both">
+            <img src="aaru.jpeg" width="35%" class="aaru">
+            <img src="sambh.jpeg" width="35%" class="sambh">
+            <img src="minion.gif" width="35%" class="gif minion">
+            <img src="popper.gif" width="35%" class="gif popper">
+        </center>
+        <div class="msg">
+            <span>never stop dreaming</span>
+            <br>
+            <span>never stop growing</span>
+            <br>
+            <span>Happy Birthday Besteset dost 🥳</span>
+        </div>
+    </collage>
+</body>
+<script>
+    function addLoadedClass() {
+        document.getElementById("collage").classList.add('loaded');
+    }
+</script>
+</html>

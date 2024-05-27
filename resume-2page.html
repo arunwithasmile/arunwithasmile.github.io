@@ -24,13 +24,14 @@
 			letter-spacing: 3px;
 			background-color: #eee;
 			color: #666;
-			width: 820px; /* A4 Sheet */
+			width: 820px;
+			/* A4 Sheet */
 			margin: auto;
 		}
 
 		.id,
 		.contacts {
-			padding: 40px 60px;
+			padding: 30px 60px;
 		}
 
 		.name {
@@ -42,9 +43,14 @@
 			color: #000;
 		}
 
-		.contacts {
+		.contacts,
+		.contacts a {
 			color: #666;
 			letter-spacing: 2px;
+		}
+
+		.contacts {
+			width: 260px;
 		}
 
 		.contacts icon {
@@ -55,6 +61,10 @@
 			background-size: 20px;
 			background-repeat: no-repeat;
 			background-position: center;
+		}
+
+		.contacts>div>div {
+			margin-block: 3px;
 		}
 
 		.body {
@@ -99,11 +109,6 @@
 			width: 180px;
 		}
 
-		.skills .section,
-		.timeline .section {
-			margin-bottom: 30px;
-		}
-
 		.skills .group {
 			margin-bottom: 10px;
 		}
@@ -118,7 +123,7 @@
 
 		.stone {
 			position: relative;
-			margin-bottom: 40px;
+			margin-bottom: 30px;
 		}
 
 		.timeline {
@@ -128,10 +133,43 @@
 
 		.timeline .thread {
 			position: absolute;
-			height: 760px;
+			height: 750px;
 			width: 2px;
 			background: #ccc;
 			left: 5px;
+		}
+
+		.timeline .thread::before,
+		.timeline .thread::after {
+			content: "";
+			position: absolute;
+			display: block;
+			height: 2px;
+			width: 2px;
+		}
+
+		.timeline .thread::before {
+			background: #ccc;
+		}
+
+		.timeline .thread::after {
+			background: #ddd;
+		}
+
+		.timeline .thread.first::before {
+			bottom: -5px;
+		}
+
+		.timeline .thread.first::after {
+			bottom: -10px;
+		}
+
+		.timeline .thread.last::before {
+			top: -5px;
+		}
+
+		.timeline .thread.last::after {
+			top: -10px;
 		}
 
 		.marker {
@@ -157,7 +195,8 @@
 		}
 
 		.stone .project,
-		.stone .company {
+		.stone .company,
+		.stone .duration {
 			display: inline-block;
 			letter-spacing: 1px;
 			text-transform: uppercase;
@@ -165,13 +204,20 @@
 
 		.stone .project {
 			color: #000;
+			font-size: 11.5pt;
 			font-weight: bold;
-			margin-bottom: 10px;
 		}
 
 		.stone .company {
+			color: #333;
+			font-weight: bold;
+			font-size: 10pt;
+			margin-left: 5px;
+		}
+
+		.stone .duration {
 			color: #888;
-			font-size: 9pt;
+			font-size: 8.5pt;
 			margin-left: 5px;
 		}
 
@@ -187,13 +233,26 @@
 			font-size: 10.5pt;
 		}
 
-		.role:before {
+		/* .role:before {
 			content: "Responsibilities:";
+		} */
+
+		.role ul {
+			margin-block-start: 0.5em;
+			padding-inline-start: 25px;
 		}
+
 		.designation {
-			font-size: 15px;
+			display: inline-block;
+			font-size: 9.5pt;
 			font-weight: bold;
-			margin-bottom: 5px;
+			margin-bottom: 10px;
+		}
+
+		.company-skills {
+			display: inline-block;
+			font-size: 9.5pt;
+			color: #888;
 		}
 
 		.edu {
@@ -245,36 +304,41 @@
 				<div class="title">Software Engineer</div>
 			</td>
 			<td class="contacts" valign="middle">
-				<table valign="middle" align="right">
-					<tr>
-						<td>
-							<icon class="phone" style="background-image: url(images/resume/phone.png)" />
-						</td>
-						<td>+91 974 208 3691</td>
-					</tr>
-					<tr>
-						<td>
-							<icon class="mail" style="background-image: url(images/resume/mail.png)" />
-						</td>
-						<td>arunwithasmile@gmail.com</td>
-					</tr>
-					<tr>
-						<td>
-							<icon class="map" style="background-image: url(images/resume/map.png)" />
-						</td>
-						<td>Jayanagar, Bengaluru</td>
-					</tr>
-				</table>
+				<div valign="middle">
+					<div>
+						<a href="https://wa.me/+910742083691?text=Hey+Arun" target="_blank">
+							<icon class="phone" style="background-image: url(images/resume/phone.png)"></icon>
+							<span>
+								+91 974 208 3691
+							</span>
+						</a>
+					</div>
+					<div>
+						<a href="mailto:arunwithasmile@gmail.com">
+							<icon class="mail" style="background-image: url(images/resume/mail.png)"></icon>
+							<span>arunwithasmile@gmail.com</span>
+						</a>
+					</div>
+					<div>
+						<a href="https://www.linkedin.com/in/arun-pujari" target="_blank">
+							<icon class="map" style="background-image: url(images/resume/linkedin.svg)"></icon>
+							<span>Connect</span>
+						</a>
+					</div>
+				</div>
 			</td>
 		</tr>
-	</tr>	
+		</tr>
 		</tr>
 	</table>
 	<table class="body">
 		<tr>
 			<td colspan="2">
 				<div class="section">Summary</div>
-				<div>Full Stack Developer with 11+ years of experience in Java and UI technologies. With right skills to design systems to scale and reliabilty, with maintainable codebase.
+				<div style="text-align: justify;">Full Stack Developer with 12+ years of experience in designing and
+					developing remarkable systems using Java and Frontend Frameworks. Delivered 6 enterprise systems
+					from a clean slate and added 20+ modules to existing products. Mentored two teams of up to 4
+					engieers.
 				</div>
 			</td>
 		</tr>
@@ -284,10 +348,14 @@
 					<div class="section">Skills</div>
 					<div class="sub-section">Back End</div>
 					<div class="group backend">
-						<span>Core Java</span>
-						<span>Spring MVC</span>
+						<span>Java</span>
 						<span>Spring Boot</span>
+						<span>Spring MVC</span>
+						<span>Spring Security</span>
 						<span>REST</span>
+						<span>JDBC</span>
+						<span>JPA</span>
+						<span>Hibernate</span>
 						<span>JOOQ</span>
 						<span>JMS</span>
 						<span>Node JS</span>
@@ -314,18 +382,22 @@
 						<span>MySQL</span>
 						<span>Postgres</span>
 						<span>SQL Server</span>
+						<span>PL/SQL</span>
+						<span>Stored Proceedures</span>
 					</div>
 
 					<div class="sub-section">Others</div>
 					<div class="group tools">
 						<span>Linux/Unix</span>
-						<span>Git</span><br>
+						<span>Pentaho Kettle</span>
+						<span>Jasper Reports</span>
+						<span>Git</span>
 						<span>Postman</span>
 						<span>Agile</span>
 						<span>Jira</span>
 					</div>
 				</div>
-				<div style="width: 100%; height: 335px">
+				<div style="width: 100%; height: 170px">
 					&nbsp;
 				</div>
 				<div class="section">Education</div>
@@ -341,61 +413,101 @@
 				</div>
 				<div class="section" style="margin-top: 50px;">Hobies and Interests</div>
 				<div class="edu">
-					<div class="college">Playing Instruments, Painting, Camping, Photshop, UI & UX Designing, CSS Art</div>
+					<div class="college">Playing Instruments, Painting, Camping, Photshop, UI & UX Designing, CSS Art
+					</div>
 				</div>
 			</td>
 			<td class="timeline" valign="top">
-				<div class="thread"></div>
+				<div class="thread first"></div>
 				<div class="section">Career Path</div>
 				<div class="stone">
 					<div class="marker"></div>
-					<div class="project">DemandFarm</div>
-					<div class="company">DemandFarm Inc. | June 2021 - Today</div>
-					<div class="designation">Product Solution Engineer</div>
-					<div class="summary">DemandFarm is a Key Account management tool that helps Account
-						Managers better manage their Key Accounts with Plans, Financials, and Revenues, etc. in a
-						single place. Built on Java & Angular/React Stack.</div>
+					<div class="project">Lead Software Engineer</div>
+					<div class="company">Twilio Inc.</div>
+					<div class="duration">Jun 2023 - Today</div>
+					<div>
+						<div class="designation">Tech Stack: </div>
+						<div class="company-skills">Java 17, Spring Boot, MySQL, React, Highcharts</div>
+					</div>
+					<div class="summary">
+						As a Lead Software Engineer, I lead a small team of 3 able developers, collaborating with the
+						product team to study user trends, brainstorm ideas, and reduce them into features for
+						the team and myself.
+					</div>
 					<div class="role">
 						<ul>
-							<li>Designed real-time Integration Systems for MS Dynamics, Oracle Fusion, and more helping in 40% customer onboarding and retention.</li>
-							<li>Introduced Modular design allowing customers to subscribe to smaller modules of the product, resulting in about 10% enquiry surge.</li>
-							<li>Designed a highly advanced search system.</li>
-							<li>Designed Card, List View &amp; Interactive Analytic tools with search &amp; filters.</li>
-							<li>Production Support with Deployments, Backups & Prod Issues</li>
-							<li>Mentored budding team members</li>
+							<li>Delivered Dashboards and Weekly to Quarterly Trends of sales & pipelines
+							</li>
+							<li>Designed a notificatoin system to alert any anomalies, dues, or concerns</li>
+							<li>Added walkthough tutorial system, for first-time users</li>
+							<li>Present commendable demos to PMs, Directors and other stakeholders</li>
 						</ul>
 					</div>
 				</div>
 				<div class="stone">
 					<div class="marker"></div>
-					<div class="project">Oracle Marketing Cloud</div>
-					<div class="company">Oracle India | Jun 2016 - Jun 2021</div>
-					<div class="designation">Senior Application Engineer - Full-stack</div>
-					<div class="summary">Oracle Marketing Cloud - Responsys is a Targeted Marketing platform, where a
-						marketer can create personalized campaigns and send Emails, SMSs, or Push Notifications to the
-						targeted audience. It connects to Google's & Apple's services, and telecom companies to send
-						Push & SMS.</div>
+					<div class="project">Product Solution Engineer</div>
+					<div class="company">DemandFarm Inc.</div>
+					<div class="duration">Jun 2021 - Jun 2023</div>
+					<div>
+						<div class="designation">Tech Stack: </div>
+						<div class="company-skills">Java 17, Spring Boot, Postgres, JPA, React, Highcharts</div>
+					</div>
+					<div class="summary">I worked on developing a new product, Account Central, from a clean slate. We
+						designed it to specialize in connecting to all major CRMs and integrating data flow in real
+						time. Collaborating with customers and the product team, I added features and created workflows.
+						Additionally, I led a team of 4 developers and actively participated in the product's
+						development.</div>
 					<div class="role">
+						<ul>
+							<li>Created connectors to MS Dynamics, Oracle Fusion, Pipedrive, & a few more</li>
+							<li>Designed and implented features like Webhook, Search API</li>
+							<li>Production Support with Deployments, Backups & Productoin Issues</li>
+							<li>Mentored budding team members</li>
+						</ul>
+					</div>
+				</div>
+				<div class="thread last" style="margin-top: 280px; height: 650px"></div>
+				<div class="stone">
+					<div class="marker"></div>
+					<div class="project">Senior Application Engineer</div>
+					<div class="company">Oracle India</div>
+					<div class="duration">Jun 2016 - Jun 2021</div>
+					<div>
+						<div class="designation">Tech Stack: </div>
+						<div class="company-skills">Java 8, Spring MVC, Spring Boot, Oracle DB, Extjs, OJET</div>
+					</div>
+					<div class="summary">Was part of the development team for Oracle Marketing Cloud, one of the
+						largest marketing platforms. Our team managed Mobile Push, SMS, and Browser Notifications. In my
+						role, I handled developing Campaign screens, APIs, and improving
+						Personalization, Delivery, and Action Tracking phases.
+					</div>
+					<div class="role" style="padding-top: 60px;">
 						<ul>
 							<li>Designed architectures of <i>SMS Providers Portal</i> &amp; <i>CSV Parsing Tool</i></li>
 							<li>Optimised <i>Personalisation Engine</i> by about 10% faster</li>
-							<li>Added features <i>Live View</i>, <i>Account Alerts</i>, <i>Web Notifications</i> etc.</li>
 							<li>Tracked user activity post-delivery</li>
 							<li>Mentored budding team members</li>
 						</ul>
 					</div>
 				</div>
-				<div class="thread" style="margin-top: 70px;height: 560px"></div>
-				<div class="stone" style="padding-top: 80px;">
+				<div class="stone">
 					<div class="marker"></div>
-					<div class="project">DemandFarm</div>
-					<div class="company">DemandFarm Inc. | Dec 2014 - Jun 2016</div>
-					<div class="designation">Product Engineer</div>
-					<div class="summary">Demandfarm was in its adolesence here. We added a lot of features based on the market needs and client interactions.</div>
+					<div class="project">Product Engineer</div>
+					<div class="company">DemandFarm Inc.</div>
+					<div class="duration">Dec 2014 - Jun 2016</div>
+					<div>
+						<div class="designation">Tech Stack: </div>
+						<div class="company-skills">Java 8, Spring MVC, MySQL, Angular, Kettle</div>
+					</div>
+					<div class="summary">Demandfarm was in its adolesence here. We added a lot of features based on the
+						market research and client interactions.</div>
 					<div class="role">
 						<ul>
-							<li>Added features <i>Account Offering Map</i>, <i>Contact Communication Module</i>, <i>Activitiy Calendar</i> etc.</li>
-							<li>Wrote a connector to Microsoft Dynamics CRM using REST</li>
+							<li>Added features named <i>Account Offering Map</i>, <i>Contact Communication Module</i>,
+								<i>Activitiy Calendar</i> etc.
+							</li>
+							<li>Wrote the first connector to Microsoft Dynamics CRM using REST and Kettle ETL</li>
 							<li>Designed REST APIs for external systems to use</li>
 							<li>Designed UI Components like <i>Accordian</i>, <i>Aside Drawer</i></li>
 						</ul>
@@ -403,15 +515,22 @@
 				</div>
 				<div class="stone">
 					<div class="marker"></div>
-					<div class="project">Global Business Travel</div>
-					<div class="company">Mindtree Ltd. | Apr 2011 - Dec 2014</div>
-					<div class="designation">Senior Software Engineer</div>
-					<div class="summary">The project delivered travel records like E-Tickets, Invoices as PDFs to the travelers who use
-						American Express Global Business Travel. Our Job was to parse the PNR data from an XML SOAP input, process it,
-						generate the documents & deliver them via emails, and downstream systems.</div>
+					<div class="project">Senior Software Engineer</div>
+					<div class="company">Mindtree Ltd.</div>
+					<div class="duration">Apr 2011 - Dec 2014</div>
+					<div>
+						<div class="designation">Tech Stack: </div>
+						<div class="company-skills">Java 6, Spring MVC, MS SQL, JQuery, Jasper Reports</div>
+					</div>
+					<div class="summary">Started my journey here as a programmer analyst and grew up to be a Senior
+						Software Engineer by working for Amex GBT projects. Developed various features and enhancements
+						to a legacy product (Digital Travel Record) and built a new product (Global Document Delivery)
+						from the scratch.</div>
 					<div class="role">
 						<ul>
-							<li>Designed a PNR end-to-end Tracker system</li>
+							<li>Showcased a POC for generating documents using Jasper Reports</li>
+							<li>Had the ownership of the code PNR Processing Engine</li>
+							<li>Designed a PNR end-to-end Tracking system</li>
 							<li>Designed a Document Archive System that stored docs for up to 10 yrs</li>
 						</ul>
 					</div>
@@ -420,14 +539,15 @@
 		</tr>
 		<tr class="java">
 			<td colspan="2" align="center" class="footer">
-				I am fluent in English, Hindi, and Kannada. I like to play musical instruments, make sketches, photoshoping, & CSS Art.
+				I am fluent in English, Hindi, and Kannada. I like to play musical instruments, make sketches,
+				photoshoping, & CSS Art.
 			</td>
 		</tr>
 		<tr class="full-stack">
 			<td colspan="2" align="center" class="footer">
-				I am fluent in English, Hindi, and Kannada. I am currently learning Microservices and React. Taking online courses on Leadership and Team bonding.
-				I like mostly creative works like music, painting, film making, etc.
-				I enjoy creating objects using CSS Art. Checkout
+				I am fluent in English, Hindi, and Kannada. I am currently learning Microservices and taking online
+				courses on Leadership and Team Bonding. I have a soft spot for all kinds of creative works like music,
+				painting, film making, etc. I enjoy creating objects using CSS Art. Checkout
 				<a href="https://arunwithasmile.github.io/notif.html">this iPhone</a>
 				that was created only using HTML and CSS.
 			</td>

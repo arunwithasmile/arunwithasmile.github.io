@@ -1,0 +1,329 @@
+{
+    "questions": [
+        {
+            "question": "When I'm feeling down, this uplifts me more",
+            "options": [
+                {
+                    "choice": "Receiving a warm hug",
+                    "love_language": "touch"
+                },
+                {
+                    "choice": "Hearing my partner reminding me of my strengths",
+                    "love_language": "words"
+                }
+            ]
+        },
+        {
+            "question": "The action from my partner that I treasure more",
+            "options": [
+                {
+                    "choice": "Spending a quiet evening together",
+                    "love_language": "time"
+                },
+                {
+                    "choice": "Them organizing a surprise party with my closest friends & family to celebrate me",
+                    "love_language": "gifts"
+                }
+            ]
+        },
+        {
+            "question": "The surprise from my partner that would make my day",
+            "options": [
+                {
+                    "choice": "Them surprising me with a handwritten love letter",
+                    "love_language": "words"
+                },
+                {
+                    "choice": "Them taking me on a road trip for the weekend",
+                    "love_language": "time"
+                }
+            ]
+        },
+        {
+            "question": "The expression of love that resonates with me more",
+            "options": [
+                {
+                    "choice": "My partner holding the umbrela for me",
+                    "love_language": "service"
+                },
+                {
+                    "choice": "My partner expressing their love verbally",
+                    "love_language": "words"
+                }
+            ]
+        },
+        {
+            "question": "The gesture from my partner that makes me feel cherished",
+            "options": [
+                {
+                    "choice": "Them presenting me with a photo album filled with memories of our time together",
+                    "love_language": "gifts"
+                },
+                {
+                    "choice": "Them cooking my favorite meal",
+                    "love_language": "service"
+                }
+            ]
+        },
+        {
+            "question": "My prefered way to spend quality time with my partner",
+            "options": [
+                {
+                    "choice": "Engaging in meaningful conversations and sharing thoughts and feelings",
+                    "love_language": "time"
+                },
+                {
+                    "choice": "Being physically close, whether it's cuddling on the couch or sitting in the park",
+                    "love_language": "touch"
+                }
+            ]
+        },
+        {
+            "question": "This makes me connected to my partner the most",
+            "options": [
+                {
+                    "choice": "Cooking a new recepe together",
+                    "love_language": "time"
+                },
+                {
+                    "choice": "Exchanging little gifts unexpectedly",
+                    "love_language": "gifts"
+                }
+            ]
+        },
+        {
+            "question": "The action from my partner that makes me feel most cared for",
+            "options": [
+                {
+                    "choice": "Them preparing my lunch box with love and care",
+                    "love_language": "service"
+                },
+                {
+                    "choice": "Them telling me how much I mean to them",
+                    "love_language": "words"
+                }
+            ]
+        },
+        {
+            "question": "This gesture makes me feel most loved",
+            "options": [
+                {
+                    "choice": "Holding hands while walking",
+                    "love_language": "touch"
+                },
+                {
+                    "choice": "My partner surprising me with breakfast in bed",
+                    "love_language": "gifts"
+                }
+            ]
+        },
+        {
+            "question": "The gesture from my partner that makes me feel valued",
+            "options": [
+                {
+                    "choice": "Them surprising me with a handwritten love letter expressing their feelings for me",
+                    "love_language": "gifts"
+                },
+                {
+                    "choice": "Them helping me with my hobby even though that doesn't interest them",
+                    "love_language": "service"
+                }
+            ]
+        },
+        {
+            "question": "I feel more appreciated when",
+            "options": [
+                {
+                    "choice": "My partner helps me with chores or tasks",
+                    "love_language": "service"
+                },
+                {
+                    "choice": "My partner showering me with compliments",
+                    "love_language": "words"
+                }
+            ]
+        },
+        {
+            "question": "When I'm sick, this would make me feel better",
+            "options": [
+                {
+                    "choice": "My partner staying by my side and cudling me",
+                    "love_language": "touch"
+                },
+                {
+                    "choice": "My partner bringing me my favorite comfort food",
+                    "love_language": "service"
+                }
+            ]
+        },
+        {
+            "question": "When I'm feeling overwhelmed, this would calm me down",
+            "options": [
+                {
+                    "choice": "My partner giving me a relaxing massage",
+                    "love_language": "touch"
+                },
+                {
+                    "choice": "My partner making me a cup of my favorite drink",
+                    "love_language": "service"
+                }
+            ]
+        },
+        {
+            "question": "I feel most valued when",
+            "options": [
+                {
+                    "choice": "My partner surprise me with a bouquet of my favorite flowers",
+                    "love_language": "gifts"
+                },
+                {
+                    "choice": "My partner tells me how much they appreciate me and all that I do",
+                    "love_language": "words"
+                }
+            ]
+        },
+        {
+            "question": "When I'm apart from my partner, I prefer",
+            "options": [
+                {
+                    "choice": "Writing heartfelt messages or letters to each other",
+                    "love_language": "words"
+                },
+                {
+                    "choice": "Video calls or phone calls to see and hear each other",
+                    "love_language": "time"
+                }
+            ]
+        },
+        {
+            "question": "The expression of love from my partner that I cherish the most",
+            "options": [
+                {
+                    "choice": "Them spending quality time with me, even if it's just watching TV together",
+                    "love_language": "time"
+                },
+                {
+                    "choice": "Them surprising me with a piece of artwork that reminds them of me",
+                    "love_language": "gifts"
+                }
+            ]
+        },
+        {
+            "question": "When I'm feeling anxious, this would reassure me the most",
+            "options": [
+                {
+                    "choice": "My partner holding me close and comforting me",
+                    "love_language": "touch"
+                },
+                {
+                    "choice": "My partner reminding me of all my strengths and capabilities",
+                    "love_language": "words"
+                }
+            ]
+        },
+        {
+            "question": "I feel appreciated when",
+            "options": [
+                {
+                    "choice": "My partner leaves me heartfelt notes around the house",
+                    "love_language": "words"
+                },
+                {
+                    "choice": "Them organizing my workspace to make it more comfortable",
+                    "love_language": "service"
+                }
+            ]
+        },
+        {
+            "question": "The expression of love from my partner that brings me the most joy",
+            "options": [
+                {
+                    "choice": "That cute \"Good morning\" every single day",
+                    "love_language": "words"
+                },
+                {
+                    "choice": "Them gifting me a personalized item with my name or a special message engraved on it",
+                    "love_language": "gifts"
+                }
+            ]
+        },
+        {
+            "question": "I feel more understood by my partner when",
+            "options": [
+                {
+                    "choice": "They offering to finish what I started",
+                    "love_language": "service"
+                },
+                {
+                    "choice": "They actively listen and validate my feelings",
+                    "love_language": "time"
+                }
+            ]
+        },
+        {
+            "question": "I feel most connected to my partner when",
+            "options": [
+                {
+                    "choice": "Spending a lazy Sunday morning cuddling in bed",
+                    "love_language": "touch"
+                },
+                {
+                    "choice": "Having a romantic dinner together at home",
+                    "love_language": "time"
+                }
+            ]
+        },
+        {
+            "question": "My heart skips a beat when",
+            "options": [
+                {
+                    "choice": "Surprise kiss when I least expect it",
+                    "love_language": "touch"
+                },
+                {
+                    "choice": "Them preparing my favourite meal just to see me smile",
+                    "love_language": "service"
+                }
+            ]
+        },
+        {
+            "question": "The actions from my partner that would make me feel most loved",
+            "options": [
+                {
+                    "choice": "My partner spending time discussing my dreams and goals",
+                    "love_language": "time"
+                },
+                {
+                    "choice": "Surprising me with tickets to a concert of my favourite band",
+                    "love_language": "gifts"
+                }
+            ]
+        },
+        {
+            "question": "I feel most loved by my partner when",
+            "options": [
+                {
+                    "choice": "They give me their full attention when I'm talking",
+                    "love_language": "time"
+                },
+                {
+                    "choice": "They hold me close when I'm feeling vulnerable",
+                    "love_language": "touch"
+                }
+            ]
+        },
+        {
+            "question": "This excites me the most when",
+            "options": [
+                {
+                    "choice": "My partner puts their arm around me in public",
+                    "love_language": "touch"
+                },
+                {
+                    "choice": "My partner buys me a dress I've always wanted",
+                    "love_language": "gifts"
+                }
+            ]
+        }
+    ]
+}
