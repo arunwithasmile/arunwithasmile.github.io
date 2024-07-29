@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Quotation Arun S P - Music Dept Charges</title>
+	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+	<link rel="icon" type="image/x-icon" href="images/resume/favicon.ico">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.5.2/css/all.css">
+	<style type="text/css">
+		body {
+			font-family: 'Roboto';
+			font-size: 11pt;
+			line-height: 17pt;
+			color: #333;
+			background: #f8f9fa;
+			margin: 0;
+		}
+
+		page {
+			width: 820px;
+			/* A4 Sheet */
+			display: block;
+			margin: auto;
+			padding-bottom: 1px;
+			margin-bottom: 50px;
+			background: #fff;
+			/* box-shadow: 0 1px 5px rgb(0 0 0 / 30%); */
+		}
+
+		table {
+			border-collapse: collapse;
+		}
+
+		.header {
+			text-transform: uppercase;
+			font-size: 8.5pt;
+			letter-spacing: 3px;
+			background-color: #eee;
+			color: #666;
+			width: 100%;
+			margin: auto;
+			position: relative;
+		}
+
+		.header::before {
+			content: "";
+			position: absolute;
+			height: 100%;
+			width: 100%;
+			top: 0;
+			left: 0;
+			background-image: url(images/resume/musical-symbols.jpg);
+			background-size: cover;
+			background-position: center;
+			opacity: 0.02;
+			z-index: -1;
+		}
+
+		.id {
+			display: flex;
+			align-items: center;
+    		gap: 0.5rem;
+			
+			img {
+				border: 5px solid #fff;
+        		height: 100px;
+			}
+		}
+
+		.id,
+		.contacts {
+			padding: 40px 60px;
+		}
+
+		.name {
+			font-family: sans-serif;
+			font-size: 15.5pt;
+			font-weight: bolder;
+			letter-spacing: 6px;
+			margin: 10px 0px 5px;
+			color: #000;
+		}
+
+		.contacts {
+			color: #666;
+			letter-spacing: 2px;
+		}
+
+		.contacts icon {
+			display: inline-block;
+			vertical-align: middle;
+			height: 22px;
+			width: 30px;
+			background-size: 20px;
+			background-repeat: no-repeat;
+			background-position: center;
+		}
+
+		.body {
+			width: 720px;
+			margin: 40px auto;
+		}
+
+		.section,
+		.sub-section {
+			text-transform: uppercase;
+		}
+
+		.section {
+			position: relative;
+			font-size: 12pt;
+			letter-spacing: 2px;
+			margin-bottom: 25px;
+			color: #666;
+		}
+
+		.section:before {
+			content: "";
+			display: block;
+			height: 3px;
+			width: 22px;
+			background: orange;
+			position: absolute;
+			bottom: -7px;
+		}
+
+		.sub-section {
+			font-size: 9pt;
+			color: #ccc;
+		}
+
+		.skills,
+		.timeline {
+			padding-top: 35px;
+		}
+
+		.skills {
+			width: 170px;
+		}
+
+		.skills .section,
+		.timeline .section {
+			margin-bottom: 30px;
+		}
+
+		.skills .group {
+			margin-bottom: 10px;
+		}
+
+		.skills .group span {
+			padding: 4px 7px;
+			line-height: 30px;
+			background: #f7f7f7;
+			border-radius: 5px;
+			box-shadow: 0 1px rgb(0 0 0 / 15%);
+		}
+
+		.timeline {
+			position: relative;
+			padding-left: 30px;
+		}
+
+		.timeline .thread {
+			position: absolute;
+			height: 602px;
+			width: 2px;
+			background: #ccc;
+			left: 5px;
+			top: 20px;
+		}
+
+		.stone:not(:last-of-type) {
+			position: relative;
+			margin-bottom: 30px;
+		}
+
+		.marker {
+			position: absolute;
+			height: 15px;
+			width: 15px;
+			border: 2px solid #ccc;
+			border-radius: 50%;
+			background: #fff;
+			transform: translate(-33.5px, 1px);
+		}
+
+		.marker:after {
+			content: "";
+			width: 5px;
+			height: 5px;
+			display: block;
+			background: orange;
+			position: absolute;
+			top: 5px;
+			left: 5px;
+			border-radius: 50%;
+		}
+
+		.stone {
+			padding-top: 20px;
+			padding-left: 10px;
+		}
+
+		.stone .project,
+		.stone .company {
+			display: inline-block;
+			letter-spacing: 1px;
+			text-transform: uppercase;
+		}
+
+		.stone .project {
+			color: #000;
+			font-weight: bold;
+			margin-bottom: 10px;
+		}
+
+		.stone .company {
+			color: #888;
+			font-size: 9pt;
+			margin-left: 5px;
+		}
+
+		.stone .summary {
+			letter-spacing: 0.4px;
+			text-align: justify;
+			margin-bottom: 10px;
+		}
+		
+		.stone .duration {
+			color: #888;
+			font-size: 8.5pt;
+			margin-left: 5px;
+		}
+
+		.role {
+			color: #666;
+			letter-spacing: 0.5px;
+			font-size: 10.5pt;
+		}
+
+		.edu {
+			font-size: 9.5pt;
+		}
+
+		.major {
+			text-transform: uppercase;
+			font-weight: bold;
+			letter-spacing: 0.6px;
+		}
+
+		.college,
+		.year {
+			color: #888;
+		}
+
+		.year {
+			text-transform: uppercase;
+		}
+
+		.footer {
+			padding-top: 20px;
+			font-size: 10pt;
+			color: #666;
+
+			&.para {
+				padding-top: 50px;
+				text-align: justify;
+			}
+		}
+
+		a {
+			text-decoration: none;
+			color: #393d5e;
+			font-weight: bold;
+		}
+
+		a:hover {
+			text-decoration: underline;
+		}
+
+		table.charges td {
+			padding: 0 10px;
+			color: #444;
+		}
+
+		table.charges .total td {
+			font-weight: bold;
+			color: #000;
+		}
+
+		.role ul {
+			margin-top: 0;
+		}
+
+		.section.charges {
+			margin-top: 30px;
+			margin-bottom: 0;
+		}
+		.label {
+			opacity: 0.6;
+			&::after {
+				content: ':';
+			}
+		}
+
+		.media-links{
+			opacity: 0.7;
+
+			a {
+			   margin-inline: 8px;
+		   }
+		}
+	</style>
+</head>
+
+<body type="java">
+	<page>
+		<table class="header">
+			<tr>
+				<td class="id">
+					<img src="images/resume/arun.jpeg">
+					<div>
+						<div class="doc">Bio Data</div>
+						<div class="name">Arun Pujari</div>
+						<div class="title">Lead Software Developer</div>
+					</div>
+				</td>
+				<td class="contacts" valign="middle">
+					<div valign="middle">
+						<div>
+							<a href="https://wa.me/+910742083691?text=Hey+Arun" target="_blank">
+								<icon class="phone" style="background-image: url(images/resume/phone.png)"></icon>
+								<span>
+									+91 974 208 3691
+								</span>
+							</a>
+						</div>
+						<div>
+							<a href="mailto:arunwithasmile@gmail.com">
+								<icon class="mail" style="background-image: url(images/resume/mail.png)"></icon>
+								<span>arunwithasmile@gmail.com</span>
+							</a>
+						</div>
+						<div>
+							<a href="https://maps.app.goo.gl/EGXgvS1LrTNQBDL4A" target="_blank">
+								<icon class="map" style="background-image: url(images/resume/map.png)"></icon>
+								<span>Jayanagar, Bengaluru</span>
+							</a>
+						</div>
+					</div>
+				</td>
+			</tr>
+		</table>
+		<table class="body">
+			<tr>
+				<td colspan="2">
+					<div class="section">Summary</div>
+					<div>Hello, I'm a Software Developer. Currently working as a Lead Developer in a company called
+						American Express GBT. I have immense affection towards music.
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<div class="section charges">Personal Details</div>
+					<div class="stone">
+						<div>
+							<span class="label">Birth Date</span>
+							<span class="value">20<sup>th</sup> July 1989</span>
+						</div>
+						<div>
+							<span class="label">Birth Place</span>
+							<span class="value">Bagalkot</span>
+						</div>
+						<div>
+							<span class="label">Height</span>
+							<span class="value">5'8</span>
+						</div>
+						<div>
+							<span class="label">Weight</span>
+							<span class="value">64 kg</span>
+						</div>
+					</div>
+
+					<div class="section charges">Education & Career</div>
+					<div class="stone">
+						<div>
+							<span class="label">Career</span>
+							<span class="value">Lead Software Developer at Amex GBT</span>
+							<span class="duration">Jun 2023 - Today</span>
+						</div>
+						<div>
+							<span class="label">College</span>
+							<span class="value">Basaveshwar Engineering College Bagalkot</span>
+							<span class="duration">2007 - 2011</span>
+						</div>
+						<div>
+							<span class="label">Specialisation</span>
+							<span class="value">Computer Science</span>
+						</div>
+						<div>
+							<span class="label">High School</span>
+							<span class="value">Sainik Scool Bijapur</span>
+							<span class="duration">2000 - 2007</span>
+						</div>
+					</div>
+
+					<div class="section charges">Family Details</div>
+					<div class="stone">
+						<div>
+							<span class="label">Father</span>
+							<span class="value">Shankar Pujari - Govt Servant</span>
+							<span class="duration">In a better place</span>
+						</div>
+						<div>
+							<span class="label">Mother</span>
+							<span class="value">Sarawathi Pujari - House Maker</span>
+						</div>
+						<div>
+							<span class="label">Siblings</span>
+							<span class="value">1 Elder Sister <span class="duration">(married)</span>, 2 Younger Sisters</span>
+						</div>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2" class="footer para">
+					I'm a soft spoken person and lead a simple lifestyle. I love coding as well as making music. Career is stable and aspiring to settle and retire in Bengaluru. I run a music studio and I like to spend my free time in it. I also do occasional live performances. Movie buff. Likes Cycling and Hikes. Non smoker. Occasional Drinker.
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2" align="center" class="footer media-links">
+					<a href="https://www.facebook.com/arunwithasmile" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+					<a href="https://youtube.com/chikkistudios"><i class="fa-brands fa-youtube"></i></a>
+					<a href="https://www.instagram.com/arunwithasmile/"><i class="fa-brands fa-instagram"></i></a>
+				</td>
+			</tr>
+		</table>
+	</page>
+</body>
+
+</html>
