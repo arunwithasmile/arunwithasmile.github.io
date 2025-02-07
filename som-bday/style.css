@@ -1,0 +1,106 @@
+@font-face {
+    font-family: 'playpen';
+    font-style: normal;
+    font-weight: 400;
+    /* src: url('https://fonts.cdnfonts.com/s/107131/Simply-Kind-BF654a40107a349.woff') format('woff'); */
+    src: url('https://fonts.cdnfonts.com/s/107189/PlaypenSans[wght].woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Hello Dosky';
+    font-style: normal;
+    font-weight: 400;
+    src: url('https://fonts.cdnfonts.com/s/107069/HelloDosky-Yzmxv.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'christmas';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''), url('https://fonts.cdnfonts.com/s/107163/ChristmasGift-7B4Ll.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'christmas-mono';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''), url('https://fonts.cdnfonts.com/s/107163/MonogramChristmasGift-mLqvx.woff') format('woff');
+}
+
+
+body {
+    font-family: 'playpen';
+    min-height: 100vh;
+
+    background:
+        linear-gradient(150deg, #733239, transparent 30%),
+        linear-gradient(330deg, rgb(101 99 100), transparent 30%),
+        linear-gradient(225deg, #69777f, #fbdce7, #e2fae1, #73665c);
+}
+
+.glow {
+    color: #fffffe;
+    text-shadow: 0 1px 1px #a39c8e, 0 1px 1px #fcf1db, 0 1px 7px #eebfa2;
+}
+
+.no-glow {
+    text-shadow: none;
+}
+
+.container {
+    width: 800px;
+    min-height: 550px;
+    margin: auto;
+    position: relative;
+}
+
+.container::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: url(pink-roses-bday.jpg);
+    background-repeat: no-repeat;
+    filter: brightness(0.9);
+}
+
+.name {
+    font-size: 1.8rem;
+    margin-block: 1rem;
+}
+
+heart {
+    font-size: 1.7rem;
+    display: inline-block;
+    transform: translateY(-3px);
+    margin-left: 3px;
+}
+
+b-body {
+    position: absolute;
+    top: 4%;
+    left: 47%;
+    width: 49%;
+    font-size: 1.45rem;
+
+    p {
+        margin-block: 1rem;
+    }
+}
+
+wish {
+    font-family: 'christmas';
+    font-size: 2rem;
+    font-weight: bold;
+    display: block;
+    width: 100%;
+    margin: auto;
+    position: absolute;
+    top: 72%;
+    text-align: center;
+}
+
+auth {
+    position: absolute;
+    top: 90%;
+    right: 3%;
+}
