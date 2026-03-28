@@ -1,0 +1,14 @@
+.container {
+    max-width: 480px;
+    background-color: #fff;
+    box-shadow: 0 0 0 1px rgb(0 0 0 / 10%);
+    margin: auto;
+    padding: 0.5rem 1rem;
+}
+
+h2 {
+    margin: 0;
+    padding: 1rem 0.75rem;
+    color: var(--clr-primary);
+    font-weight: 400;
+}

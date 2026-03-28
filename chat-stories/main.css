@@ -1,0 +1,46 @@
+html {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --clr-primary: #25d366;
+    --clr-wash: #F7F5F3;
+    --clr-text-secondary: #0009;
+}
+
+body {
+    margin: 0;
+    background-color: var(--clr-wash);
+    color: #222;
+}
+
+
+
+input,
+button {
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid #0005;
+}
+
+button {
+    background-color: var(--clr-primary);
+}
+
+.card {
+    border-radius: 1rem;
+    padding: 2rem;
+    box-shadow: 0 1px 2px rgb(0 0 0 / 15%), 0 1px 10px rgb(0 0 0 / 10%);
+    width: fit-content;
+}
+
+asp-chats {
+    display: none;
+}

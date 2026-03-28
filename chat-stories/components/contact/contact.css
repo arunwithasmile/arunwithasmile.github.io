@@ -1,0 +1,44 @@
+.contact {
+    display: flex;
+    gap: 1rem;
+    padding: 0.5rem;
+}
+
+.avatar {
+    aspect-ratio: 1;
+    height: 50px;
+    font-size: 22px;
+    border-radius: 50%;
+    align-content: center;
+    text-align: center;
+    background-color: #ddd;
+    text-box-trim: trim-both;
+    text-box-edge: cap alphabetic;
+}
+
+.desc {
+    align-content: center;
+    flex-grow: 1;
+}
+
+.title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.name {
+    line-height: 1.5;
+}
+
+.time {
+    font-size: 0.75rem;
+    color: var(--clr-text-secondary);
+}
+
+.last-message {
+    font-size: 0.875rem;
+    margin-top: 2px;
+    line-height: 20px;
+    color: var(--clr-text-secondary);
+}
