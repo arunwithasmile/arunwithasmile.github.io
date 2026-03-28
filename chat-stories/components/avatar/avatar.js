@@ -27,6 +27,7 @@ class AvatarComponent extends HTMLElement {
 
     update() {
         const name = this.getAttribute('name') || '?';
+        const size = this.getAttribute('size');
         const initial = name.charAt(0).toUpperCase();
         const avatar = this.shadowRoot?.querySelector('.avatar');
 
@@ -36,6 +37,10 @@ class AvatarComponent extends HTMLElement {
             for (let i = 0; i < name.length; i++) hash = name.charCodeAt(i) + ((hash << 6) - hash);
             const hue = Math.abs(hash) % 360;
             avatar.style.backgroundColor = `hsl(${hue}, 65%, 85%)`;
+
+            if (size) {
+                avatar.classList.add(size);
+            }
         }
     }
 }
