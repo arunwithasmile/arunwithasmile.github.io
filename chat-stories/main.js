@@ -27,6 +27,7 @@ loadAppData();
 
 document.addEventListener('auth-success', () => {
     history.pushState({}, '', '/#/chats');
+    window.dispatchEvent(new Event('popstate'));
     document.querySelector('asp-auth').style.display = 'none';
     document.querySelector('asp-chats').style.display = 'block';
 });

@@ -11,9 +11,21 @@ class ChatsComponent extends HTMLElement {
 
             this.renderContacts();
             document.addEventListener('data-ready', () => this.renderContacts());
+
+            window.addEventListener('hashchange', () => this.handleNavigation());
+            window.addEventListener('popstate', () => this.handleNavigation());
+            this.handleNavigation();
         } catch (err) {
             console.error('Error loading chats component:', err);
         }
+    }
+
+    handleNavigation() {
+        const container = this.shadowRoot?.querySelector('.contacts-container');
+        if (!container) return;
+
+        const isConversation = window.location.hash === '#/conversation';
+        container.style.left = isConversation ? '-100%' : '0';
     }
 
     renderContacts() {
@@ -25,9 +37,20 @@ class ChatsComponent extends HTMLElement {
             const contact = document.createElement('asp-contact');
             const displayName = key.charAt(0).toUpperCase() + key.slice(1);
             contact.setAttribute('name', displayName);
+
+            contact.addEventListener('click', () => {
+                const conv = this.shadowRoot.querySelector('asp-conversation');
+                if (conv) {
+                    conv.setAttribute('name', key);
+                    window.location = '#/conversation';
+                }
+            });
+
             container.appendChild(contact);
         });
     }
 }
+
+
 
 customElements.define('asp-chats', ChatsComponent);

@@ -2,6 +2,12 @@
     display: flex;
     gap: 1rem;
     padding: 0.5rem;
+    border-radius: 0.75rem;
+    cursor: pointer;
+
+    &:hover {
+        background-color: #c2bdb826;
+    }
 }
 
 .avatar {
@@ -41,4 +47,27 @@
     margin-top: 2px;
     line-height: 20px;
     color: var(--clr-text-secondary);
+}
+
+
+
+
+.chat-container {
+    height: 200px;
+    /* Define a viewing height */
+    overflow-y: auto;
+    /* Enable scrolling */
+    display: flex;
+    flex-direction: column-reverse;
+    /* Stack content from bottom to top */
+}
+
+.message-list {
+    display: flex;
+    flex-direction: column-reverse;
+    /* Ensure list items also reverse order */
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    /* Optional: remove bullet points */
 }
