@@ -1,0 +1,19 @@
+.avatar {
+    aspect-ratio: 1;
+    height: 100%;
+    width: 100%;
+    font-size: 22px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ddd;
+    text-box-trim: trim-both;
+    text-box-edge: cap alphabetic;
+}
+
+:host {
+    display: block;
+    height: 50px;
+    width: 50px;
+}

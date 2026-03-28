@@ -24,8 +24,15 @@ class ChatsComponent extends HTMLElement {
         const container = this.shadowRoot?.querySelector('.contacts-container');
         if (!container) return;
 
-        const isConversation = window.location.hash === '#/conversation';
-        container.style.left = isConversation ? '-100%' : '0';
+        const hash = window.location.hash;
+        const isConversation = hash.startsWith('#/chats/') && hash.split('/').length > 2;
+        container.style.left = isConversation ? '-101%' : '0';
+
+        if (isConversation) {
+            const name = hash.split('/')[2];
+            const conv = this.shadowRoot.querySelector('asp-conversation');
+            if (conv) conv.setAttribute('name', name);
+        }
     }
 
     renderContacts() {
@@ -39,11 +46,7 @@ class ChatsComponent extends HTMLElement {
             contact.setAttribute('name', displayName);
 
             contact.addEventListener('click', () => {
-                const conv = this.shadowRoot.querySelector('asp-conversation');
-                if (conv) {
-                    conv.setAttribute('name', key);
-                    window.location = '#/conversation';
-                }
+                window.location.hash = `#/chats/${key}`;
             });
 
             container.appendChild(contact);

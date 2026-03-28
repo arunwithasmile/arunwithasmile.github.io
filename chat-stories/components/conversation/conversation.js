@@ -27,10 +27,15 @@ class ConversationComponent extends HTMLElement {
     }
 
     renderMessages() {
-        const container = this.shadowRoot?.querySelector('.conv-container');
+        const container = this.shadowRoot?.querySelector('.message-list');
         if (!container) return;
 
         const name = this.getAttribute('name')?.toLowerCase();
+        const headerNameEle = this.shadowRoot?.querySelector('header .name');
+        headerNameEle.textContent = name;
+        const avatar = this.shadowRoot?.querySelector('header asp-avatar');
+        avatar.setAttribute('name', name);
+
         const chatData = dataMap.get(name);
 
         container.innerHTML = '';

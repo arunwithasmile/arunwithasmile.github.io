@@ -10,18 +10,6 @@
     }
 }
 
-.avatar {
-    aspect-ratio: 1;
-    height: 50px;
-    font-size: 22px;
-    border-radius: 50%;
-    align-content: center;
-    text-align: center;
-    background-color: #ddd;
-    text-box-trim: trim-both;
-    text-box-edge: cap alphabetic;
-}
-
 .desc {
     align-content: center;
     flex-grow: 1;
