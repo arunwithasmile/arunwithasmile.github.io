@@ -11,9 +11,16 @@
         body {
             margin: 0;
             padding: 0;
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            color: #fff;
+            font-family: 'Calibri', sans-serif;
+            color: #0f0e0d;
             -webkit-font-smoothing: antialiased;
+        }
+
+        table,
+        tr,
+        td,
+        span {
+            font-family: sans-serif;
         }
 
         a[x-apple-data-detectors] {
@@ -38,11 +45,10 @@
             position: relative;
             width: 330px;
             height: 700px;
-            border-radius: 60px;
-            border: 4px solid #544464;
+            border-radius: 50px;
+            border: 5px solid #222;
             margin: 25px auto;
             background-color: #c0b0de;
-            box-shadow: 0 0 1px #000;
         }
 
         wallpaper {
@@ -51,16 +57,16 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: linear-gradient(to bottom, #cca4ff, #334dfd);
+            background: linear-gradient(to bottom, #bab6bf, #40466f);
             overflow: hidden;
-            border-radius: 56px;
+            border-radius: 45px;
             transition: filter 1s;
         }
 
         wallpaper .ball {
             width: 172%;
             height: 88%;
-            background: linear-gradient(to bottom, #663bc2, #0b2cff);
+            background: linear-gradient(to bottom, #6a6477, #182577);
             border-radius: 50%;
             position: absolute;
             left: -35.5%;
@@ -81,7 +87,7 @@
             width: 58.8%;
             left: 37%;
             top: 20%;
-            box-shadow: -30px 0 70px #fff inset, 0 0 50px rgb(0 0 0 / 50%);
+            box-shadow: -30px 0 70px rgb(233 239 255 / 75%) inset, 0 0 250px rgb(0 0 0 / 50%);
         }
 
         #toggle:not(:checked)~wallpaper {
@@ -90,70 +96,30 @@
 
         .bezel {
             position: absolute;
-            border: 7px solid #333;
-            border-radius: 56px;
+            border: 10px solid #111;
+            /* border-color: #a78c00; */
+            border-radius: 44px;
             height: 100%;
             width: 100%;
-            padding: 11px;
-            box-shadow: -0.5px 0px 3px 2px #fbf2ff;
+            box-shadow: -1px 0px 5px #888;
         }
 
         .notch {
-            display: flex;
-            align-items: center;
-            justify-content: end;
-            padding-inline: 7px;
             background-color: #111;
             height: 28px;
-            width: 96px;
+            width: 180px;
             margin: auto;
-            border-radius: 20px;
-
-            .camera {
-                width: 15px;
-                aspect-ratio: 1;
-                border-radius: 50%;
-                background-color: #222;
-                padding: 4px;
-
-                .lens {
-                    height: 100%;
-                    width: 100%;
-                    border-radius: 50%;
-                    background: #222;
-                    box-shadow: -1px 1px 2px #124021 inset;
-                    text-align: left;
-                    padding: 3px 0 0 2px;
-
-                    .flare {
-                        background: rgb(90 60 89);
-                        height: 3px;
-                        width: 2px;
-                        border-radius: 50%;
-                        transform: rotate(-20deg);
-                        -webkit-transform: rotate(-20deg);
-                    }
-                }
-            }
+            border-bottom-right-radius: 20px;
+            border-bottom-left-radius: 20px;
         }
 
-        .sys-date-time {
-            margin-block: 3rem 2rem;
-
-            .date {
-                text-align: center;
-                font-weight: bold;
-                opacity: 1;
-            }
-            .time {
-                display: flex;
-                align-items: center;
-                font-size: 4rem;
-                font-weight: bold;
-                width: fit-content;
-                margin: auto;
-                opacity: 0.75;
-            }
+        .sys-time {
+            color: #000;
+            margin-top: 8px;
+            margin-left: 5px;
+            font-size: 12px;
+            font-weight: bold;
+            -webkit-font-smoothing: antialiased;
         }
 
         @keyframes blinker {
@@ -164,40 +130,22 @@
 
         .blinker {
             animation: blinker 2s step-start infinite;
-
-            &::before,
-            &::after {
-                content: "";
-                display: block;
-                height: 9px;
-                aspect-ratio: 1;
-                background: currentColor;
-                margin: 8px 4px;
-                border-radius: 50%;
-            }
         }
 
         .wifi-battery {
-            position: absolute;
-            right: 10px;
-            top: 11px;
-            height: 28px;
-            display: flex;
-            align-items: center;
-            gap: 4px;
+            margin-top: 5px;
         }
 
         .wifi {
             display: inline-block;
             height: 22px;
-            aspect-ratio: 1;
-            translate: 0 25%;
+            width: 22px;
         }
 
         .wifi,
         .wifi-inner {
             border: 6px double transparent;
-            border-top-color: currentColor;
+            border-top-color: #000;
             border-radius: 50%;
         }
 
@@ -214,7 +162,7 @@
         .battery {
             width: 40px;
             height: 22px;
-            border: 2px solid #fff8;
+            border: 2px solid rgba(0, 0, 0, 70%);
             border-radius: 6px;
             padding: 2px;
             transform: scale(0.5);
@@ -222,14 +170,14 @@
         }
 
         .battery .charge {
-            background: currentColor;
+            background: #000;
             height: 100%;
             width: 84%;
             border-radius: 3px 1.5px 1.5px 3px;
         }
 
         .cap {
-            background: #fff8;
+            background: #000;
             height: 6px;
             width: 2px;
             border-radius: 0 4px 4px 0;
@@ -239,14 +187,38 @@
         }
 
         .speaker {
-            position: absolute;
-            top: -7px;
-            left: 120px;
-            width: 67px;
+            width: 55px;
+            height: 7px;
+            background-color: #222;
+            border-radius: 5px;
+            box-shadow: 1px 1px #333;
+        }
+
+        .notch .camera {
+            width: 17px;
+            height: 17px;
+            border-radius: 50%;
+            background-color: rgb(41, 41, 41);
+            padding: 6px;
+        }
+
+        .notch .camera .lens {
+            height: 100%;
+            width: 100%;
+            border-radius: 50%;
+            background: #222;
+            box-shadow: -1px 1px 2px #124021 inset;
+            text-align: left;
+            padding: 3px 0 0 2px;
+        }
+
+        .notch .camera .lens .flare {
+            background: rgb(90 60 89);
             height: 3px;
-            border-radius: 0 0 3px 3px;
-            background-color: #000;
-            border-bottom: 1px dotted #555;
+            width: 2px;
+            border-radius: 50%;
+            transform: rotate(-20deg);
+            -webkit-transform: rotate(-20deg);
         }
 
         .home-btn {
@@ -257,9 +229,6 @@
             margin: auto;
             backdrop-filter: blur(2px);
             transition: background 1s;
-            position: absolute;
-            translate: calc(50% + 30px);
-            bottom: 1rem;
         }
 
         #toggle:not(:checked)~.bezel .home-btn {
@@ -271,15 +240,17 @@
         * ##############################*/
 
         .notification {
-            display: flex;
-            align-items: center;
-            box-shadow: 0px 0px 2px rgba(0, 0, 0, 30%), -1px -1px 1px #fff6, 1px 0 1px #fff;
+            background: rgba(255, 255, 255);
+            box-shadow: 0px 0px 2px rgba(0, 0, 0, 30%);
             margin: 10px 5px 3px;
-            border-radius: 25px;
-            font-size: 12px;
-            height: 182px;
+            border-radius: 15px;
+            font-size: 14px;
+            display: block;
+            height: 220px;
+            /* overflow: hidden; */
             cursor: pointer;
-            transition: height 0.3s, margin-top 0.5s, background-color 0.3s, scale 0.3s;
+            transition: height 0.3s, margin-top 0.3s, background-color 0.3s;
+            letter-spacing: 0.5px;
             backdrop-filter: blur(5px);
         }
 
@@ -296,92 +267,88 @@
 
         #toggle:checked~.bezel .notification {
             height: 115px;
-            background: rgba(255, 255, 255, 12%);
+            background: rgba(255, 255, 255, 70%);
             line-height: 14px;
-
-            .icon {
-                background: linear-gradient(#a5c8e254, #0059d959);
-            }
         }
 
         #toggle:checked~.bezel .notification:hover {
-            scale: 1.01;
+            background: rgba(255, 255, 255, 75%);
         }
 
         #toggle:not(:checked)~.bezel .notification {
             margin-top: 69px;
-            background: rgba(255, 255, 255, 90%);
-            color: #222;
-            box-shadow: 0px 0px 2px rgba(0, 0, 0, 30%);
+            background: rgba(255, 255, 255, 80%);
         }
 
         .notification .info-header {
-            display: flex;
-            justify-content: space-between;
-            padding: 14px 14px 5px 2px;
+            height: 40px;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-bottom: 1px solid rgb(0, 0, 0, 15%);
             position: relative;
+        }
+
+        #toggle:checked~.bezel .notification .info-header {
+            height: 35px;
+            margin-bottom: 0px;
+            border: none;
         }
 
         .notification .content {
-            margin-inline: 12px 14px;
-            height: calc(100% - 47px);
+            margin: 0 11px 12px;
+            height: calc(100% - 63px);
             overflow: hidden;
         }
 
+        #toggle:checked~.bezel .notification .content {
+            height: calc(100% - 47px);
+        }
+
         .notification .icon {
-            background: linear-gradient(#3098e4, #0d4eac);
-            border-radius: 12px;
+            background: #735e79;
+            padding: 4px 3px 2px 5px;
+            /* border: 1px solid #c0c0c0; */
+            border-radius: 5px;
+            font-size: 12px;
             position: relative;
-            height: 42px;
-            aspect-ratio: 1;
-            margin-left: 10px;
+            display: inline-block;
+            height: 20px;
+            width: 20px;
+            vertical-align: middle;
         }
 
         .notification .cloud {
-            display: inline-block;
-            position: absolute;
-            left: 6px;
-            bottom: 10px;
-            border-radius: 10px;
-            height: 32%;
-            width: 69%;
             background-color: #fff;
-            opacity: 0.7;
+            border-radius: 4px;
+            display: inline-block;
+            height: 8px;
+            left: 2px;
+            position: absolute;
+            top: 8px;
+            width: 16px;
+            transform: scale(0.85);
         }
 
         .cloud:after,
         .cloud:before {
-            content: '';
-            position: absolute;
-            border-radius: 100%;
-            aspect-ratio: 1;
             background-color: #fff;
+            content: '';
+            border-radius: 100%;
+            position: absolute;
         }
 
         .cloud:before {
-            height: 108%;
-            left: 9px;
-            top: -9px;
+            height: 12px;
+            left: 1px;
+            top: -4px;
+            width: 12px;
         }
 
         .cloud:after {
-            height: 118%;
-            right: -1px;
-            top: -3px;
-        }
-
-        .sun {
-            position: absolute;
-            top: 19%;
-            right: 14%;
-            width: 34%;
-            aspect-ratio: 1;
-            border-radius: 50%;
-            background-color: #facf4c;
-        }
-
-        .notification .body {
-            height: 100%;
+            height: 6px;
+            left: 9px;
+            top: -2px;
+            width: 6px;
         }
 
         .notification .title {
@@ -391,12 +358,19 @@
 
         .notification .app-name {
             display: inline-block;
+            width: 210px;
             padding: 0 8px;
+            font-size: 12px;
             opacity: 0.65;
         }
 
         .notification .time {
             opacity: 0.65;
+            font-size: 13px;
+        }
+
+        #toggle:not(:checked)~.bezel .notification .time {
+            display: none;
         }
 
         .notification .close {
@@ -419,7 +393,22 @@
 
         #toggle:not(:checked)~.bezel .notification .close {
             opacity: 0.6;
-            transition: opacity 1.1s ease 0.65s;
+            transition: opacity 1s ease 0.5s;
+        }
+
+        .notification .dots {
+            position: absolute;
+            top: 3px;
+            right: 15px;
+            font-size: 20px;
+            font-weight: bold;
+            font-family: auto;
+            opacity: 0;
+        }
+
+        #toggle:not(:checked)~.bezel .notification .dots {
+            opacity: 0.3;
+            transition: top 0.3s;
         }
 
         .notification .text {
@@ -430,8 +419,6 @@
 
         buttons {
             display: block;
-            width: 90%;
-            margin: auto;
             overflow: hidden;
             transition: height 0.6s;
         }
@@ -451,15 +438,7 @@
             display: grid;
             place-items: center;
             height: 40px;
-            transition: background-color 0.2s, height 0.4s ease 0.25s;
-
-            &:first-child {
-                border-radius: 20px 20px 0 0;
-            }
-
-            &:last-child {
-                border-radius: 0 0 20px 20px;
-            }
+            transition: background-color 0.2s, height 0.4s ease 0.15s;
         }
 
         .button:hover {
@@ -505,18 +484,10 @@
         .with-tip:hover>.tip {
             display: block !important;
         }
-
-        img.ref {
-            position: absolute;
-            top: -594px;
-            scale: 0.2045;
-            left: -302px;
-            opacity: 0.2;
-        }
     </style>
 </head>
 
-<body>
+<body style="">
     <div class="phone">
         <!-- This is the Open/Close switch -->
         <input type="checkbox" checked id="toggle">
@@ -528,55 +499,87 @@
             </div>
         </wallpaper>
         <div class="bezel">
-            <div class="speaker"></div>
-            <div class="notch">
-                <div class="camera">
-                    <div class="lens">
-                        <div class="flare"></div>
-                    </div>
-                </div>
-            </div>
-            <div class="wifi-battery">
-                <div class="wifi">
-                    <div class="wifi-inner"></div>
-                </div>
-                <div class="battery">
-                    <div class="charge"></div>
-                    <div class="cap"></div>
-                </div>
-            </div>
-            <div class="sys-date-time">
-                <div class="date">Wed 29 June</div>
-                <div class="time">16<span class="blinker"></span>43</div>
-            </div>
-            <label class="notification" for="toggle">
-                <span class="icon">
-                    <div class="sun"></div>
-                    <span class="cloud"></span>
-                </span>
-                <div class="body">
+            <div style="width: 100%;height: 97%">
+                <table align="center" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse;">
+                    <tr>
+                        <td align="center" width="67">
+                            <div class="sys-time">16<span class="blinker">:</span>43</div>
+                        </td>
+                        <td>
+                            <div class="notch">
+                                <table cellpadding="0" cellspacing="0"
+                                    style="border-collapse: collapse;height: 15px;margin-top: -3px;">
+                                    <tr>
+                                        <td align="right" valign="middle" width="120">
+                                            <div class="speaker"></div>
+                                        </td>
+                                        <td align="center" style="width: 55px;">
+                                            <div class="camera">
+                                                <div class="lens">
+                                                    <div class="flare"></div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </td>
+                        <td width="67">
+                            <table class="wifi-battery" cellpadding="0" cellspacing="0" width="80%"
+                                style="border-collapse: collapse;text-align: center;">
+                                <tr>
+                                    <td style="width: 30px;">
+                                        <div style="height:11px;">
+                                            <div class="wifi">
+                                                <div class="wifi-inner"></div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td style="width: 20px;">
+                                        <div style="width:20px;">
+                                            <div class="battery">
+                                                <div class="charge"></div>
+                                                <div class="cap"></div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+
+                <label class="notification" for="toggle">
                     <div class="info-header">
-                        <span class="app-name">CSS Phone</span>
+                        <span class="icon">
+                            <span class="cloud"></span>
+                        </span>
+                        <span class="app-name">CSS PHONE</span>
                         <span class="time">now</span>
+                        <span class="dots" title="No, this is not a menu">&mldr;</span>
                         <span class="close">×</span>
                     </div>
                     <div class="content">
                         <div class="title">Welcome to CSS Phone</div>
-                        <div class="text">&#128587;&#8205;&#9794;&#65039; Hey! So cool you clicked to check this out. This phone
-                            is made with HTML and CSS only. Seriously no images, no Javascript! Expand and collapse of this notification is achieved using a simple
-                            checkbox. Pretty fun right? &#128526;
+                        <div class="text">&#128587;&#8205;&#9794;&#65039;Hey! I'm glad you took time to click that link and check this out. This phone
+                            layout
+                            is made purely with HTML and CSS elements. There's also little bit of animation used to make
+                            the
+                            transitions smooth. Expand and collapse of this notification is achieved using a simple
+                            checkbox. Pretty fun right?&#128526;
                         </div>
                     </div>
-                </div>
-            </label>
-            <buttons>
-                <a class="button" href="mailto:arunwithasmile@gmail.com?subject=Nice to Meet You&body=Hi Arun.">Reply</a>
-                <a class="button" href="http://linkedin.com/in/arun-pujari">Connect</a>
-            </buttons>
+                </label>
+                <buttons>
+                    <a class="button" style="border-radius: 13px 13px 0 0;"
+                        href="mailto:arunwithasmile@gmail.com?subject=Nice to Meet You&body=Hi Arun.">Reply</a>
+                    <a class="button" style="border-radius: 0 0 13px 13px;"
+                        href="http://linkedin.com/in/arun-pujari">Connect</a>
+                </buttons>
+            </div>
             <div class="home-btn"></div>
         </div>
     </div>
-<!-- <img src="images/iphone-ref.png" class="ref"> -->
 </body>
 
 </html>
