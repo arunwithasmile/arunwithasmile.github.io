@@ -1,13 +1,328 @@
 {
     "messages": [
         {
+            "type": "s",
+            "msg": "Hey hope you had a good day. Let me do the hard thing. You seem like a really sweet person. But since we both feel it's forced, it's best we stop here and call it off. Let's not spend time and energy for something that isn't moving forward. I wish you a better match honestly 😊 You take care.",
+            "timestamp": "08-Feb-2026 22:37"
+        },
+        {
             "type": "r",
-            "msg": "Hello Arun, Ananya here. We've connected on Jeevansathi",
-            "timestamp": "24-Jan-2026 15:45"
+            "msg": "Okay",
+            "timestamp": "07-Feb-2026 20:47"
+        },
+        {
+            "type": "s",
+            "msg": "I'm looking for marriage as well. It's no age for casual or anything honestly 😊",
+            "timestamp": "07-Feb-2026 20:41"
+        },
+        {
+            "type": "r",
+            "msg": "What is it that you’re looking for immediately?",
+            "timestamp": "07-Feb-2026 20:40"
+        },
+        {
+            "type": "s",
+            "msg": "Ok that's fair. I felt the same too. It was far slower for me as well. Just wanted to check if that's what you felt as well",
+            "timestamp": "07-Feb-2026 20:37"
+        },
+        {
+            "type": "r",
+            "msg": "I just think that our conversations don’t flow and I’m seriously looking only at marriage and hope things become clear quickly once i come in contact with someone",
+            "timestamp": "07-Feb-2026 20:32"
+        },
+        {
+            "type": "s",
+            "msg": "Hi 😊",
+            "timestamp": "07-Feb-2026 20:32"
+        },
+        {
+            "type": "r",
+            "msg": "Hi",
+            "timestamp": "07-Feb-2026 20:30"
+        },
+        {
+            "type": "s",
+            "msg": "But if you're feeling a bit disconnected, please let me know too. We'll see if it can be worked out",
+            "timestamp": "07-Feb-2026 20:28"
+        },
+        {
+            "type": "s",
+            "msg": "Hi Ananya. I was a bit struggling with clarity about us. I feel like we're going sorta too slow. But if this is your general pace I'm ok to give it time.",
+            "timestamp": "07-Feb-2026 20:27"
+        },
+        {
+            "type": "s",
+            "msg": "What's up? Had food?",
+            "timestamp": "04-Feb-2026 16:10"
+        },
+        {
+            "type": "s",
+            "msg": "Hey",
+            "timestamp": "04-Feb-2026 16:09"
+        },
+        {
+            "type": "r",
+            "msg": "Haha",
+            "timestamp": "01-Feb-2026 14:36"
+        },
+        {
+            "type": "s",
+            "msg": "Good 😊",
+            "timestamp": "01-Feb-2026 14:15"
+        },
+        {
+            "type": "r",
+            "msg": "Im super",
+            "timestamp": "01-Feb-2026 00:28"
+        },
+        {
+            "type": "r",
+            "msg": "Ah",
+            "timestamp": "30-Jan-2026 11:47"
+        },
+        {
+            "type": "s",
+            "msg": "You?",
+            "timestamp": "30-Jan-2026 11:47"
+        },
+        {
+            "type": "s",
+            "msg": "Doing fine. Just recovered from viral infection actually. Cold, fever n all 😂",
+            "timestamp": "30-Jan-2026 11:47"
+        },
+        {
+            "type": "s",
+            "msg": "Good morning",
+            "timestamp": "30-Jan-2026 11:46"
+        },
+        {
+            "type": "r",
+            "msg": "How are you doing",
+            "timestamp": "30-Jan-2026 11:27"
+        },
+        {
+            "type": "r",
+            "msg": "Good morning",
+            "timestamp": "30-Jan-2026 11:26"
+        },
+        {
+            "type": "r",
+            "msg": "Hahaha",
+            "timestamp": "30-Jan-2026 07:33"
+        },
+        {
+            "type": "s",
+            "msg": "Oh accha accha 😄 Hope you're getting compensated properly then 😛",
+            "timestamp": "30-Jan-2026 03:48"
+        },
+        {
+            "type": "r",
+            "msg": "MBA PG kind of courses, program management side of things",
+            "timestamp": "29-Jan-2026 23:34"
+        },
+        {
+            "type": "r",
+            "msg": "Na na baba, privileged kids only",
+            "timestamp": "29-Jan-2026 23:34"
+        },
+        {
+            "type": "s",
+            "msg": "Oh there it is. That's nice! Like helping out the underprivileged ones?",
+            "timestamp": "29-Jan-2026 21:48"
+        },
+        {
+            "type": "r",
+            "msg": "I work with education programs",
+            "timestamp": "29-Jan-2026 21:43"
+        },
+        {
+            "type": "s",
+            "msg": "I mean manager yes. But outside work I mean",
+            "timestamp": "29-Jan-2026 21:34"
+        },
+        {
+            "type": "r",
+            "msg": "Aiyyo",
+            "timestamp": "29-Jan-2026 21:33"
+        },
+        {
+            "type": "s",
+            "msg": "That's nice 😊 What do you exactly do? I still have no idea 😂",
+            "timestamp": "29-Jan-2026 21:31"
+        },
+        {
+            "type": "r",
+            "msg": "How have you been",
+            "timestamp": "29-Jan-2026 21:26"
+        },
+        {
+            "type": "r",
+            "msg": "Yaa had an event today, was stuck crazy",
+            "timestamp": "29-Jan-2026 21:26"
+        },
+        {
+            "type": "r",
+            "msg": "Hahahaha",
+            "timestamp": "29-Jan-2026 21:26"
+        },
+        {
+            "type": "r",
+            "msg": "Hey hey",
+            "timestamp": "29-Jan-2026 21:26"
+        },
+        {
+            "type": "s",
+            "msg": "I feel like we were in better contact on JS app than here 😄",
+            "timestamp": "29-Jan-2026 21:14"
+        },
+        {
+            "type": "s",
+            "msg": "Hey Ananya. Busy?",
+            "timestamp": "29-Jan-2026 21:14"
+        },
+        {
+            "type": "s",
+            "msg": "Oh what happened? 😄",
+            "timestamp": "26-Jan-2026 15:56"
+        },
+        {
+            "type": "r",
+            "msg": "How have you been",
+            "timestamp": "26-Jan-2026 15:28"
+        },
+        {
+            "type": "r",
+            "msg": "Wtsup",
+            "timestamp": "26-Jan-2026 15:28"
+        },
+        {
+            "type": "r",
+            "msg": "just been running around yesterday and today, Thoda crazy",
+            "timestamp": "26-Jan-2026 15:28"
+        },
+        {
+            "type": "r",
+            "msg": "Hey",
+            "timestamp": "26-Jan-2026 15:28"
+        },
+        {
+            "type": "s",
+            "msg": "Hey Ananya. What's up?",
+            "timestamp": "26-Jan-2026 15:19"
+        },
+        {
+            "type": "s",
+            "msg": "https://www.youtube.com/watch?v=5lfncPdcWEc\nThis one is private. Need your email id to give access",
+            "timestamp": "25-Jan-2026 08:30"
+        },
+        {
+            "type": "s",
+            "msg": "https://www.youtube.com/watch?v=5lfncPdcWEc",
+            "timestamp": "25-Jan-2026 08:29"
+        },
+        {
+            "type": "s",
+            "msg": "Found a couple. Both in kannada though :)",
+            "timestamp": "25-Jan-2026 08:28"
+        },
+        {
+            "type": "s",
+            "msg": "https://www.youtube.com/watch?v=rCAyhkzvP4U",
+            "timestamp": "25-Jan-2026 08:28"
+        },
+        {
+            "type": "s",
+            "msg": "https://www.youtube.com/watch?v=oGbP7-v46Ws",
+            "timestamp": "25-Jan-2026 08:27"
+        },
+        {
+            "type": "s",
+            "msg": "Good morning. Sorry search karte karte so gaya. Most theatre songs are not released so we won't find them online",
+            "timestamp": "25-Jan-2026 08:27"
+        },
+        {
+            "type": "r",
+            "msg": "You rest well : ) take care",
+            "timestamp": "25-Jan-2026 00:41"
+        },
+        {
+            "type": "r",
+            "msg": "Okie",
+            "timestamp": "25-Jan-2026 00:40"
+        },
+        {
+            "type": "s",
+            "msg": "Folk music share karo na\nLet me see 😊",
+            "timestamp": "25-Jan-2026 00:39"
+        },
+        {
+            "type": "s",
+            "msg": "Sorry got home and was settling down",
+            "timestamp": "25-Jan-2026 00:39"
+        },
+        {
+            "type": "r",
+            "msg": "Busy ho?",
+            "timestamp": "25-Jan-2026 00:35"
+        },
+        {
+            "type": "r",
+            "msg": "Folk music share karo na",
+            "timestamp": "25-Jan-2026 00:27"
+        },
+        {
+            "type": "r",
+            "msg": "Awesome",
+            "timestamp": "25-Jan-2026 00:26"
+        },
+        {
+            "type": "s",
+            "msg": "Started with keyboard. Then learnt guitar, then small small instruments like harmonica etc",
+            "timestamp": "25-Jan-2026 00:23"
+        },
+        {
+            "type": "s",
+            "msg": "Usually in the plays I do more grounded kinda, simple folk-sounding music. For commercial videos, depending upon genre. Simple romantic, scary, serious etc",
+            "timestamp": "25-Jan-2026 00:21"
+        },
+        {
+            "type": "r",
+            "msg": "What kind of music and what instrument do you play",
+            "timestamp": "25-Jan-2026 00:16"
+        },
+        {
+            "type": "r",
+            "msg": "Nice",
+            "timestamp": "25-Jan-2026 00:16"
+        },
+        {
+            "type": "s",
+            "msg": "Aaj bhi matlab I was in music team",
+            "timestamp": "25-Jan-2026 00:14"
+        },
+        {
+            "type": "s",
+            "msg": "No no music only",
+            "timestamp": "25-Jan-2026 00:14"
+        },
+        {
+            "type": "r",
+            "msg": "Acha, so acting and music, both?",
+            "timestamp": "25-Jan-2026 00:13"
+        },
+        {
+            "type": "s",
+            "msg": "Interest toh bachpan se tha🙈 Realistically started performing in bands etc. From college bands etc",
+            "timestamp": "25-Jan-2026 00:09"
         },
         {
             "type": "r",
             "msg": "Hope you've been well",
+            "timestamp": "24-Jan-2026 15:45"
+        },
+        {
+            "type": "r",
+            "msg": "Hello Arun, Ananya here. We've connected on Jeevansathi",
             "timestamp": "24-Jan-2026 15:45"
         }
     ]
