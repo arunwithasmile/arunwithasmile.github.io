@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    main {
+        position: relative;
+        width: 400px;
+        margin: auto;
+    }
+
+    img,
+    overlay {
+        width: 100%;
+    }
+
+    overlay {
+        position: absolute;
+        inset: 0;
+        padding: 81px 16px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 14px;
+    }
+
+    card {
+        display: block;
+        width: 48px;
+        height: 57px;
+        border: 3px solid green;
+        border-radius: 2px;
+    }
+
+    /* Adjustments */
+    card:nth-of-type(8),
+    card:nth-of-type(14),
+    card:nth-of-type(15),
+    card:nth-of-type(17),
+    card:nth-of-type(20),
+    card:nth-of-type(21),
+    card:nth-of-type(22),
+    card:nth-of-type(23),
+    card:nth-of-type(27),
+    card:nth-of-type(28) {
+        translate: 2px;
+    }
+
+    card:nth-of-type(26),
+    card:nth-of-type(29) {
+        translate: 3px;
+    }
+
+    card:nth-of-type(11),
+    card:nth-of-type(16),
+    card:nth-of-type(30) {
+        translate: 1px;
+    }
+
+    card:nth-of-type(31) {
+        translate: 1px -4px;
+    }
+</style>
+
+<body>
+    <main>
+        <img src="images/may-reset.webp" alt="">
+        <overlay>
+            <card></card>
+            <card></card>
+            <card></card>
+            <card></card>
+            <card></card>
+            <card></card>
+            <card></card>
+            <card></card>
+            <card></card>
+            <card></card>
+            <card></card>
+            <card></card>
+            <card></card>
+            <card></card>
+            <card></card>
+            <card></card>
+            <card></card>
+            <card></card>
+            <card></card>
+            <card></card>
+            <card></card>
+            <card></card>
+            <card></card>
+            <card></card>
+            <card></card>
+            <card></card>
+            <card></card>
+            <card></card>
+            <card></card>
+            <card></card>
+            <card></card>
+        </overlay>
+    </main>
+</body>
+
+</html>
