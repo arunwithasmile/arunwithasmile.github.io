@@ -143,12 +143,12 @@
                 if (card.dataset.completed === 'true') {
                     card.dataset.completed = 'false';
                     const completedCards = localStorage.getItem('completedCards')?.split(',') || [];
-                    const updatedCards = completedCards.filter(i => i !== index.toString());
+                    const updatedCards = completedCards.filter(i => i !== (index + 1).toString());
                     localStorage.setItem('completedCards', updatedCards.join(','));
                 } else {
                     card.dataset.completed = 'true';
                     const completedCards = localStorage.getItem('completedCards')?.split(',') || [];
-                    completedCards.push(index);
+                    completedCards.push(index + 1);
                     localStorage.setItem('completedCards', completedCards.join(','));
                 }
             });
@@ -156,14 +156,22 @@
     }
 
     function markCompleteCards() {
+        if (document.querySelectorAll('card').length != 31) {
+            setTimeout(markCompleteCards, 100);
+            return;
+        }
         const cards = localStorage.getItem('completedCards')?.split(',') || [];
         cards.forEach(index => {
-            const card = document.querySelector(`card:nth-of-type(${index + 1})`);
+            const card = document.querySelector(`card:nth-of-type(${index})`);
             card.dataset.completed = 'true';
         });
+
     }
-    setupCardCompletionEvents();
-    markCompleteCards();
+
+    document.addEventListener('DOMContentLoaded', () => {
+        setupCardCompletionEvents();
+        markCompleteCards();
+    });
 </script>
 
 </html>
