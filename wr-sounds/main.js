@@ -15,6 +15,7 @@ document.querySelectorAll('pad').forEach(pad => {
                 const sound = id;
                 const audio = new Audio(`audio/${sound}.mp3`);
                 const loop = id !== 'truck' && id !== 'song';
+                audio.loop = loop;
                 sounds[id] = { audio, loop };
             }
             sounds[id].playing = true;
