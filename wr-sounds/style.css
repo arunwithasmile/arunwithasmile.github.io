@@ -1,0 +1,75 @@
+:root {
+    --purple: #958aff;
+    --magenta: #ff8af7;
+    --cyan: #8afff2;
+    --yellow: #fff58a;
+    --green: #8aff8a;
+    --blue: #8aafff;
+    --orange: #ffb58a;
+}
+
+body {
+    background-color: #eee;
+    font-family: 'Poppins', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+}
+
+.controller {
+    width: 80%;
+    max-width: 600px;
+    margin-inline: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+pad {
+    display: grid;
+    place-items: center;
+    width: calc(50% - 0.5rem);
+    aspect-ratio: 1;
+    background: radial-gradient(#f4ffff 50%, #cfd4e2);
+    border-radius: 2rem;
+    box-shadow: 0 0.2px 1px 2px white, 1px 1px 5px rgba(0, 0, 0, 0.5);
+    font-size: 4rem;
+
+    &.active {
+        background: radial-gradient(#f4ffff 50%, #e4e8f2);
+        box-shadow: 0 0.2px 1px 3px, 1px 1px 0 3px #fff5, 1px 1px 20px;
+    }
+
+    &.magenta.active {
+        color: var(--magenta);
+    }
+
+    &.cyan.active {
+        color: var(--cyan);
+    }
+
+    &.yellow.active {
+        color: var(--yellow);
+    }
+
+    &.green.active {
+        color: var(--green);
+    }
+
+    &.blue.active {
+        color: var(--blue);
+    }
+
+    &.orange.active {
+        color: var(--orange);
+    }
+
+    &.purple.active {
+        color: var(--purple);
+    }
+}
