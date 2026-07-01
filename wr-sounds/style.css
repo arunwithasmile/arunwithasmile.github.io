@@ -9,6 +9,7 @@
 }
 
 body {
+    margin: 0;
     background-color: #eee;
     font-family: 'Poppins', sans-serif;
 }
@@ -18,7 +19,7 @@ body {
 }
 
 h1 {
-    text-align: left;
+    text-align: center;
 }
 
 .controller {
@@ -82,8 +83,21 @@ pad {
     font-size: 2rem;
     z-index: 100;
     border: none;
+}
 
-    &.active {
+body.fullscreen {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    h1 {
+        position: absolute;
+        top: 1rem;
+        width: 100%;
+    }
+
+    .btn-fs {
         font-weight: bold;
         rotate: 180deg;
         text-shadow: 0 0 1px black;

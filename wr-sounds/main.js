@@ -1,7 +1,6 @@
 var sounds = {};
 
 document.addEventListener('DOMContentLoaded', () => {
-    alert('Loaded');
     const fullscreenBtn = document.getElementById('btn-fs');
 
     fullscreenBtn.addEventListener('click', () => {
@@ -10,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
             document.documentElement.requestFullscreen()
                 .then(() => {
                     fullscreenBtn.textContent = '⤷';
-                    fullscreenBtn.classList.add('active');
+                    document.body.classList.add('fullscreen');
                 })
                 .catch((err) => {
                     console.error(`Error attempting to enable fullscreen: ${err.message}`);
@@ -19,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
             // Exit fullscreen mode
             document.exitFullscreen();
             fullscreenBtn.textContent = '⛶';
-            fullscreenBtn.classList.remove('active');
+            document.body.classList.remove('fullscreen');
         }
     });
 
@@ -27,7 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
     document.addEventListener('fullscreenchange', () => {
         if (!document.fullscreenElement) {
             fullscreenBtn.textContent = '⛶';
-            fullscreenBtn.classList.remove('active');
+            document.body.classList.remove('fullscreen');
         }
     });
 
