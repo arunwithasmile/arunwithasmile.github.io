@@ -1,6 +1,7 @@
 var sounds = {};
 
 document.addEventListener('DOMContentLoaded', () => {
+    alert('Loaded');
     const fullscreenBtn = document.getElementById('btn-fs');
 
     fullscreenBtn.addEventListener('click', () => {
