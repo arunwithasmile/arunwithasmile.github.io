@@ -1,0 +1,15 @@
+.container {
+    height: 80vh;
+    align-content: center;
+}
+
+.form {
+    margin: auto;
+    width: 360px;
+    padding: 2rem;
+
+    >* {
+        width: 100%;
+        margin-block: 0.5rem;
+    }
+}

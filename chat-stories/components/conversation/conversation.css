@@ -1,0 +1,30 @@
+header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    height: 4rem;
+    background-color: #fff;
+    padding: 0.625rem 1rem;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 15%);
+}
+
+.name {
+    text-transform: capitalize;
+}
+
+.messages-container {
+    height: calc(100vh - 4rem);
+    overflow-y: auto;
+    display: flex;
+
+    /* Stack content from bottom to top */
+    flex-direction: column-reverse;
+}
+
+.message-list {
+    display: flex;
+    flex-direction: column-reverse;
+    /* Ensure list items also reverse order */
+    padding: 0;
+    margin: 0;
+}

@@ -1,0 +1,34 @@
+{
+    "messages": [
+        {
+            "type": "s",
+            "msg": "Hi Payal",
+            "timestamp": "09-Mar-2026 19:26"
+        },
+        {
+            "type": "s",
+            "msg": "Arun here from Jeevansathi",
+            "timestamp": "09-Mar-2026 19:27"
+        },
+        {
+            "type": "r",
+            "msg": "i am busy",
+            "timestamp": "09-Mar-2026 19:31"
+        },
+        {
+            "type": "r",
+            "msg": "will talk later",
+            "timestamp": "09-Mar-2026 19:31"
+        },
+        {
+            "type": "s",
+            "msg": "Sure sure",
+            "timestamp": "09-Mar-2026 19:31"
+        },
+        {
+            "type": "s",
+            "msg": "No problem",
+            "timestamp": "09-Mar-2026 19:31"
+        }
+    ]
+}
