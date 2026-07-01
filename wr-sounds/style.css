@@ -73,3 +73,19 @@ pad {
         color: var(--purple);
     }
 }
+
+.btn-fs {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 3px 5px 0;
+    font-size: 2rem;
+    z-index: 100;
+    border: none;
+
+    &.active {
+        font-weight: bold;
+        rotate: 180deg;
+        text-shadow: 0 0 1px black;
+    }
+}
