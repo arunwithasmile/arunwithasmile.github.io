@@ -39,7 +39,7 @@ pad {
     background: radial-gradient(#f4ffff 50%, #cfd4e2);
     border-radius: 2rem;
     box-shadow: 0 0.2px 1px 2px white, 1px 1px 5px rgba(0, 0, 0, 0.5);
-    font-size: 18vw;
+    font-size: min(18vw, 8.4rem);
 
     &.active {
         background: radial-gradient(#f4ffff 50%, #e4e8f2);
